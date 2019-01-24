@@ -1,0 +1,100 @@
+	Ellisomyces_anomalus_NRRL_2465_Plus-T.aa	Ellisomyces_anomalus_RSA_581-.aa
+Number of genes	11095	11082
+Number of genes in orthogroups	10736	10763
+Number of unassigned genes	359	319
+Percentage of genes in orthogroups	96.8	97.1
+Percentage of unassigned genes	3.2	2.9
+Number of orthogroups containing species	9373	9372
+Percentage of orthogroups containing species	100.0	100.0
+Number of species-specific orthogroups	4	3
+Number of genes in species-specific orthogroups	24	22
+Percentage of genes in species-specific orthogroups	0.2	0.2
+
+
+Number of genes per-species in orthogroup	Number of orthogroups	Number of orthogroups
+'0	3	4
+'1	8394	8387
+'2	736	738
+'3	158	151
+'4	55	62
+'5	15	15
+'6	8	12
+'7	3	4
+'8	4	3
+'9	0	0
+'10	0	0
+11-15	0	0
+16-20	0	0
+21-50	0	0
+51-100	0	0
+101-150	0	0
+151-200	0	0
+201-500	0	0
+501-1000	0	0
+'1001+	0	0
+
+Number of genes per-species in orthogroup	Percentage of orthogroups	Percentage of orthogroups
+'0	0.0	0.0
+'1	89.5	89.5
+'2	7.8	7.9
+'3	1.7	1.6
+'4	0.6	0.7
+'5	0.2	0.2
+'6	0.1	0.1
+'7	0.0	0.0
+'8	0.0	0.0
+'9	0.0	0.0
+'10	0.0	0.0
+11-15	0.0	0.0
+16-20	0.0	0.0
+21-50	0.0	0.0
+51-100	0.0	0.0
+101-150	0.0	0.0
+151-200	0.0	0.0
+201-500	0.0	0.0
+501-1000	0.0	0.0
+'1001+	0.0	0.0
+
+Number of genes per-species in orthogroup	Number of genes	Number of genes
+'0	0	0
+'1	8394	8387
+'2	1472	1476
+'3	474	453
+'4	220	248
+'5	75	75
+'6	48	72
+'7	21	28
+'8	32	24
+'9	0	0
+'10	0	0
+11-15	0	0
+16-20	0	0
+21-50	0	0
+51-100	0	0
+101-150	0	0
+151-200	0	0
+201-500	0	0
+501-1000	0	0
+'1001+	0	0
+
+Number of genes per-species in orthogroup	Percentage of genes	Percentage of genes
+'0	0.0	0.0
+'1	75.7	75.7
+'2	13.3	13.3
+'3	4.3	4.1
+'4	2.0	2.2
+'5	0.7	0.7
+'6	0.4	0.6
+'7	0.2	0.3
+'8	0.3	0.2
+'9	0.0	0.0
+'10	0.0	0.0
+11-15	0.0	0.0
+16-20	0.0	0.0
+21-50	0.0	0.0
+51-100	0.0	0.0
+101-150	0.0	0.0
+151-200	0.0	0.0
+201-500	0.0	0.0
+501-1000	0.0	0.0
+'1001+	0.0	0.0

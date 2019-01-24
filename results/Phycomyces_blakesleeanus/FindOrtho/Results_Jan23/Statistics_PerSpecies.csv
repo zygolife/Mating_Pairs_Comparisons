@@ -1,0 +1,100 @@
+	Phycomyces_blakesleeanus_Burgeff_NRRL_1465.aa	Phycomyces_blakesleeanus_NRRL_1555.aa
+Number of genes	12952	16528
+Number of genes in orthogroups	11448	12835
+Number of unassigned genes	1504	3693
+Percentage of genes in orthogroups	88.4	77.7
+Percentage of unassigned genes	11.6	22.3
+Number of orthogroups containing species	10113	10118
+Percentage of orthogroups containing species	100.0	100.0
+Number of species-specific orthogroups	0	5
+Number of genes in species-specific orthogroups	0	53
+Percentage of genes in species-specific orthogroups	0.0	0.3
+
+
+Number of genes per-species in orthogroup	Number of orthogroups	Number of orthogroups
+'0	5	0
+'1	9210	9072
+'2	679	668
+'3	126	160
+'4	61	72
+'5	15	32
+'6	9	24
+'7	8	18
+'8	2	10
+'9	0	3
+'10	0	5
+11-15	2	25
+16-20	0	13
+21-50	1	15
+51-100	0	0
+101-150	0	1
+151-200	0	0
+201-500	0	0
+501-1000	0	0
+'1001+	0	0
+
+Number of genes per-species in orthogroup	Percentage of orthogroups	Percentage of orthogroups
+'0	0.0	0.0
+'1	91.0	89.7
+'2	6.7	6.6
+'3	1.2	1.6
+'4	0.6	0.7
+'5	0.1	0.3
+'6	0.1	0.2
+'7	0.1	0.2
+'8	0.0	0.1
+'9	0.0	0.0
+'10	0.0	0.0
+11-15	0.0	0.2
+16-20	0.0	0.1
+21-50	0.0	0.1
+51-100	0.0	0.0
+101-150	0.0	0.0
+151-200	0.0	0.0
+201-500	0.0	0.0
+501-1000	0.0	0.0
+'1001+	0.0	0.0
+
+Number of genes per-species in orthogroup	Number of genes	Number of genes
+'0	0	0
+'1	9210	9072
+'2	1358	1336
+'3	378	480
+'4	244	288
+'5	75	160
+'6	54	144
+'7	56	126
+'8	16	80
+'9	0	27
+'10	0	50
+11-15	25	316
+16-20	0	230
+21-50	32	403
+51-100	0	0
+101-150	0	123
+151-200	0	0
+201-500	0	0
+501-1000	0	0
+'1001+	0	0
+
+Number of genes per-species in orthogroup	Percentage of genes	Percentage of genes
+'0	0.0	0.0
+'1	71.1	54.9
+'2	10.5	8.1
+'3	2.9	2.9
+'4	1.9	1.7
+'5	0.6	1.0
+'6	0.4	0.9
+'7	0.4	0.8
+'8	0.1	0.5
+'9	0.0	0.2
+'10	0.0	0.3
+11-15	0.2	1.9
+16-20	0.0	1.4
+21-50	0.2	2.4
+51-100	0.0	0.0
+101-150	0.0	0.7
+151-200	0.0	0.0
+201-500	0.0	0.0
+501-1000	0.0	0.0
+'1001+	0.0	0.0

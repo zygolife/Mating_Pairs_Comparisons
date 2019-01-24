@@ -1,0 +1,100 @@
+	Circinella_angarensis_RSA_198_Plus.aa	Circinella_angarensis_RSA_618-.aa
+Number of genes	11089	10865
+Number of genes in orthogroups	10012	10007
+Number of unassigned genes	1077	858
+Percentage of genes in orthogroups	90.3	92.1
+Percentage of unassigned genes	9.7	7.9
+Number of orthogroups containing species	8616	8616
+Percentage of orthogroups containing species	99.9	99.9
+Number of species-specific orthogroups	5	5
+Number of genes in species-specific orthogroups	26	30
+Percentage of genes in species-specific orthogroups	0.2	0.3
+
+
+Number of genes per-species in orthogroup	Number of orthogroups	Number of orthogroups
+'0	5	5
+'1	7672	7663
+'2	677	693
+'3	171	168
+'4	52	52
+'5	24	20
+'6	9	10
+'7	4	5
+'8	3	1
+'9	1	1
+'10	3	1
+11-15	0	2
+16-20	0	0
+21-50	0	0
+51-100	0	0
+101-150	0	0
+151-200	0	0
+201-500	0	0
+501-1000	0	0
+'1001+	0	0
+
+Number of genes per-species in orthogroup	Percentage of orthogroups	Percentage of orthogroups
+'0	0.1	0.1
+'1	89.0	88.9
+'2	7.9	8.0
+'3	2.0	1.9
+'4	0.6	0.6
+'5	0.3	0.2
+'6	0.1	0.1
+'7	0.0	0.1
+'8	0.0	0.0
+'9	0.0	0.0
+'10	0.0	0.0
+11-15	0.0	0.0
+16-20	0.0	0.0
+21-50	0.0	0.0
+51-100	0.0	0.0
+101-150	0.0	0.0
+151-200	0.0	0.0
+201-500	0.0	0.0
+501-1000	0.0	0.0
+'1001+	0.0	0.0
+
+Number of genes per-species in orthogroup	Number of genes	Number of genes
+'0	0	0
+'1	7672	7663
+'2	1354	1386
+'3	513	504
+'4	208	208
+'5	120	100
+'6	54	60
+'7	28	35
+'8	24	8
+'9	9	9
+'10	30	10
+11-15	0	24
+16-20	0	0
+21-50	0	0
+51-100	0	0
+101-150	0	0
+151-200	0	0
+201-500	0	0
+501-1000	0	0
+'1001+	0	0
+
+Number of genes per-species in orthogroup	Percentage of genes	Percentage of genes
+'0	0.0	0.0
+'1	69.2	70.5
+'2	12.2	12.8
+'3	4.6	4.6
+'4	1.9	1.9
+'5	1.1	0.9
+'6	0.5	0.6
+'7	0.3	0.3
+'8	0.2	0.1
+'9	0.1	0.1
+'10	0.3	0.1
+11-15	0.0	0.2
+16-20	0.0	0.0
+21-50	0.0	0.0
+51-100	0.0	0.0
+101-150	0.0	0.0
+151-200	0.0	0.0
+201-500	0.0	0.0
+501-1000	0.0	0.0
+'1001+	0.0	0.0
