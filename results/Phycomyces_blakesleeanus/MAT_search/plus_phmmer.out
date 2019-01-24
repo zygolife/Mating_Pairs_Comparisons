@@ -1,0 +1,731 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             MAT_locus_peps/mat_locus_query.pep
+# target sequence database:        annotation/Phycomyces_blakesleeanus_Burgeff_NRRL_1465.aa.fasta
+# output directed to file:         results/Phycomyces_blakesleeanus/MAT_search/plus_phmmer.out
+# per-dom hits tabular output:     results/Phycomyces_blakesleeanus/MAT_search/plus_phmmer.domtbl
+# sequence reporting threshold:    E-value <= 1e-05
+# number of worker threads:        8
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       RNAhelicase  [L=649]
+Description: tr|B0F2G9|B0F2G9_PHYBL Putative RNA helicase (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+          0 1497.4   5.7          0 1497.0   5.7    1.1  1  GAWGY_005043-T1  GAWGY_005043
+    7.5e-06   24.1   0.0    1.4e-05   23.2   0.0    1.3  1  GAWGY_002091-T1  GAWGY_002091
+
+
+Domain annotation for each sequence (and alignments):
+>> GAWGY_005043-T1  GAWGY_005043
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 1497.0   5.7         0         0       1     649 []       1     649 [.       1     649 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 1497.0 bits;  conditional E-value: 0
+      RNAhelicase   1 mssrkssrqrpprgwdhsprpqidgpitvnaninfdtneyqvspaqpqveygynqnqdcsmrwaaeaqaswntpfstntnfntssqpsssqsss 94 
+                      mssrkssrqrpprgwdhsprpqidgpitvnaninfdtneyqvspaqpqveygynqnqdcsmrwaaeaqaswntpfstntnfntssqpsssqsss
+  GAWGY_005043-T1   1 MSSRKSSRQRPPRGWDHSPRPQIDGPITVNANINFDTNEYQVSPAQPQVEYGYNQNQDCSMRWAAEAQASWNTPFSTNTNFNTSSQPSSSQSSS 94 
+                      89******************************************************************************************** PP
+
+      RNAhelicase  95 afnnssgfqawveptrsperfshpdqvvfklnteipdrpifvekvdfasyrskpivpdpaeimqgppqvpvsndrgrrderiphipvnhvrgpy 188
+                      afnnssgfqawveptrsperfshpdqvvfklnteipdrpifvekvdfasyrskpivpdpaeimqgppqvpvsndrgrrderiphipvnhvrgpy
+  GAWGY_005043-T1  95 AFNNSSGFQAWVEPTRSPERFSHPDQVVFKLNTEIPDRPIFVEKVDFASYRSKPIVPDPAEIMQGPPQVPVSNDRGRRDERIPHIPVNHVRGPY 188
+                      ********************************************************************************************** PP
+
+      RNAhelicase 189 estdeylythfelmrqdcliplqkavqsyrltadkpkdklglamsddqvetvalsrdyrlyehvrlnaivfgsrqtlyrisfrlpyycrvkwpq 282
+                      estdeylythfelmrqdcliplqkavqsyrltadkpkdklglamsddqvetvalsrdyrlyehvrlnaivfgsrqtlyrisfrlpyycrvkwpq
+  GAWGY_005043-T1 189 ESTDEYLYTHFELMRQDCLIPLQKAVQSYRLTADKPKDKLGLAMSDDQVETVALSRDYRLYEHVRLNAIVFGSRQTLYRISFRLPYYCRVKWPQ 282
+                      ********************************************************************************************** PP
+
+      RNAhelicase 283 skrlmegsmvllskdnfvsdikiatvvnrgdepmrgssrfeyminvklecdnerdplgfgdpssadqdtyvmieaptgyfeayrhilsvlkntq 376
+                      skrlmegsmvllskdnfvsdikiatvvnrgdepmrgssrfeyminvklecdnerdplgfgdpssadqdtyvmieaptgyfeayrhilsvlkntq
+  GAWGY_005043-T1 283 SKRLMEGSMVLLSKDNFVSDIKIATVVNRGDEPMRGSSRFEYMINVKLECDNERDPLGFGDPSSADQDTYVMIEAPTGYFEAYRHILSVLKNTQ 376
+                      ********************************************************************************************** PP
+
+      RNAhelicase 377 adelplasylvdisqdirlpyyasrkqfydidprkptnsrdqqknlvkadvewpekntgmdrtqmdalqtmitnniaiiqgppgtgktfvgtyg 470
+                      adelplasylvdisqdirlpyyasrkqfydidprkptnsrdqqknlvkadvewpekntgmdrtqmdalqtmitnniaiiqgppgtgktfvgtyg
+  GAWGY_005043-T1 377 ADELPLASYLVDISQDIRLPYYASRKQFYDIDPRKPTNSRDQQKNLVKADVEWPEKNTGMDRTQMDALQTMITNNIAIIQGPPGTGKTFVGTYG 470
+                      ********************************************************************************************** PP
+
+      RNAhelicase 471 mkvllknfdqglgpivcicqtnhaldqflehvldfdprvirigarsrserlkdhilfevrkereavrglgrvyrkrdeiskkireiivtmyeep 564
+                      mkvllknfdqglgpivcicqtnhaldqflehvldfdprvirigarsrserlkdhilfevrkereavrglgrvyrkrdeiskkireiivtmyeep
+  GAWGY_005043-T1 471 MKVLLKNFDQGLGPIVCICQTNHALDQFLEHVLDFDPRVIRIGARSRSERLKDHILFEVRKEREAVRGLGRVYRKRDEISKKIREIIVTMYEEP 564
+                      ********************************************************************************************** PP
+
+      RNAhelicase 565 cvtldylrkikalrprqleslkrvgergarndalstaavaaasaggggadedsdddwvigsditisktrgaptpapsawggnrnq 649
+                      cvtldylrkikalrprqleslkrvgergarndalstaavaaasaggggadedsdddwvigsditisktrgaptpapsawggnrnq
+  GAWGY_005043-T1 565 CVTLDYLRKIKALRPRQLESLKRVGERGARNDALSTAAVAAASAGGGGADEDSDDDWVIGSDITISKTRGAPTPAPSAWGGNRNQ 649
+                      ************************************************************************************8 PP
+
+>> GAWGY_002091-T1  GAWGY_002091
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.2   0.0   2.1e-09   1.4e-05     418     514 ..     765     863 ..     692     884 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 23.2 bits;  conditional E-value: 2.1e-09
+      RNAhelicase 418 qqknlvkadvewpekntg.mdrtqmdalqtmitnniaiiqgppgtgktfvgtygmkvllknfdqglgpivcicqtnhaldqflehvl..dfdpr 508
+                      +  n+     + p+knt  +   q++++++ +++ + ++ gppgtgkt v+   +  l  n+       + +  +n+al+q++e ++  d+d r
+  GAWGY_002091-T1 765 KVPNMGPYPQDIPKKNTVpFTPVQVESIRSGMSHGLTMVVGPPGTGKTDVAVQTIANLYHNYPNQH--TLVVTHSNQALNQIFEKIMelDIDSR 856
+                      55566666677899999526789***************************************8754..456789**********9961155655 PP
+
+      RNAhelicase 509 .viriga 514
+                       ++r+g 
+  GAWGY_002091-T1 857 hLVRLGH 863
+                      3677774 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (649 nodes)
+Target sequences:                      12952  (5432404 residues searched)
+Passed MSV filter:                       605  (0.0467109); expected 259.0 (0.02)
+Passed bias filter:                      323  (0.0249382); expected 259.0 (0.02)
+Passed Vit filter:                        27  (0.00208462); expected 13.0 (0.001)
+Passed Fwd filter:                         4  (0.000308833); expected 0.1 (1e-05)
+Initial search space (Z):              12952  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.64u 0.03s 00:00:00.67 Elapsed: 00:00:00.23
+# Mc/sec: 15258.90
+//
+Query:       TPT  [L=289]
+Description: tr|B0F2G7|B0F2G7_PHYBL Putative triose phosphate transporter (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   6.5e-189  625.5  15.7   8.7e-189  625.1  15.7    1.2  1  GAWGY_005045-T1  GAWGY_005045
+    3.7e-09   36.0   9.0    3.7e-09   36.0   9.0    1.6  2  GAWGY_008449-T1  GAWGY_008449
+    2.4e-06   26.8   8.9    2.4e-06   26.8   8.9    1.7  2  GAWGY_007722-T1  GAWGY_007722
+
+
+Domain annotation for each sequence (and alignments):
+>> GAWGY_005045-T1  GAWGY_005045
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  625.1  15.7    2e-192  8.7e-189       1     289 []       5     293 ..       5     293 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 625.1 bits;  conditional E-value: 2e-192
+              TPT   1 mpgvsfisrdssllssgqyssqeqspalsrhislgdlsslpssiswasrathshsisgrsipspgskrtsstrthrinlpkqseaaqqppsirp 94 
+                      mpgvsfisrdssllssgqyssqeqspalsrhislgdlsslpssiswasrathshsisgrsipspgskrtsstrthrinlpkqseaaqqppsirp
+  GAWGY_005045-T1   5 MPGVSFISRDSSLLSSGQYSSQEQSPALSRHISLGDLSSLPSSISWASRATHSHSISGRSIPSPGSKRTSSTRTHRINLPKQSEAAQQPPSIRP 98 
+                      8********************************************************************************************* PP
+
+              TPT  95 hfsmfgghdsntddlstrhvdtydisplqtfwqslpgskhfalsdnfkfiinicmwyisssltnnigkqiltsfkypvtltfiqfalvamwcfl 188
+                      hfsmfgghdsntddlstrhvdtydisplqtfwqslpgskhfalsdn+kfiinicmwyisssltnnigkqiltsfkypvtltfiqfalvamwcfl
+  GAWGY_005045-T1  99 HFSMFGGHDSNTDDLSTRHVDTYDISPLQTFWQSLPGSKHFALSDNLKFIINICMWYISSSLTNNIGKQILTSFKYPVTLTFIQFALVAMWCFL 192
+                      ********************************************************************************************** PP
+
+              TPT 189 vanlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikalaplftvlfyrfifqvhytpnvyisllpltfgvilacsftys 282
+                      vanlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikalaplftvlfyrfifqvhytpnvyisllpltfgvilacsftys
+  GAWGY_005045-T1 193 VANLASTTHIRSPTQEIVRTITPLAVFLIVGHVFSSIAISRVPVSLVHTIKALAPLFTVLFYRFIFQVHYTPNVYISLLPLTFGVILACSFTYS 286
+                      ********************************************************************************************** PP
+
+              TPT 283 nsvvgls 289
+                      nsvvgls
+  GAWGY_005045-T1 287 NSVVGLS 293
+                      *****97 PP
+
+>> GAWGY_008449-T1  GAWGY_008449
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.0   9.0   8.6e-13   3.7e-09     154     287 ..      21     152 ..       8     154 .. 0.85
+   2 ?   -3.2   0.0      0.78   3.4e+03     228     256 ..     171     201 ..     156     210 .. 0.50
+
+  Alignments for each domain:
+  == domain 1  score: 36.0 bits;  conditional E-value: 8.6e-13
+              TPT 154 ssltnnigkqiltsfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikalaplftv 247
+                       slt   +k il  f+yp tlt i        c+l+      t  +   qe +  i  ++ +  ++  +s++++s v v++ + ++a+ p+ftv
+  GAWGY_008449-T1  21 LSLT-LYNKAILIDFRYPWTLTAIHTLCGTAGCYLMYLAGYFTPAKLGNQENLVMIM-FSFLYTINIAISNVSLSLVSVAFHQVVRAMTPVFTV 112
+                      3444.46899****************9999*****9988899999999999776554.44444577889************************* PP
+
+              TPT 248 lfyrfifqvhytpnvyisllpltfgvilacsftysnsvvg 287
+                      ++   ++   y+  +y+sllp+ +gv +a    y  +++g
+  GAWGY_008449-T1 113 MISIVFLNKSYSSMIYLSLLPVVLGVGFATFGEYDYTMIG 152
+                      *99988999******************9998889888887 PP
+
+  == domain 2  score: -3.2 bits;  conditional E-value: 0.78
+              TPT 228 srvpvs..lvhtikalaplftvlfyrfifqv 256
+                      +rv v    +h +  l+ +  + f++ +f  
+  GAWGY_008449-T1 171 NRVQVGrlKLHPLDLLSRMSPMAFFQCLFYS 201
+                      3333331123444444444444555544443 PP
+
+>> GAWGY_007722-T1  GAWGY_007722
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.8   8.9   5.6e-10   2.4e-06     147     287 ..      26     167 ..      11     169 .. 0.73
+   2 ?   -1.7   0.6      0.26   1.1e+03     222     262 ..     257     294 ..     181     305 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 26.8 bits;  conditional E-value: 5.6e-10
+              TPT 147 icmwyisssltnni.gkqi..ltsfkypvtltfiqfa..lvamwcflvanlastthirsptqeivrtitplavflivghvfssiaisrvpvslv 235
+                      ++m+++ + lt  + +k i  l  f +p tlt i      v  + f  +++ +  ++      i+     ++v+  ++  +s+++++ v v + 
+  GAWGY_007722-T1  26 LAMYFVLN-LTLTLyNKIImsLFDFPFPWTLTAIHTFcgAVGSFVFWQSDIFAPANLGERENMIML---VFSVLYTINIAISNVSLNLVTVPFH 115
+                      45555543.333330343411345788899999986511455666677788777777655444433...34566677888999********999 PP
+
+              TPT 236 htikalaplftvlfyrfifqvhytpnvyisllpltfgvilacsftysnsvvg 287
+                      + ++a+ p+ft+++  ++++ +y+  +yisllp+ +gv +a    y  + +g
+  GAWGY_007722-T1 116 QVVRAMTPVFTIIISLMFLKKRYSKMIYISLLPVVLGVAFATFGDYDYTAMG 167
+                      9*************99999********************9988788776666 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.26
+              TPT 222 fssiaisrvpvslvhtikalaplftvlfyrfifqvhytpnv 262
+                       ++   s + +++   +k    ++++++  +if++h t   
+  GAWGY_007722-T1 257 TANKKTSALTMTVAGNVK---QVLSIVLAVMIFKLHITATN 294
+                      222222333333333333...23344444556666666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (289 nodes)
+Target sequences:                      12952  (5432404 residues searched)
+Passed MSV filter:                       567  (0.043777); expected 259.0 (0.02)
+Passed bias filter:                      250  (0.019302); expected 259.0 (0.02)
+Passed Vit filter:                        27  (0.00208462); expected 13.0 (0.001)
+Passed Fwd filter:                         5  (0.000386041); expected 0.1 (1e-05)
+Initial search space (Z):              12952  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.28u 0.02s 00:00:00.30 Elapsed: 00:00:00.12
+# Mc/sec: 12198.93
+//
+Query:       sexM  [L=211]
+Description: tr|B0F2G8|B0F2G8_PHYBL Sex minus OS=Phycomyces blakesleeanus GN=sexM PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    3.1e-14   52.7   0.6      5e-14   52.1   0.6    1.4  1  GAWGY_005044-T1  GAWGY_005044
+      1e-12   47.8   3.3    2.4e-12   46.6   3.3    1.6  1  GAWGY_008337-T1  GAWGY_008337
+    4.2e-11   42.5   1.5    6.3e-11   42.0   1.5    1.3  1  GAWGY_009345-T1  GAWGY_009345
+    7.5e-10   38.4   2.9    7.5e-10   38.4   2.9    2.2  2  GAWGY_009068-T1  GAWGY_009068
+    1.7e-09   37.3   2.6    1.9e-09   37.1   0.4    2.0  2  GAWGY_003124-T1  GAWGY_003124
+    8.9e-09   34.9   0.6    5.1e-06   25.9   0.4    2.4  2  GAWGY_009697-T1  GAWGY_009697
+    1.3e-08   34.4   1.0    2.1e-08   33.7   1.0    1.3  1  GAWGY_007861-T1  GAWGY_007861
+    2.3e-08   33.6   7.9    4.5e-07   29.4   2.3    3.2  3  GAWGY_005489-T1  GAWGY_005489
+    4.1e-08   32.8   1.1    4.1e-08   32.8   1.1    2.5  3  GAWGY_002310-T1  GAWGY_002310
+    2.6e-06   26.9   8.6    0.00087   18.6   0.3    3.0  3  GAWGY_012924-T1  GAWGY_012924
+
+
+Domain annotation for each sequence (and alignments):
+>> GAWGY_005044-T1  GAWGY_005044
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.1   0.6   3.8e-17     5e-14      42     156 ..     118     237 ..      91     261 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 52.1 bits;  conditional E-value: 3.8e-17
+             sexM  42 irrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvckpflrs... 132
+                       +rp nafm+y   ++  i ++    +n +is+  g mwkn   ev+k y +ka+e + +h +++p y y  +++ t++  s     f +    
+  GAWGY_005044-T1 118 PKRPSNAFMIYSATLRKRIKTTFPEYNNSDISKLLGAMWKNAGAEVKKEYMEKANEVREWHKERYPDYEYNSRKQSTKERDSMPRTDFSNQdfi 211
+                      489********************************************************************99999998777666555543222 PP
+
+             sexM 133 tsdiqliyqkte..skspseklsats 156
+                      t+d + i q  +  s++p   l  +s
+  GAWGY_005044-T1 212 TADDEWIRQLNDllSQNPMTALHGSS 237
+                      55666665554422455555555555 PP
+
+>> GAWGY_008337-T1  GAWGY_008337
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.6   3.3   1.9e-15   2.4e-12      24     136 ..      11     123 ..       4     150 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 46.6 bits;  conditional E-value: 1.9e-15
+             sexM  24 sisstpvrqkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrk 117
+                      s ss+  +     +  +ki rp n f+ yr a +  i++     ++++is+  +k wk   ee +  + ++a + k+ h+k +p+y y pq+r 
+  GAWGY_008337-T1  11 SRSSSKTKSNTNPNQPIKIPRPMNCFLAYRLAKQSEIVARCPGANHRDISKIIAKWWKEATEEEKAPFREQAVQAKVEHAKMYPNYKYTPQKRP 104
+                      5566677777778899****************************************************************************** PP
+
+             sexM 118 trrpqstvckpflrstsdi 136
+                       r  +    +p  + ts i
+  GAWGY_008337-T1 105 NRVTRKYTMRPKDQFTSKI 123
+                      9999998888887777766 PP
+
+>> GAWGY_009345-T1  GAWGY_009345
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.0   1.5   4.9e-14   6.3e-11      41     126 ..      57     139 ..      20     163 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 42.0 bits;  conditional E-value: 4.9e-14
+             sexM  41 kirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvc 126
+                       i rp n f+ yr a +  + +     ++++is+  +k w ne +e +k y+r a + k  hs  +p y ykp+++      s v 
+  GAWGY_009345-T1  57 HIPRPMNCFLAYRLAKQKEVAAYCPGANHRDISKVIAKWWHNETQEEKKLYKRLAADAKHEHSLLYPDYKYKPRKKSA---NSAVK 139
+                      588********************999***********************************************87654...34444 PP
+
+>> GAWGY_009068-T1  GAWGY_009068
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.4   2.9   5.8e-13   7.5e-10      38     126 ..       7      95 ..       3     120 .. 0.93
+   2 ?    1.1   0.1      0.16     2e+02     167     193 ..     206     232 ..     185     245 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 38.4 bits;  conditional E-value: 5.8e-13
+             sexM  38 stvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvc 126
+                       t ki rp n f+ +r   +  il+     ++++is+  +k wk   e  ++ y +ka   k+ hsk  p y y p +r  ++p+  v 
+  GAWGY_009068-T1   7 QTKKIPRPMNCFLAFRLEKQGEILTRCPGANHRDISKIIAKWWKETPEHEKEPYREKARISKIEHSKLHPDYKYSPNKRPGHKPRKYVR 95 
+                      5889******************************************************************************9998764 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.16
+             sexM 167 stnedeilntpptqclddsilktfldd 193
+                      s  e + l tpp+  ld si   f  +
+  GAWGY_009068-T1 206 SFAEKDQLVTPPSNVLDCSIPTPFYQN 232
+                      445566677999999999998877655 PP
+
+>> GAWGY_003124-T1  GAWGY_003124
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.1      0.75   9.8e+02      12      41 ..     156     187 ..     153     202 .. 0.71
+   2 !   37.1   0.4   1.4e-12   1.9e-09      30     118 ..     247     335 ..     229     343 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.75
+             sexM  12 nsyqppsdiltesis..stpvrqkciisstvk 41 
+                       sy p s   t s+s  s p+ ++  is t+ 
+  GAWGY_003124-T1 156 RSYSPTSSSTTSSMStiSGPISRRLPISPTMA 187
+                      47888888888777633467877777777765 PP
+
+  == domain 2  score: 37.1 bits;  conditional E-value: 1.4e-12
+             sexM  30 vrqkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrkt 118
+                      + q  +++    i+rp+na++ +r     ++ s + t++ +eis+ a++ w    e  +k +   a++ek  h + fp y y p++  t
+  GAWGY_003124-T1 247 MDQSMFLTKNAHIKRPRNAWIHFRCHYGQALKSQDPTLRAEEISKRASRRWAKLTEREKKPWHDLAEQEKQAHKEAFPEYRYSPKRGLT 335
+                      35778899999**************9999************************99999**************************98665 PP
+
+>> GAWGY_009697-T1  GAWGY_009697
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.9   0.4   3.9e-09   5.1e-06      36     115 ..     228     307 ..     219     342 .. 0.87
+   2 !    6.7   0.0     0.003       3.9      43     118 ..     365     440 ..     353     455 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 25.9 bits;  conditional E-value: 3.9e-09
+             sexM  36 isstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqq 115
+                       ss  +++rp na++l+++a++  +l  +      eis+  g  wk  ++  r  y ++a   k  h ++ p +iy  + 
+  GAWGY_009697-T1 228 SSSQKRLKRPPNAYLLFNRAMRHRLLEESPKRTVAEISKEIGDRWKVLEQSERDRYIEEARMLKEDHQREHPDFIYTRRS 307
+                      567789********************999999999***********9888888888889999999***********7554 PP
+
+  == domain 2  score: 6.7 bits;  conditional E-value: 0.003
+             sexM  43 rrpknafmlyrqavhpsilss..nstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrkt 118
+                      ++p + f++y   v+  + ++   sti    is+  g  w+    e r  + +ka  +k  ++k++  y+   + + t
+  GAWGY_009697-T1 365 KHPMSGFLFYAATVRGHVAATlpGSTI--GPISKIIGANWRAMTAECRLPFLEKATADKARYAKEMQYYMASVRSKGT 440
+                      679999****99997777665115666..58**********************************9998877666555 PP
+
+>> GAWGY_007861-T1  GAWGY_007861
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.7   1.0   1.6e-11   2.1e-08      40     124 ..      62     146 ..      34     151 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 33.7 bits;  conditional E-value: 1.6e-11
+             sexM  40 vkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqst 124
+                        + rp n f++yr   +  i +     ++++is+  +k w       +++y   ad  k  hs+++p y y p+ r+ ++   t
+  GAWGY_007861-T1  62 NHVPRPMNCFLVYRCEKQKEISTYCPGANHRDISKIIAKWWHEAPSSEKEFYRTLADRGKQQHSEQYPQYKYSPRSRRQKQADGT 146
+                      5688**************999999999999*************999******************************998877655 PP
+
+>> GAWGY_005489-T1  GAWGY_005489
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.7   0.2     0.013        16      63      95 ..       2      34 ..       1      49 [. 0.89
+   2 !   29.4   2.3   3.5e-10   4.5e-07      41     117 ..     304     380 ..     297     423 .. 0.87
+   3 ?    0.2   0.0      0.29   3.8e+02      36     109 ..     437     510 ..     422     524 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 4.7 bits;  conditional E-value: 0.013
+             sexM 63 snstihnkeisrtagkmwknekeevrkyyerka 95
+                     sn  i+ ke+++  g  w n  +  r+ y++++
+  GAWGY_005489-T1  2 SNPNINKKELNKLLGDEWNNMAQSFREGYKQRS 34
+                     7999**********************9998775 PP
+
+  == domain 2  score: 29.4 bits;  conditional E-value: 3.5e-10
+             sexM  41 kirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrk 117
+                      +++rp na++l+++ ++  +l  n  +   eis++ + +wk   e+ rk y ++a   k  h    p+++y  + + 
+  GAWGY_005489-T1 304 RLKRPPNAYLLFNRFMRSKLLKVNPNLSVAEISKSVSAQWKELSEKERKPYNQEASRLKQEHMDMHPNFVYTRRSKA 380
+                      799********************************************************************876554 PP
+
+  == domain 3  score: 0.2 bits;  conditional E-value: 0.29
+             sexM  36 isstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgy 109
+                      ++     ++p + f+++  +v+  i     +    ++s+  +  w+   +  r  +  +a e+k  +++++  +
+  GAWGY_005489-T1 437 LTHPTAPKHPMSGFLFFAGSVRQEIALQRPSASVGDVSKIIAGKWRELTDAERNPWCLRATEDKGRYAREMQEF 510
+                      555556689999************999999999999**998888999999999999999999998777776655 PP
+
+>> GAWGY_002310-T1  GAWGY_002310
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.1         1   1.3e+03      71      88 ..     134     151 ..     103     176 .. 0.60
+   2 ?   -1.9   0.0       1.3   1.7e+03      28      57 ..     319     348 ..     310     356 .. 0.82
+   3 !   32.8   1.1   3.2e-11   4.1e-08      31     116 ..     358     443 ..     351     464 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 1
+             sexM  71 eisrtagkmwknekeevr 88 
+                        sr   +m+k +kee +
+  GAWGY_002310-T1 134 LHSRPTLQMYKQDKEEEK 151
+                      334445555555555543 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 1.3
+             sexM  28 tpvrqkciisstvkirrpknafmlyrqavh 57 
+                       p r   ii + v +r+p   f      vh
+  GAWGY_002310-T1 319 LPTRLDNIIETAVDLRQPHGTFDRVSFTVH 348
+                      6889999999********999987777776 PP
+
+  == domain 3  score: 32.8 bits;  conditional E-value: 3.2e-11
+             sexM  31 rqkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqr 116
+                       q  +++    i+rp+na++ +r     ++ + + t++ +eis+ a++ w    e+ +k +   a++ek  h + fp y y p++ 
+  GAWGY_002310-T1 358 DQSMFLTKNAHIKRPRNAWIHFRCHYGQALKTEDPTLRAEEISKRASRRWARLTEKEKKPWHDLAEQEKQAHKEAFPEYRYCPKRA 443
+                      57778899999*************9999*************************9999*************************9865 PP
+
+>> GAWGY_012924-T1  GAWGY_012924
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0       1.7   2.2e+03     118     145 ..     126     153 ..     121     178 .. 0.80
+   2 !   18.6   0.3   6.7e-07   0.00087      40     104 ..     523     586 ..     509     595 .. 0.84
+   3 !   11.0   2.0   0.00015       0.2      43     126 ..     597     680 ..     591     692 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 1.7
+             sexM 118 trrpqstvckpflrstsdiqliyqktes 145
+                      + rp   ++  fl+s +  +l ++k + 
+  GAWGY_012924-T1 126 SDRPNKDLAHDFLKSNTHTELGFEKYDK 153
+                      56899999999***99999999888664 PP
+
+  == domain 2  score: 18.6 bits;  conditional E-value: 6.7e-07
+             sexM  40 vkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhsk 104
+                      +k     n f+ly++ v+  + + n  + n +isr  +  wk   ee +k y  ++ e++  + k
+  GAWGY_012924-T1 523 LKPACQYNPFFLYNKTVRRDVTNDNPELSNVQISRLIASKWKELPEEEKKIYNDESAEKRA-QLK 586
+                      555566799*****************************************99887766543.444 PP
+
+  == domain 3  score: 11.0 bits;  conditional E-value: 0.00015
+             sexM  43 rrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvc 126
+                      r p n+f+l+ +     i   +      ++++  + mwk   +e +  y+  + + +   ++k p y+ k +++k    + t+ 
+  GAWGY_012924-T1 597 RFPPNSFVLFAKDYGKEIRKQHPEYDLHQVTKVTSAMWKTIDQETKLKYQALSKKLQTEFAEKNPDYVKKWKEEKVAARRQTIQ 680
+                      6799*****************9999999******************99999999999999**********99988766655554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (211 nodes)
+Target sequences:                      12952  (5432404 residues searched)
+Passed MSV filter:                       546  (0.0421557); expected 259.0 (0.02)
+Passed bias filter:                      297  (0.0229308); expected 259.0 (0.02)
+Passed Vit filter:                        28  (0.00216183); expected 13.0 (0.001)
+Passed Fwd filter:                        14  (0.00108091); expected 0.1 (1e-05)
+Initial search space (Z):              12952  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 0.28u 0.02s 00:00:00.30 Elapsed: 00:00:00.12
+# Mc/sec: 9204.20
+//
+Query:       sexP  [L=297]
+Description: tr|B0F2H1|B0F2H1_PHYBL Sex plus OS=Phycomyces blakesleeanus GN=sexP PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   2.8e-202  669.8   5.8   3.2e-202  669.6   5.8    1.0  1  GAWGY_005044-T1  GAWGY_005044
+    1.3e-19   70.4   0.5    2.8e-09   36.5   0.1    2.2  2  GAWGY_009697-T1  GAWGY_009697
+    3.6e-16   59.2  12.0    6.1e-10   38.7   2.3    3.3  3  GAWGY_005489-T1  GAWGY_005489
+      3e-13   49.6   0.2    4.7e-13   48.9   0.2    1.3  1  GAWGY_007861-T1  GAWGY_007861
+    1.2e-12   47.6   2.4    1.8e-12   47.0   2.4    1.3  1  GAWGY_008337-T1  GAWGY_008337
+    6.9e-12   45.1   0.6    1.1e-11   44.4   0.6    1.4  1  GAWGY_009345-T1  GAWGY_009345
+    6.1e-11   42.0  11.0    2.6e-06   26.8   1.0    2.7  3  GAWGY_012924-T1  GAWGY_012924
+    4.4e-09   35.9   2.4    7.6e-09   35.1   1.4    1.9  2  GAWGY_009068-T1  GAWGY_009068
+    5.9e-09   35.5   3.2    2.2e-06   27.1   0.3    2.2  2  GAWGY_009991-T1  GAWGY_009991
+    6.9e-08   32.0   1.4    6.9e-08   32.0   1.4    1.0  1  GAWGY_004291-T1  GAWGY_004291
+      4e-07   29.5   0.0    4.4e-07   29.4   0.0    1.1  1  GAWGY_011369-T1  GAWGY_011369
+    9.8e-07   28.2   0.8    9.8e-07   28.2   0.8    1.0  1  GAWGY_009121-T1  GAWGY_009121
+      4e-06   26.2   0.1      6e-06   25.6   0.1    1.3  1  GAWGY_003608-T1  GAWGY_003608
+    9.1e-06   25.0   1.4    1.8e-05   24.0   1.4    1.6  1  GAWGY_012296-T1  GAWGY_012296
+    9.2e-06   25.0   0.3    1.8e-05   24.1   0.3    1.4  1  GAWGY_002310-T1  GAWGY_002310
+
+
+Domain annotation for each sequence (and alignments):
+>> GAWGY_005044-T1  GAWGY_005044
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  669.6   5.8  3.7e-205  3.2e-202       1     296 [.       1     296 [.       1     297 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 669.6 bits;  conditional E-value: 3.7e-205
+             sexP   1 mkakqtphlpyqrpikprlllapklsvqqisviyikgktalriypsqafvyardlitmvdekrdyitvntgssverkdlfsaaesllrkqmcte 94 
+                      mkakqtphlpyqrpikprlllapklsvqqisviyikgktalriypsqafvyardlitmvdekrdyitvntgssverkdlfsaaesllrkqmcte
+  GAWGY_005044-T1   1 MKAKQTPHLPYQRPIKPRLLLAPKLSVQQISVIYIKGKTALRIYPSQAFVYARDLITMVDEKRDYITVNTGSSVERKDLFSAAESLLRKQMCTE 94 
+                      8********************************************************************************************* PP
+
+             sexP  95 ssstgvsiskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeyn 188
+                      ssstgvsiskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeyn
+  GAWGY_005044-T1  95 SSSTGVSISKGQENPYQASPEQVPKRPSNAFMIYSATLRKRIKTTFPEYNNSDISKLLGAMWKNAGAEVKKEYMEKANEVREWHKERYPDYEYN 188
+                      ********************************************************************************************** PP
+
+             sexP 189 srkqstkerdsmprtdfsnqdfitaddewirqlndllsqnpmtalhgssqenfaidytstpyfisspsndislgdlkleewqdfcnnwtehdsr 282
+                      srkqstkerdsmprtdfsnqdfitaddewirqlndllsqnpmtalhgssqenfaidytstpyfisspsndislgdlkleewqdfcnnwtehdsr
+  GAWGY_005044-T1 189 SRKQSTKERDSMPRTDFSNQDFITADDEWIRQLNDLLSQNPMTALHGSSQENFAIDYTSTPYFISSPSNDISLGDLKLEEWQDFCNNWTEHDSR 282
+                      ********************************************************************************************** PP
+
+             sexP 283 yldqnfldesfwar 296
+                      yldqnfldesfwar
+  GAWGY_005044-T1 283 YLDQNFLDESFWAR 296
+                      *************9 PP
+
+>> GAWGY_009697-T1  GAWGY_009697
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.5   0.1   3.3e-12   2.8e-09     113     193 ..     229     309 ..     220     331 .. 0.89
+   2 !   32.0   0.0   7.7e-11   6.7e-08     111     194 ..     358     440 ..     338     454 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 36.5 bits;  conditional E-value: 3.3e-12
+             sexP 113 speqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                      s ++  krp na+++++  +r r+    p+   ++isk +g  wk      +  y+e+a  ++e h+ ++pd+ y  r ++
+  GAWGY_009697-T1 229 SSQKRLKRPPNAYLLFNRAMRHRLLEESPKRTVAEISKEIGDRWKVLEQSERDRYIEEARMLKEDHQREHPDFIYTRRSKA 309
+                      4555679*****************************************999************************877654 PP
+
+  == domain 2  score: 32.0 bits;  conditional E-value: 7.7e-11
+             sexP 111 qaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqst 194
+                         p   pk+p + f++y+at+r ++  t+p      isk++ga w+   ae +  ++eka   +  + ++   y  + r + t
+  GAWGY_009697-T1 358 DCHP-SGPKHPMSGFLFYAATVRGHVAATLPGSTIGPISKIIGANWRAMTAECRLPFLEKATADKARYAKEMQYYMASVRSKGT 440
+                      4445.46*****************************************************987766555555555555555555 PP
+
+>> GAWGY_005489-T1  GAWGY_005489
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.6   0.2    0.0087       7.5     141     178 ..       4      39 ..       1     102 [. 0.74
+   2 !   38.7   2.3     7e-13   6.1e-10     103     197 ..     288     384 ..     231     390 .. 0.76
+   3 !   20.4   0.1   2.7e-07   0.00024      70     173 ..     389     498 ..     386     519 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.0087
+             sexP 141 peynnsdiskllgamwknagaevkkeymekanevrewh 178
+                      p  n  +++kllg  w n +   ++ y +++     w+
+  GAWGY_005489-T1   4 PNINKKELNKLLGDEWNNMAQSFREGYKQRSKNS--WE 39 
+                      8899*****************9999999887543..33 PP
+
+  == domain 2  score: 38.7 bits;  conditional E-value: 7e-13
+             sexP 103 skgqen...pyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                       kgq      y   pe++ krp na+++++  +r ++    p  + ++isk ++a+wk  + + +k y ++a+ +++ h + +p++ y  r ++
+  GAWGY_005489-T1 288 KKGQGKsyrKYNEEPERL-KRPPNAYLLFNRFMRSKLLKVNPNLSVAEISKSVSAQWKELSEKERKPYNQEASRLKQEHMDMHPNFVYTRRSKA 380
+                      455554001456677776.89*******************************************************************999887 PP
+
+             sexP 194 tker 197
+                        e+
+  GAWGY_005489-T1 381 ELEK 384
+                      6665 PP
+
+  == domain 3  score: 20.4 bits;  conditional E-value: 2.7e-07
+             sexP  70 tgssverkdlfsaaesllrkqmctessstgvsi.......skgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamw 156
+                      t  s +rkd++  ae+l + +  t sss++ +         +g++          pk+p + f++++ ++r++i    p  +  d+sk+++  w
+  GAWGY_005489-T1 389 TRPSQKRKDMMLKAEALGQGEASTASSSSSKTTpqlkvrdPRGRKKKRLTH-PTAPKHPMSGFLFFAGSVRQEIALQRPSASVGDVSKIIAGKW 481
+                      556889*************99999888765443111111135555554444.468*************************************** PP
+
+             sexP 157 knagaevkkeymekane 173
+                      +      +  +  +a e
+  GAWGY_005489-T1 482 RELTDAERNPWCLRATE 498
+                      98765555555555555 PP
+
+>> GAWGY_007861-T1  GAWGY_007861
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.9   0.2   5.5e-16   4.7e-13     111     199 ..      58     145 ..      44     172 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 48.9 bits;  conditional E-value: 5.5e-16
+             sexP 111 qaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerds 199
+                      + +p  vp rp n f++y    +k+i t  p  n+ disk+++  w  a +  k+ y   a+  ++ h e+yp y+y+ r +  k+ d 
+  GAWGY_007861-T1  58 RRNPNHVP-RPMNCFLVYRCEKQKEISTYCPGANHRDISKIIAKWWHEAPSSEKEFYRTLADRGKQQHSEQYPQYKYSPRSRRQKQADG 145
+                      56799999.7******************************************9999***********************9999999886 PP
+
+>> GAWGY_008337-T1  GAWGY_008337
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.0   2.4   2.1e-15   1.8e-12      90     205 ..       4     119 ..       1     136 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 47.0 bits;  conditional E-value: 2.1e-15
+             sexP  90 qmctessstgvsiskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkeryp 183
+                      q  t+sss + s +k+  np q  p ++p rp n f+ y    + +i    p  n+ disk+++  wk a  e k  + e+a + +  h + yp
+  GAWGY_008337-T1   4 QKKTKSSSRSSSKTKSNTNPNQ--PIKIP-RPMNCFLAYRLAKQSEIVARCPGANHRDISKIIAKWWKEATEEEKAPFREQAVQAKVEHAKMYP 94 
+                      5668899998888888888876..89999.7*************************************************************** PP
+
+             sexP 184 dyeynsrkqs...tkerdsmprtdf 205
+                      +y+y  +k+    t++    p+  f
+  GAWGY_008337-T1  95 NYKYTPQKRPnrvTRKYTMRPKDQF 119
+                      *****99875111344444555555 PP
+
+>> GAWGY_009345-T1  GAWGY_009345
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.4   0.6   1.3e-14   1.1e-11     111     196 ..      52     136 ..      13     160 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 44.4 bits;  conditional E-value: 1.3e-14
+             sexP 111 qaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstke 196
+                      +  p  +p rp n f+ y    +k++    p  n+ disk+++  w n   e kk y   a + +  h   ypdy+y  rk+s   
+  GAWGY_009345-T1  52 KRKPHHIP-RPMNCFLAYRLAKQKEVAAYCPGANHRDISKVIAKWWHNETQEEKKLYKRLAADAKHEHSLLYPDYKYKPRKKSANS 136
+                      45788898.8***********************************************************************99754 PP
+
+>> GAWGY_012924-T1  GAWGY_012924
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.2   0.2       8.7   7.5e+03     184     201 ..     356     373 ..     337     381 .. 0.58
+   2 !   21.9   0.3   9.2e-08   7.9e-05     118     177 ..     525     584 ..     509     598 .. 0.87
+   3 !   26.8   1.0     3e-09   2.6e-06     119     194 ..     597     672 ..     591     687 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -4.2 bits;  conditional E-value: 8.7
+             sexP 184 dyeynsrkqstkerdsmp 201
+                      dy  + +  s +erd + 
+  GAWGY_012924-T1 356 DYNASKKNTSRQERDPLE 373
+                      444444444556677654 PP
+
+  == domain 2  score: 21.9 bits;  conditional E-value: 9.2e-08
+             sexP 118 pkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrew 177
+                      p    n f++y+ t+r+ +    pe +n  is+l+++ wk    e kk y +++ e r  
+  GAWGY_012924-T1 525 PACQYNPFFLYNKTVRRDVTNDNPELSNVQISRLIASKWKELPEEEKKIYNDESAEKRAQ 584
+                      6667799*******************************************9999887754 PP
+
+  == domain 3  score: 26.8 bits;  conditional E-value: 3e-09
+             sexP 119 krpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqst 194
+                      + p n+f++++    k+i+   pey+   ++k+ +amwk    e k +y+  + +++    e+ pdy    +++  
+  GAWGY_012924-T1 597 RFPPNSFVLFAKDYGKEIRKQHPEYDLHQVTKVTSAMWKTIDQETKLKYQALSKKLQTEFAEKNPDYVKKWKEEKV 672
+                      5699***************************************************************766555544 PP
+
+>> GAWGY_009068-T1  GAWGY_009068
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.1   1.4   8.8e-12   7.6e-09     115     198 ..       9      92 ..       2     140 .. 0.85
+   2 ?   -2.6   0.0       2.8   2.4e+03     197     211 ..     301     315 ..     286     328 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 35.1 bits;  conditional E-value: 8.8e-12
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs.tkerd 198
+                      +++p rp n f+ +    + +i t  p  n+ disk+++  wk      k+ y eka   +  h + +pdy+y+ +k+   k r 
+  GAWGY_009068-T1   9 KKIP-RPMNCFLAFRLEKQGEILTRCPGANHRDISKIIAKWWKETPEHEKEPYREKARISKIEHSKLHPDYKYSPNKRPgHKPRK 92 
+                      4455.8*******************************************************************988764145454 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 2.8
+             sexP 197 rdsmprtdfsnqdfi 211
+                        sm r+dfs+ d++
+  GAWGY_009068-T1 301 YWSMIRSDFSSPDYL 315
+                      4589999**999997 PP
+
+>> GAWGY_009991-T1  GAWGY_009991
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.1   0.3   2.5e-09   2.2e-06     109     192 ..      96     180 ..      83     210 .. 0.86
+   2 !    8.8   0.2   0.00091      0.78     115     177 ..     283     345 ..     258     358 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 27.1 bits;  conditional E-value: 2.5e-09
+             sexP 109 pyqaspeqv.pkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkq 192
+                      p +  pe     rp naf++++  +rk++k   p    ++isk +g  wk  +   k  y+ +a  +++ ++   p+  y  r +
+  GAWGY_009991-T1  96 PVETLPEPTrVTRPPNAFLLFNKEMRKQLKDQNPTMKVAEISKEIGGRWKCLNQVDKDRYVAEAERLKDHQRALNPNAMYIRRSK 180
+                      5566666542369***************************************9999999**********9999999988877655 PP
+
+  == domain 2  score: 8.8 bits;  conditional E-value: 0.00091
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrew 177
+                         pk+p +a+m y   +r      +p      iskl +  w   +   +  +  ka+  +e 
+  GAWGY_009991-T1 283 SSTPKHPLSAYMWYLTEVRPDTMRAYPGSTVGQISKLCADRWNTMSETEQMPWKTKAHADKER 345
+                      568***************************************887766667777777765554 PP
+
+>> GAWGY_004291-T1  GAWGY_004291
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.0   1.4     8e-11   6.9e-08     103     183 ..      17      92 ..       1     106 [] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 32.0 bits;  conditional E-value: 8e-11
+             sexP 103 skgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkeryp 183
+                       +g++   +  p   pkr  +a+m++s   r+++k   pe     i kllg  wk+   + kk y+ ka       k+ry 
+  GAWGY_004291-T1  17 DEGKKRRTKKDP-SAPKRGLSAYMFFSQDQRQQVKEENPEATFGSIGKLLGEKWKSMTDDDKKPYIAKAEAD----KKRYE 92 
+                      456666666666.58*****************************************************9653....34443 PP
+
+>> GAWGY_011369-T1  GAWGY_011369
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.4   0.0   5.1e-10   4.4e-07     109     164 ..     112     167 ..      55     171 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 29.4 bits;  conditional E-value: 5.1e-10
+             sexP 109 pyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevk 164
+                      p +      pk p n f++y    r +ik  fp+ n  +++k+lg  wk    e k
+  GAWGY_011369-T1 112 PRRKKDPNAPKGPGNVFFLYCRLERDKIKDEFPQENLGEVTKILGQKWKGLTKEEK 167
+                      555566689****************************************9877765 PP
+
+>> GAWGY_009121-T1  GAWGY_009121
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.2   0.8   1.1e-09   9.8e-07      97     186 ..      10      94 ..       1     105 [] 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 28.2 bits;  conditional E-value: 1.1e-09
+             sexP  97 stgvsiskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdye 186
+                       t+  +  g++   +  p   pkr  +a+m++s   r  +k   p+ +   i k+lg  wk      kk y +ka    e  k+ry d +
+  GAWGY_009121-T1  10 RTSKVVDDGKKRRTKKDP-SAPKRGLSAYMFFSQDQRHVVKENNPDASFGQIGKILGERWKKMTDADKKPYNQKA----ELDKKRYEDEK 94 
+                      455556777777777777.58*****************************************99999****9988....56777777754 PP
+
+>> GAWGY_003608-T1  GAWGY_003608
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.6   0.1   6.9e-09     6e-06     109     171 ..      99     161 ..      86     197 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 25.6 bits;  conditional E-value: 6.9e-09
+             sexP 109 pyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymeka 171
+                      p +      pk p n f+++    r +ik   p+ +  d+++llg  wk+ + e k+ y +  
+  GAWGY_003608-T1  99 PRKKKDPNAPKGPGNVFFLFCRFERDKIKDENPQESLGDVTRLLGLKWKSLSKEEKQVYYDMY 161
+                      666666789***********************************************9998754 PP
+
+>> GAWGY_012296-T1  GAWGY_012296
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.0   1.4   2.1e-08   1.8e-05      99     190 ..     237     329 ..     209     383 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 24.0 bits;  conditional E-value: 2.1e-08
+             sexP  99 gvsiskgqenpyq..aspe.qvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeyns 189
+                      g s  +  +  yq  a p+   p +ps+a++++s  +r ++++       ++++kl+g  wkn + + k+ y   a   r+ ++ r  dy+  +
+  GAWGY_012296-T1 237 GDSTGRLWKRKYQrhAKPDkNCPLKPSSAYVMFSNDVRAELRSRNMT--FTELAKLVGDRWKNLNHDEKQRYETNAMVARKQYQIRLEDYQRTT 328
+                      4444444455554335665268*****************99987655..579**************************************9776 PP
+
+             sexP 190 r 190
+                      +
+  GAWGY_012296-T1 329 E 329
+                      5 PP
+
+>> GAWGY_002310-T1  GAWGY_002310
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.1   0.3   2.1e-08   1.8e-05     119     193 ..     370     444 ..     352     462 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 24.1 bits;  conditional E-value: 2.1e-08
+             sexP 119 krpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                      krp na++ +     + +kt  p     +isk  +  w     + kk + + a + ++ hke +p+y y  ++ +
+  GAWGY_002310-T1 370 KRPRNAWIHFRCHYGQALKTEDPTLRAEEISKRASRRWARLTEKEKKPWHDLAEQEKQAHKEAFPEYRYCPKRAN 444
+                      9********************************************************************887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (297 nodes)
+Target sequences:                      12952  (5432404 residues searched)
+Passed MSV filter:                       520  (0.0401482); expected 259.0 (0.02)
+Passed bias filter:                      268  (0.0206918); expected 259.0 (0.02)
+Passed Vit filter:                        41  (0.00316553); expected 13.0 (0.001)
+Passed Fwd filter:                        22  (0.00169858); expected 0.1 (1e-05)
+Initial search space (Z):              12952  [actual number of targets]
+Domain search space  (domZ):              15  [number of targets reported over threshold]
+# CPU time: 0.36u 0.02s 00:00:00.38 Elapsed: 00:00:00.16
+# Mc/sec: 10012.62
+//
+[ok]

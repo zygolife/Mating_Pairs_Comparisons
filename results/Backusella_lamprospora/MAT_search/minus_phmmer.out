@@ -1,0 +1,752 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             MAT_locus_peps/mat_locus_query.pep
+# target sequence database:        annotation/Backusella_lamprospora_NRRL_1401.aa.fasta
+# output directed to file:         results/Backusella_lamprospora/MAT_search/minus_phmmer.out
+# per-dom hits tabular output:     results/Backusella_lamprospora/MAT_search/minus_phmmer.domtbl
+# sequence reporting threshold:    E-value <= 1e-05
+# number of worker threads:        8
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       RNAhelicase  [L=649]
+Description: tr|B0F2G9|B0F2G9_PHYBL Putative RNA helicase (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   1.1e-190  634.9  16.6   5.9e-190  632.5  13.8    2.5  2  CTHSW_008978-T1  CTHSW_008978
+    3.5e-07   28.7   0.0    8.1e-07   27.5   0.0    1.5  1  CTHSW_006477-T1  CTHSW_006477
+
+
+Domain annotation for each sequence (and alignments):
+>> CTHSW_008978-T1  CTHSW_008978
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  632.5  13.8  7.6e-194  5.9e-190       1     626 [.       1     600 [.       1     613 [. 0.92
+   2 ?   -2.2   0.0       0.1     8e+02     520     561 ..     820     861 ..     801     867 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 632.5 bits;  conditional E-value: 7.6e-194
+      RNAhelicase   1 mssrkssrqrpprgwdhsprpqidgpitvnaninfdtneyqvspaqpq...veygynqnqdcsmrwaaeaqaswnt.pfstntnfntssqpsss 90 
+                      ms r+++++ pp+  ++   p   gp  vna +n +tne+ v+  qp+    ++++  n + s  wa +aq  w + p+               
+  CTHSW_008978-T1   1 MSRRRNTQRGPPNPAEYWDLPITAGPTVVNATLNVNTNEFDVTEEQPRsnrSKFNFGANNEPSDSWAFDAQHGWGSgPIYA------------- 81 
+                      6788999999*********************************99997222578999*****************7523333............. PP
+
+      RNAhelicase  91 qsssafnnssgfqawveptrsperfshpdqvvfklnteipdrpifvekvdfasyrskpivpdpaeimqgppqvpvsndrgrrderi..phipvn 182
+                           +nn +     v    + +rfs  +   f+lntei + p+f +  d+  +r k i+p+  ++m  p q p   d +    r+  p+ipvn
+  CTHSW_008978-T1  82 ---DTWNNVTEADQHV----TADRFSKKEVATFRLNTEISEAPVFTKVTDYTEFREKTILPNYEDLMLDPVQPPDDYDLNIPSYRLplPNIPVN 168
+                      ...3455554433333....4689*******************************************************99999862379**** PP
+
+      RNAhelicase 183 hvrgpyestdeylythfelmrqdcliplqkavqsyrltadkpkdklglamsddqvetvalsrdyrlyehvrlnaivfgsrqtlyrisfrlpyyc 276
+                        ++ y+s d+ylythfelmr dcliplqkav+syr t +  kd        + +e  +  + +rlyehv++n++vfgsrq lyr+sfrlpyy 
+  CTHSW_008978-T1 169 KTKNAYDSVDQYLYTHFELMRNDCLIPLQKAVRSYRETHETLKDTAD---YGEAMEANSAPKPFRLYEHVHINSMVFGSRQVLYRVSFRLPYYV 259
+                      *******************************************9755...45778999999********************************* PP
+
+      RNAhelicase 277 rvkwpqskrlmegsmvllskdnfvsdikiatvvnrgdepmrgssrfeyminvklecdnerdplgfgdpssadqdtyvmieaptgyfeayrhils 370
+                      rv w qskrlm gs+vllskd+f +d+k+atvv rgd+pm gs+rfe+mi++ le dn   plgfgdp + ++dtyvmiea  gyfeayrh+l+
+  CTHSW_008978-T1 260 RVTWEQSKRLMPGSLVLLSKDHFKTDLKVATVVERGDKPMAGSNRFEFMIDIYLEQDNPDMPLGFGDPLTGEEDTYVMIEATDGYFEAYRHVLA 353
+                      ********************************************************************************************** PP
+
+      RNAhelicase 371 vlkntqadelplasylvdisqdirlpyyasrkqfydidprkptnsrdqqknlvkadvewpekntgmdrtqmdalqtmitnniaiiqgppgtgkt 464
+                      v+kn  ++elp++ ylv +s ++ +pyya+r++ ydi+   p  sr  ++  v     wp   tgmd+tqmdal+t++tnn+ai+qgppgtgkt
+  CTHSW_008978-T1 354 VFKNLTSNELPFSDYLVKLSNEVLVPYYANRRKHYDINVLTPMRSRQHERWTVDITNPWPSFRTGMDKTQMDALRTILTNNLAIVQGPPGTGKT 447
+                      ********************************************************************************************** PP
+
+      RNAhelicase 465 fvgtygmkvllknfdqglgpivcicqtnhaldqflehvldfdprvirigarsrserlkdhilfevrkereavrglgrvyrkrdeiskkireiiv 558
+                      +vgty+m+vll nfd ++gpivcicqtnhaldqflehv++ dp+++r+g rs+s  lk+h l+e++k++e  + ++ +yr rde+  k++ +i+
+  CTHSW_008978-T1 448 YVGTYAMRVLLTNFDTSIGPIVCICQTNHALDQFLEHVFEHDPNIVRVGGRSKSSILKEHTLYELKKQHERPKKMAGLYRTRDEMKTKMKRLII 541
+                      ********************************************************************************************** PP
+
+      RNAhelicase 559 tmyeepcvtldylrkikalrprqleslkrvgergarndalstaavaaasaggggadedsdddwvigsd 626
+                       mye+pcvt+dy++ki  lrp+ql+slkr+ e+  +  a +t +  a         +dsddd+++  d
+  CTHSW_008978-T1 542 EMYEKPCVTIDYINKINGLRPKQLDSLKRIVEKEKK--AKNTNSTHA-------NFDDSDDDFIMYPD 600
+                      ******************************998644..334433222.......23466777666555 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.1
+      RNAhelicase 520 rlkdhilfevrkereavrglgrvyrkrdeiskkireiivtmy 561
+                      rl+ h  +  ++  e    + +  r+ deisk ir+i  t  
+  CTHSW_008978-T1 820 RLQAHKKWVNQRNTEIEATIVECMRRYDEISKDIRKIWTTHE 861
+                      6666666666666677777888899***********987754 PP
+
+>> CTHSW_006477-T1  CTHSW_006477
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.5   0.0     1e-10   8.1e-07     374     518 ..     685     829 ..     675     850 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 27.5 bits;  conditional E-value: 1e-10
+      RNAhelicase 374 ntqadelplasylvdisqdirlpyyasrkqfydidprkptnsrdqqk.nlvkadvewpekntgmdrtqmdalqtmitnniaiiqgppgtgktfv 466
+                      +  a+e  + +y+ d+  di       ++ f    p k    r   k   v           ++  +q+ alq  +t+ ia+i gp gtgkt++
+  CTHSW_006477-T1 685 HISANESQVPNYMRDVDLDISCVLVNKNRSFI-ATPSKNNWPRHNSKwESVSPSKRQ--PIYALSPSQVSALQFALTHRIAVISGPAGTGKTYL 775
+                      56788888899999999999987766655554.567776555554441333333333..3467899**************************** PP
+
+      RNAhelicase 467 gtygmkvllknfdqgl..gpivcicqtnhaldqflehvldfdprvirigarsrs 518
+                      +   ++++   + +g    p++ i+++   ld +l +++     v+r+g +   
+  CTHSW_006477-T1 776 AAKLIQLISDRLHKGQfhQPVLLIAKSQSGLDSILTQIVPHLHDVVRFGGHPWD 829
+                      ***9999999988875337********************999999999987655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (649 nodes)
+Target sequences:                      15563  (6778031 residues searched)
+Passed MSV filter:                       600  (0.038553); expected 311.3 (0.02)
+Passed bias filter:                      320  (0.0205616); expected 311.3 (0.02)
+Passed Vit filter:                        28  (0.00179914); expected 15.6 (0.001)
+Passed Fwd filter:                         4  (0.00025702); expected 0.2 (1e-05)
+Initial search space (Z):              15563  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.72u 0.03s 00:00:00.75 Elapsed: 00:00:00.24
+# Mc/sec: 17680.96
+//
+Query:       TPT  [L=289]
+Description: tr|B0F2G7|B0F2G7_PHYBL Putative triose phosphate transporter (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    6.8e-90  301.0   4.8    1.3e-89  300.1   4.8    1.4  1  CTHSW_008977-T1  CTHSW_008977
+    1.2e-49  169.0   8.7    2.2e-49  168.2   8.7    1.5  1  CTHSW_007459-T1  CTHSW_007459
+    1.8e-09   37.3   8.0    1.8e-09   37.3   8.0    1.5  2  CTHSW_001752-T1  CTHSW_001752
+    1.2e-08   34.6   6.3    1.2e-08   34.6   6.3    1.7  2  CTHSW_000240-T1  CTHSW_000240
+
+
+Domain annotation for each sequence (and alignments):
+>> CTHSW_008977-T1  CTHSW_008977
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  300.1   4.8   3.3e-93   1.3e-89      45     289 .]      26     270 ..      14     270 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 300.1 bits;  conditional E-value: 3.3e-93
+              TPT  45 swasrathshsisgrsipspgskrtsstrthrinlpkqseaaqqppsirphfsmfgghdsn.tddlstrhvdtydisplqtfwqslpgskhfal 137
+                      + a +  h+ +     +p+  s  +s   t r   p+  +      + +  fs+f g +s+   dl+trhv+ yd   +q +wqs+ g++hf +
+  CTHSW_008977-T1  26 NGAPKLRHALNEDKTRLPATFSHGSSVIGTIRTFSPQMQKRNIDSGNKKGFFSLFDGSESDiAHDLTTRHVERYD-GRIQEMWQSVFGNRHFTI 118
+                      55666667766677778888888888888888888888888888888999*******9998358***********.679*************** PP
+
+              TPT 138 sdnfkfiinicmwyisssltnnigkqiltsfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavflivghvfssiaisrvp 231
+                      sdn+kfi+n cmwy+sssl+nnigk i+ sf++pvtlt++qf lva+wc+l++ +  tt+ir p+q i++titpla+flivghvfssiais+vp
+  CTHSW_008977-T1 119 SDNMKFILNCCMWYMSSSLSNNIGKSIMNSFRFPVTLTYVQFGLVAFWCYLISAVFKTTQIRKPSQVIIKTITPLAIFLIVGHVFSSIAISKVP 212
+                      ********************************************************************************************** PP
+
+              TPT 232 vslvhtikalaplftvlfyrfifqvhytpnvyisllpltfgvilacsftysnsvvgls 289
+                      vslvhtikalaplftvlfyr +fqv y+  vy+sllpltfgvilacsftysn++vgls
+  CTHSW_008977-T1 213 VSLVHTIKALAPLFTVLFYRAVFQVSYSRRVYLSLLPLTFGVILACSFTYSNNIVGLS 270
+                      ********************************************************97 PP
+
+>> CTHSW_007459-T1  CTHSW_007459
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  168.2   8.7   5.6e-53   2.2e-49     133     288 ..      60     217 ..      20     218 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 168.2 bits;  conditional E-value: 5.6e-53
+              TPT 133 khfalsdnfkfiinicmwyisssltnnigkqiltsfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavflivghvfssia 226
+                      +h++lsdn +f++n  +wy+sssl++n gkqi+  fkypvtltf qf +va wc  +  l  t  i+ pt+ i++ti pl++f+ vgh++ss+a
+  CTHSW_007459-T1  60 RHWSLSDNSRFLVNCLLWYLSSSLSSNTGKQIMNHFKYPVTLTFAQFFFVACWCATIEFLFQTAGIKKPTKTIIQTIVPLSLFMTVGHILSSVA 153
+                      8********************************************************************************************* PP
+
+              TPT 227 isrvpvslvhtikalaplftvl..fyrfifqvhytpnvyisllpltfgvilacsftysnsvvgl 288
+                      isr+pvslvhtik                  vhy+  vy +l+pl +gvilacsft+sns++gl
+  CTHSW_007459-T1 154 ISRIPVSLVHTIKVSLQSSNNNnnNNDDSNHVHYSSKVYTALIPLIIGVILACSFTFSNSIIGL 217
+                      *************866655444014456789********************************9 PP
+
+>> CTHSW_001752-T1  CTHSW_001752
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   8.0   4.7e-13   1.8e-09     155     288 ..      19     150 ..       6     151 .. 0.86
+   2 ?   -2.2   0.1      0.53   2.1e+03     170     200 ..     178     209 ..     155     275 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 37.3 bits;  conditional E-value: 4.7e-13
+              TPT 155 sltnnigkqiltsfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikalaplftvl 248
+                      slt   +k +l  f+yp tlt i      + c+++  +   t  +    e +  +   a++  ++  +s+++++ v v++ + ++a+ p+ftv 
+  CTHSW_001752-T1  19 SLT-LYNKVLLLDFRYPWTLTAIHTLCSTLGCYMLYFMRVFTPAKLGDNEKMVMVMFSALY-TINIAISNVSLNLVSVAFHQVVRAMTPVFTVA 110
+                      444.4578899************************99999999888777766555555555.567899************************** PP
+
+              TPT 249 fyrfifqvhytpnvyisllpltfgvilacsftysnsvvgl 288
+                      +  +++q  y+  +y+sllp+ +gv +a    y  ++vgl
+  CTHSW_001752-T1 111 ISIMFLQKSYSKMIYLSLLPVVMGVGFATYGEYDYTMVGL 150
+                      *99999**********************999999999997 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.53
+              TPT 170 ypvtltfiqfalvamwcflvanlast.thirs 200
+                      +p+ l f    l  + c++ a l     ++r 
+  CTHSW_001752-T1 178 HPLDLLFRMSPLAFIQCIVYAQLTGEmDNVRE 209
+                      56666666666666666666666542133443 PP
+
+>> CTHSW_000240-T1  CTHSW_000240
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.6   6.3   3.1e-12   1.2e-08     167     288 ..       2     122 ..       1     123 [. 0.92
+   2 ?   -1.7   0.1      0.35   1.4e+03     225     260 ..     137     174 ..     124     204 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 34.6 bits;  conditional E-value: 3.1e-12
+              TPT 167 sfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikalaplftvlfyrfifqvhytp 260
+                       f+yp tlt i      + c+++  +   t  +    e +     ++v+  ++  +s+++++ v v++ + ++a+ p+ftv++  +++q  +  
+  CTHSW_000240-T1   2 GFRYPWTLTAIHTLCGTIGCYILYLMGHFTPAKLGDNENLIM-VMFSVLYTINIAISNVSLNLVSVAFHQVVRAMTPVFTVIISLMFLQKSFPK 94 
+                      69************************9999999877776544.457888889999*****************************999******* PP
+
+              TPT 261 nvyisllpltfgvilacsftysnsvvgl 288
+                       +y+sllp+ +gv +a    y  ++vgl
+  CTHSW_000240-T1  95 KIYLSLLPVVLGVTFATYGEYDYTMVGL 122
+                      *****************99999999997 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.35
+              TPT 225 iaisrvpvsl..vhtikalaplftvlfyrfifqvhytp 260
+                      i  +rv v    +h +  l  +  + f + if  h t 
+  CTHSW_000240-T1 137 IVTNRVQVGKlkLHPLDLLFRMSPLAFVQCIFYAHMTG 174
+                      44555555431256666676677777777777777764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (289 nodes)
+Target sequences:                      15563  (6778031 residues searched)
+Passed MSV filter:                       641  (0.0411874); expected 311.3 (0.02)
+Passed bias filter:                      338  (0.0217182); expected 311.3 (0.02)
+Passed Vit filter:                        30  (0.00192765); expected 15.6 (0.001)
+Passed Fwd filter:                         6  (0.00038553); expected 0.2 (1e-05)
+Initial search space (Z):              15563  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.35u 0.02s 00:00:00.37 Elapsed: 00:00:00.15
+# Mc/sec: 12763.81
+//
+Query:       sexM  [L=211]
+Description: tr|B0F2G8|B0F2G8_PHYBL Sex minus OS=Phycomyces blakesleeanus GN=sexM PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    7.5e-20   71.3   4.4    8.8e-20   71.1   4.0    1.4  1  CTHSW_011818-T1  CTHSW_011818
+    6.4e-12   45.5   1.2    1.4e-11   44.4   1.2    1.6  1  CTHSW_009111-T1  CTHSW_009111
+    3.7e-11   43.0   2.4      6e-11   42.3   2.4    1.4  1  CTHSW_013790-T1  CTHSW_013790
+    7.9e-11   41.9   1.2    7.9e-11   41.9   1.2    1.9  2  CTHSW_002873-T1  CTHSW_002873
+    1.6e-10   40.9   6.6    3.8e-09   36.4   1.4    2.5  2  CTHSW_009571-T1  CTHSW_009571
+    3.6e-10   39.7   1.6    3.6e-10   39.7   1.6    1.7  1  CTHSW_005173-T1  CTHSW_005173
+    4.3e-10   39.5   3.7    4.3e-10   39.5   3.7    1.9  2  CTHSW_014323-T1  CTHSW_014323
+    4.9e-10   39.3   0.8      1e-09   38.3   0.8    1.5  1  CTHSW_008905-T1  CTHSW_008905
+      5e-08   32.8   1.1    9.4e-08   31.8   1.1    1.5  1  CTHSW_008134-T1  CTHSW_008134
+    2.3e-06   27.3   0.6    3.5e-06   26.7   0.6    1.3  1  CTHSW_014122-T1  CTHSW_014122
+    3.5e-06   26.7   6.3    6.1e-06   25.9   0.9    2.2  2  CTHSW_008524-T1  CTHSW_008524
+
+
+Domain annotation for each sequence (and alignments):
+>> CTHSW_011818-T1  CTHSW_011818
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   71.1   4.0   6.2e-23   8.8e-20      33     142 ..      19     127 ..       5     173 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 71.1 bits;  conditional E-value: 6.2e-23
+             sexM  33 kciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrk.trrpqstv 125
+                      + i  ++ k  rpknaf+lyr+  +  +  +  +ih+k++sr  gkmw+ne ++v + yer a+eekl h  k+p y y p+q+k  +  q+t 
+  CTHSW_011818-T1  19 ETIGKTSKKTPRPKNAFILYRREKQKYFNLNFRSIHSKDLSRIIGKMWRNETQDVIRTYERLAEEEKLQHISKYPLYKYAPKQKKkVKCTQNTA 112
+                      55666778999***********999888888899***********************************************9876155567766 PP
+
+             sexM 126 ckpflrstsdiqliyqk 142
+                             t  ++ + q 
+  CTHSW_011818-T1 113 SNS--TETGKLKHVSQT 127
+                      543..344555555554 PP
+
+>> CTHSW_009111-T1  CTHSW_009111
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.4   1.2   9.8e-15   1.4e-11      38     121 ..       9      93 ..       3     125 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 44.4 bits;  conditional E-value: 9.8e-15
+             sexM  38 stvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrkt.rrp 121
+                      s  k  rpkn f+l+r  ++  +  +    ++++isr  +k w+   + v+kyy++ a +ek+ h++ +p+y + p ++    rp
+  CTHSW_009111-T1   9 SVDKAPRPKNCFILFRLDMQSKVSETCPGANHRDISRIIAKWWREASDTVHKYYQELARQEKIQHAQMYPNYKFNPVRKTVaTRP 93 
+                      566889***************999999999**********************************************765421344 PP
+
+>> CTHSW_013790-T1  CTHSW_013790
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.3   2.4   4.2e-14     6e-11      40     119 ..       6      85 ..       1     121 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 42.3 bits;  conditional E-value: 4.2e-14
+             sexM  40 vkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktr 119
+                      +   rp n f+lyr   +  il      +++++s+  +k wk   +e +  y++ka eek  h++ +p y y p+++ t 
+  CTHSW_013790-T1   6 IAPPRPLNCFLLYRMDKQKEILEKCEGANHRDMSKIIAKWWKEATDEEKSPYKKKASEEKKKHAEMYPDYKYSPKKKTTP 85 
+                      56679*********************************************************************988764 PP
+
+>> CTHSW_002873-T1  CTHSW_002873
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.1       2.4   3.4e+03      26      67 ..      58     102 ..      49     114 .. 0.60
+   2 !   41.9   1.2   5.6e-14   7.9e-11       5     118 ..     208     323 ..     204     333 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 2.4
+             sexM  26 sstpvrqkciisstvkir...rpknafmlyrqavhpsilssnsti 67 
+                        tp+ q c + s    +    pk + ++    + ps  ss s++
+  CTHSW_002873-T1  58 EPTPLTQNCHMDSKFSPKfstLPKESTQVPLPTLVPSSSSSCSSV 102
+                      567888888777654322111466665555555555555555554 PP
+
+  == domain 2  score: 41.9 bits;  conditional E-value: 5.6e-14
+             sexM   5 mfvnefkns.yqppsdiltes..isstpvrqkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerka 95 
+                      +f+n f    y        es  + +tp +q  +++    i+rp+na++ +r     ++ s + t++ +eis+ a++ w n  e  +k +   a
+  CTHSW_002873-T1 208 LFLNRFNQKaYSSTHFSSQESnpFLATP-NQSMFLTKNAHIKRPRNAWIRFRCHYGQALKSRDPTLRAEEISKRASRRWSNLSEMEKKPWHDLA 300
+                      6777775431433332223331144566.678899999***************9999************************************* PP
+
+             sexM  96 deeklyhskkfpgyiykpqqrkt 118
+                      ++ek  h + fp+y y p++  t
+  CTHSW_002873-T1 301 EQEKQAHKEAFPNYRYCPRRSNT 323
+                      ******************98776 PP
+
+>> CTHSW_009571-T1  CTHSW_009571
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.4   1.4   2.7e-12   3.8e-09      37     118 ..     267     348 ..     240     390 .. 0.85
+   2 !    6.8   0.3    0.0032       4.5      43     111 ..     422     490 ..     390     523 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 36.4 bits;  conditional E-value: 2.7e-12
+             sexM  37 sstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrkt 118
+                       s  k++rp na++l+++ ++  +l  +  +   eis+  g  wk   ++ r+yy ++a   k  h kk+p +iy  + +  
+  CTHSW_009571-T1 267 RSQEKLKRPPNAYLLFNRDMRRKLLKQSPKMTVAEISKVVGDWWKALPDDQRQYYIKEASLLKEEHLKKYPDFIYTRRSKAE 348
+                      46789**********************************************************************8665543 PP
+
+  == domain 2  score: 6.8 bits;  conditional E-value: 0.0032
+             sexM  43 rrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiy 111
+                      ++p +a++ y   v+p +  +        is++ ++ w     + r  + +ka+ +k  +++++  y+ 
+  CTHSW_009571-T1 422 KHPMSAYLYYLAEVYPQVSQNFPGSTVGPISKSISRTWHAMSAQERLPWVQKAESDKARYAREMQVYMA 490
+                      7899*************98765444456899999999*9999999999**********99999887765 PP
+
+>> CTHSW_005173-T1  CTHSW_005173
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.7   1.6   2.6e-13   3.6e-10      47     117 ..       2      72 ..       1      85 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 39.7 bits;  conditional E-value: 2.6e-13
+             sexM  47 nafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrk 117
+                      n f+lyr  ++  i++     ++++is+  +k w+   ee++k y  +a +ek  h kk+pgy y p+++ 
+  CTHSW_005173-T1   2 NCFLLYRNDMQKEIVAKCKGANHRDISKIIAKWWRESDEELKKSYRLRAMKEKEEHKKKYPGYKYCPKKKA 72 
+                      89*****************************************************************8764 PP
+
+>> CTHSW_014323-T1  CTHSW_014323
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.1      0.82   1.2e+03      31      55 ..     145     168 ..     119     212 .. 0.71
+   2 !   39.5   3.7     3e-13   4.3e-10      19     137 ..     273     388 ..     258     400 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.82
+             sexM  31 rqkciisstvkirrpknafmlyrqa 55 
+                      rq+  i  t++i  p+ + m+y+q+
+  CTHSW_014323-T1 145 RQRDTI-PTLQIPVPRRSTMIYQQS 168
+                      444444.467777788888888775 PP
+
+  == domain 2  score: 39.5 bits;  conditional E-value: 3e-13
+             sexM  19 diltesisstpvrqkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiyk 112
+                         t+  s t + q  +++    i+rp+na++ +r     ++ + + t++ +eis+ a++ w    e  +k +   a++ekl h + fp y y 
+  CTHSW_014323-T1 273 PTGTDPYSKTCIDQNMFLTKNSHIKRPRNAWIHFRCHYGQALKTQDPTLRAEEISKRASRRWSKLSENEKKPWHDLAEQEKLAHREAFPEYRYC 366
+                      445889999***************************9999*****************************************************9 PP
+
+             sexM 113 pqqrktrrpqstvckpflrstsdiq 137
+                      p+  +++ p s   k   +  sdi 
+  CTHSW_014323-T1 367 PR--RSNAPYSPP-KRSRNDESDIP 388
+                      95..556676643.33444555555 PP
+
+>> CTHSW_008905-T1  CTHSW_008905
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.3   0.8   7.3e-13     1e-09      25     133 ..     271     376 ..     261     397 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 38.3 bits;  conditional E-value: 7.3e-13
+             sexM  25 isstpvrqkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrkt 118
+                        +tp+ q  +++    i+rp+na++ +r     ++   + +++ + is+ a++ w    e  +k +   a++ekl h + fp y y p++  t
+  CTHSW_008905-T1 271 KKATPIDQSMFLTKNAHIKRPRNAWIHFRCHYGQALKIQDPSLRAEGISKCASRRWARLSENEKKPWHSLAEQEKLAHREAFPEYRYCPRR--T 362
+                      568**************************9999999999*************************************************964..3 PP
+
+             sexM 119 rrpqstvckpflrst 133
+                       +p  +v+    rs 
+  CTHSW_008905-T1 363 -NPNGSVAPKRARSV 376
+                      .47777766655654 PP
+
+>> CTHSW_008134-T1  CTHSW_008134
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.8   1.1   6.7e-11   9.4e-08      42     124 ..      82     164 ..      58     197 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 31.8 bits;  conditional E-value: 6.7e-11
+             sexM  42 irrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqst 124
+                      + rp n+f+ yr   +  i       +++eis+  +k w +  e+ ++ y ++a   kl h++++p y + p+++k ++  +t
+  CTHSW_008134-T1  82 VPRPMNSFLSYRTEQQHFIRKYCPGANHREISKIVAKWWHDLDEKDKELYREQATSAKLEHAERYPDYKFTPKKKKIKNDGAT 164
+                      789*********9999999999999999************************************************9887665 PP
+
+>> CTHSW_014122-T1  CTHSW_014122
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.7   0.6   2.5e-09   3.5e-06      40     128 ..      22     110 ..       8     177 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 26.7 bits;  conditional E-value: 2.5e-09
+             sexM  40 vkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgy.iykpqqrktrrpqstvckp 128
+                       k  rp n+fm+yr   +  i+     i+++++s+  +k w+   e  ++ ye ka  ek  h++ +p       + +k++ p + +  p
+  CTHSW_014122-T1  22 KKAPRPLNSFMIYRLEKQHLIFEKCPGINHRDVSKIIAKWWRELPEGEKRGYEAKAFAEKTKHAE-LPKKkQTTRKYKKSKIPATALFTP 110
+                      5788**********999999**************************99***************86.453302223334444444444433 PP
+
+>> CTHSW_008524-T1  CTHSW_008524
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.9   0.9   4.3e-09   6.1e-06      26     112 ..      53     140 ..      38     150 .. 0.83
+   2 ?    3.7   0.5     0.028        40      44     164 ..     186     256 ..     152     288 .. 0.51
+
+  Alignments for each domain:
+  == domain 1  score: 25.9 bits;  conditional E-value: 4.3e-09
+             sexM  26 sstpvr.qkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiyk 112
+                       stp      i  s  ++ rp na++l+++ ++  +  sn  +   eis+  g  wk+  +  ++ + r+a++ k  + +  p  +y 
+  CTHSW_008524-T1  53 DSTPDTpTPTITDSPTRVTRPPNAYLLFNREMRKKLKQSNPNMTVGEISKEVGTKWKSLSKTEKERFVREANKLKQSQKELHPDAVYI 140
+                      4555431457888999******************************************998889999999998888888888888875 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.028
+             sexM  44 rpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvckpflrstsdiq 137
+                      +p + +m y    +p  +         +is+  +  w    +e +                                                 
+  CTHSW_008524-T1 186 HPLSPYMWYLTEQRPETMRQYPGSTVGQISKLCADKWNAMSDEAQLP----------------------------------------------- 232
+                      34444444444444444443332233344555555555555555544............................................... PP
+
+             sexM 138 liyqkteskspseklsatsqdyiihcr 164
+                          kt++++  e+ +   q y +h +
+  CTHSW_008524-T1 233 ---WKTKAEADKERYANEMQVYALHNN 256
+                      ...455555555555555555555543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (211 nodes)
+Target sequences:                      15563  (6778031 residues searched)
+Passed MSV filter:                       780  (0.0501189); expected 311.3 (0.02)
+Passed bias filter:                      322  (0.0206901); expected 311.3 (0.02)
+Passed Vit filter:                        44  (0.00282722); expected 15.6 (0.001)
+Passed Fwd filter:                        23  (0.00147786); expected 0.2 (1e-05)
+Initial search space (Z):              15563  [actual number of targets]
+Domain search space  (domZ):              11  [number of targets reported over threshold]
+# CPU time: 0.38u 0.02s 00:00:00.40 Elapsed: 00:00:00.14
+# Mc/sec: 10181.98
+//
+Query:       sexP  [L=297]
+Description: tr|B0F2H1|B0F2H1_PHYBL Sex plus OS=Phycomyces blakesleeanus GN=sexP PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    4.5e-14   52.5   1.8    6.3e-14   52.1   1.8    1.2  1  CTHSW_013790-T1  CTHSW_013790
+    1.2e-13   51.2  10.7    1.2e-07   31.5   4.6    2.5  3  CTHSW_005616-T1  CTHSW_005616
+    4.5e-13   49.3   9.9    6.1e-10   39.0   0.9    2.4  2  CTHSW_009571-T1  CTHSW_009571
+    1.2e-12   47.9   5.9    2.6e-10   40.2   0.5    2.1  2  CTHSW_008524-T1  CTHSW_008524
+    1.8e-11   44.0   0.6    3.6e-11   43.0   0.6    1.5  1  CTHSW_009111-T1  CTHSW_009111
+    2.2e-11   43.7   3.4    5.1e-09   36.0   0.4    2.2  2  CTHSW_015111-T1  CTHSW_015111
+      2e-10   40.6   0.3    3.5e-10   39.8   0.3    1.4  1  CTHSW_008134-T1  CTHSW_008134
+    5.2e-10   39.2   2.6      1e-09   38.3   1.8    1.7  2  CTHSW_011818-T1  CTHSW_011818
+      6e-10   39.0   1.1      6e-10   39.0   1.1    1.6  1  CTHSW_005173-T1  CTHSW_005173
+      1e-07   31.7   0.7    1.7e-07   31.0   0.7    1.3  1  CTHSW_002873-T1  CTHSW_002873
+    2.9e-07   30.2   1.0    4.4e-07   29.6   1.0    1.4  1  CTHSW_013938-T1  CTHSW_013938
+    4.3e-07   29.6   1.9    4.7e-07   29.5   1.9    1.0  1  CTHSW_008261-T1  CTHSW_008261
+    4.4e-07   29.6   1.1    4.8e-07   29.5   1.1    1.0  1  CTHSW_004072-T1  CTHSW_004072
+      1e-06   28.4   2.4    1.1e-06   28.3   1.5    1.4  1  CTHSW_010176-T1  CTHSW_010176
+    1.8e-06   27.6   0.3    2.4e-06   27.2   0.3    1.1  1  CTHSW_015351-T1  CTHSW_015351
+    2.9e-06   26.9   1.5    4.7e-06   26.2   1.5    1.4  1  CTHSW_003698-T1  CTHSW_003698
+    4.4e-06   26.3  10.4     0.0063   16.0   1.5    3.2  3  CTHSW_013812-T1  CTHSW_013812
+
+
+Domain annotation for each sequence (and alignments):
+>> CTHSW_013790-T1  CTHSW_013790
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.1   1.8   6.9e-17   6.3e-14     116     206 ..       6      96 ..       1     125 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 52.1 bits;  conditional E-value: 6.9e-17
+             sexP 116 qvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerdsmprtdfs 206
+                        p rp n f++y    +k+i       n+ d+sk+++  wk a  e k  y +ka+e ++ h e ypdy+y+ +k++t +r    +t+ s
+  CTHSW_013790-T1   6 IAPPRPLNCFLLYRMDKQKEILEKCEGANHRDMSKIIAKWWKEATDEEKSPYKKKASEEKKKHAEMYPDYKYSPKKKTTPKRIYRRKTNSS 96 
+                      5799***************************************************************************999877776543 PP
+
+>> CTHSW_005616-T1  CTHSW_005616
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.1       1.9   1.7e+03     198     219 ..      78      97 ..      57     139 .. 0.66
+   2 !   31.5   4.6   1.3e-10   1.2e-07     105     194 ..     145     233 ..      77     247 .. 0.83
+   3 !   23.0   0.4   5.1e-08   4.7e-05     111     176 ..     267     332 ..     239     368 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 1.9
+             sexP 198 dsmprtdfsnqdfitaddewir 219
+                       s prt  snqd++  d   i 
+  CTHSW_005616-T1  78 PSSPRT--SNQDYLELDSSSIS 97 
+                      566776..78888888876554 PP
+
+  == domain 2  score: 31.5 bits;  conditional E-value: 1.3e-10
+             sexP 105 gqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqst 194
+                       ++  y  spe+v krp na+++++  +r++++       + +isk ++a wk  +   +  y+++  ++++ h   y ++ y  r ++ 
+  CTHSW_005616-T1 145 HKKRKYGQSPERV-KRPPNAYLLFNRDMRRQLQDVHQGLTSGEISKSISARWKKLSKNERDYYLKEEAKLKQEHNNAYTNFVYTRRSKAE 233
+                      45678999***98.89******************************************9999**9999***************9887654 PP
+
+  == domain 3  score: 23.0 bits;  conditional E-value: 5.1e-08
+             sexP 111 qaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevre 176
+                      +   + +pk+p +a++ ++  +r  +k  +p+    disk++g+ w+  + +  + ++e an+ + 
+  CTHSW_005616-T1 267 KKEADHLPKHPMSAYLHFAKYMRPILKKEYPQGKLVDISKMIGSRWRAMNPKELEPWVESANQDKA 332
+                      5567899*****************************************999999999999998654 PP
+
+>> CTHSW_009571-T1  CTHSW_009571
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   0.9   6.6e-13   6.1e-10     112     193 ..     267     347 ..     249     369 .. 0.87
+   2 !   14.5   2.3     2e-05     0.018     103     193 ..     407     496 ..     375     530 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 39.0 bits;  conditional E-value: 6.6e-13
+             sexP 112 aspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                       s e+  krp na+++++  +r+++    p+   ++isk++g  wk    + ++ y+++a+ ++e h ++ypd+ y  r ++
+  CTHSW_009571-T1 267 RSQEK-LKRPPNAYLLFNRDMRRKLLKQSPKMTVAEISKVVGDWWKALPDDQRQYYIKEASLLKEEHLKKYPDFIYTRRSKA 347
+                      44444.59********************************************************************988654 PP
+
+  == domain 2  score: 14.5 bits;  conditional E-value: 2e-05
+             sexP 103 skgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                       +g++      p   pk+p +a++ y a +  ++   fp      isk ++  w   +a+ +  +++ka   +  +  +   y  +++  s
+  CTHSW_009571-T1 407 PRGRKKKRHKHP-YAPKHPMSAYLYYLAEVYPQVSQNFPGSTVGPISKSISRTWHAMSAQERLPWVQKAESDKARYAREMQVYMASNKNIS 496
+                      444444444444.58*****************************************************98776655555555544433332 PP
+
+>> CTHSW_008524-T1  CTHSW_008524
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.2   0.5   2.9e-13   2.6e-10     113     193 ..      66     145 ..      48     153 .. 0.91
+   2 !   10.5   0.6   0.00032      0.29     115     203 ..     181     274 ..     163     303 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 40.2 bits;  conditional E-value: 2.9e-13
+             sexP 113 speqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                      sp +v  rp na+++++  +rk++k + p     +isk +g  wk+ +   k+ ++ +an++++ +ke +pd  y  r +s
+  CTHSW_008524-T1  66 SPTRV-TRPPNAYLLFNREMRKKLKQSNPNMTVGEISKEVGTKWKSLSKTEKERFVREANKLKQSQKELHPDAVYIRRSKS 145
+                      67776.5899***************************************99**********************99888766 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 0.00032
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdye...ynsrkqst..kerdsmprt 203
+                       + pk+p + +m y    r +    +p      iskl +  w   + e +  +  ka   +e +  +   y     +s  + t  k r+++p t
+  CTHSW_008524-T1 181 PKAPKHPLSPYMWYLTEQRPETMRQYPGSTVGQISKLCADKWNAMSDEAQLPWKTKAEADKERYANEMQVYAlhnNHSMGRGTrqKYRNTVPTT 274
+                      368*****************9999******************99999**999999998887776655555541003333334411445666655 PP
+
+>> CTHSW_009111-T1  CTHSW_009111
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.0   0.6   3.9e-14   3.6e-11     113     209 ..       9     106 ..       2     126 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 43.0 bits;  conditional E-value: 3.9e-14
+             sexP 113 speqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerdsmpr..td 204
+                      s ++ p rp n f+++   ++ ++  t p  n+ dis++++  w+ a+  v k y+e a + +  h + yp+y++n  +++   r    r   +
+  CTHSW_009111-T1   9 SVDKAP-RPKNCFILFRLDMQSKVSETCPGANHRDISRIIAKWWREASDTVHKYYQELARQEKIQHAQMYPNYKFNPVRKTVATRPYRKRalNE 101
+                      555555.8********************************************************************988877666555441146 PP
+
+             sexP 205 fsnqd 209
+                      f+++d
+  CTHSW_009111-T1 102 FTSKD 106
+                      66665 PP
+
+>> CTHSW_015111-T1  CTHSW_015111
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.0   0.4   5.6e-12   5.1e-09     114     192 ..     280     357 ..     267     367 .. 0.88
+   2 !    8.6   0.2    0.0013       1.2     112     178 ..     384     449 ..     357     486 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 36.0 bits;  conditional E-value: 5.6e-12
+             sexP 114 peqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkq 192
+                      p +v  rp na+++++  +rkr+k   p     +isk +g  wk+ +   k  y+ +an+++e +k  +p+  y  r +
+  CTHSW_015111-T1 280 PTRV-IRPPNAYLLFNREMRKRLKNNNPGMTVGEISKEIGVRWKSLSQTDKSRYVMEANKLKETQKALHPNAMYMRRSR 357
+                      4454.4899**************************************************************99976654 PP
+
+  == domain 2  score: 8.6 bits;  conditional E-value: 0.0013
+             sexP 112 aspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewh 178
+                        p   pk+p +a+m y   +r +    +p      iskl +  w     + +  ++ +a   +e +
+  CTHSW_015111-T1 384 KHP-TAPKHPLSAYMWYLTEVRPETMRHYPGSTVGQISKLCADRWNKMMDDERAPWIARAASDKERY 449
+                      333.58***************************************9988888888877776555544 PP
+
+>> CTHSW_008134-T1  CTHSW_008134
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.8   0.3   3.8e-13   3.5e-10     112     197 ..      77     161 ..      51     191 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 39.8 bits;  conditional E-value: 3.8e-13
+             sexP 112 aspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstker 197
+                        p  vp rp n+f+ y    +  i+   p  n+ +isk+++  w +   + k+ y e+a   +  h erypdy++  +k+  k  
+  CTHSW_008134-T1  77 RDPNHVP-RPMNSFLSYRTEQQHFIRKYCPGANHREISKIVAKWWHDLDEKDKELYREQATSAKLEHAERYPDYKFTPKKKKIKND 161
+                      5789998.7*********************************************************************99988753 PP
+
+>> CTHSW_011818-T1  CTHSW_011818
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.3   1.8   1.1e-12     1e-09     118     197 ..      28     106 ..       9     153 .. 0.81
+   2 ?   -0.5   0.0      0.73   6.7e+02     203     243 ..     132     172 ..     113     202 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 38.3 bits;  conditional E-value: 1.1e-12
+             sexP 118 pkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstker 197
+                        rp naf++y    +k +   f   ++ d+s+++g mw+n   +v + y   a e +  h  +yp y+y  + q  k +
+  CTHSW_011818-T1  28 TPRPKNAFILYRREKQKYFNLNFRSIHSKDLSRIIGKMWRNETQDVIRTYERLAEEEKLQHISKYPLYKYAPK-QKKKVK 106
+                      459*******************************************************************754.444433 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.73
+             sexP 203 tdfsnqdfitaddewirqlndllsqnpmtalhgssqenfai 243
+                      t  ++ d++++ d +  + +d++ + p   l   sqe +a 
+  CTHSW_011818-T1 132 TQANSYDILSSIDMFACEYSDVFEEVPPEVLDPGSQEAMAN 172
+                      55667899999999999999999999999999999998775 PP
+
+>> CTHSW_005173-T1  CTHSW_005173
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   1.1   6.5e-13     6e-10     123     202 ..       2      81 ..       1     147 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 39.0 bits;  conditional E-value: 6.5e-13
+             sexP 123 nafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerdsmpr 202
+                      n f++y   ++k+i       n+ disk+++  w+ +  e+kk y  +a + +e hk++yp y+y  +k++  +r  + r
+  CTHSW_005173-T1   2 NCFLLYRNDMQKEIVAKCKGANHRDISKIIAKWWRESDEELKKSYRLRAMKEKEEHKKKYPGYKYCPKKKAGAKRGYIRR 81 
+                      89******************************************************************999888877655 PP
+
+>> CTHSW_002873-T1  CTHSW_002873
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.0   0.7   1.9e-10   1.7e-07      96     194 ..     217     323 ..     186     333 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 31.0 bits;  conditional E-value: 1.9e-10
+             sexP  96 sstgvsiskgqenpyqaspeqvp........krpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhker 181
+                      + ++  +s  + np+ a+p q          krp na++ +     + +k+  p     +isk  +  w n +   kk + + a + ++ hke 
+  CTHSW_002873-T1 217 AYSSTHFSSQESNPFLATPNQSMfltknahiKRPRNAWIRFRCHYGQALKSRDPTLRAEEISKRASRRWSNLSEMEKKPWHDLAEQEKQAHKEA 310
+                      33344566778899999998852223333449*****************************************999****************** PP
+
+             sexP 182 ypdyeynsrkqst 194
+                      +p+y y  r+ +t
+  CTHSW_002873-T1 311 FPNYRYCPRRSNT 323
+                      *******999887 PP
+
+>> CTHSW_013938-T1  CTHSW_013938
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.6   1.0   4.8e-10   4.4e-07     115     188 ..      81     154 ..      64     209 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 29.6 bits;  conditional E-value: 4.8e-10
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeyn 188
+                         pk p n f++y    r +ik   p  n  ++++llg  wk+   e k +y +      e ++e    y   
+  CTHSW_013938-T1  81 PNAPKGPGNVFFLYCRLERDKIKDEHPTENLGEVTRLLGQKWKSLTKEEKSKYYDMYKREMEDYEEAMKTYTLT 154
+                      468*************************************************9998877777777777777655 PP
+
+>> CTHSW_008261-T1  CTHSW_008261
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   1.9   5.2e-10   4.7e-07     114     179 ..      20      85 ..       2      91 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 5.2e-10
+             sexP 114 peqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhk 179
+                          pkr  +a+m++s   r++ik   p+     + k+lg  wk    + kk y +ka   +e ++
+  CTHSW_008261-T1  20 DPNAPKRGLSAYMFFSQANREKIKQENPDATFGQLGKILGEKWKEMTDDQKKPYNDKAKTDKERYE 85 
+                      4568*****************************************************987666443 PP
+
+>> CTHSW_004072-T1  CTHSW_004072
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   1.1   5.2e-10   4.8e-07     111     184 ..      24      93 ..       2      98 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 5.2e-10
+             sexP 111 qaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypd 184
+                             pkr  +a+m++s   r  +k   p+ +   i k+lg  wk+ + + kk y +ka       k+ry d
+  CTHSW_004072-T1  24 GKKDPNAPKRGLSAYMFFSQDQRATVKNENPDASFGQIGKILGEKWKSMSDDDKKPYTKKAEA----DKKRYED 93 
+                      4444578****************************************************9964....4555554 PP
+
+>> CTHSW_010176-T1  CTHSW_010176
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   1.5   1.2e-09   1.1e-06     112     188 ..      52     127 ..      31     167 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 28.3 bits;  conditional E-value: 1.2e-09
+             sexP 112 aspe.qvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeyn 188
+                      a p+   p +p +a++++s  +r ++k     +  +d++k++g  wkn +ae k+ y  +a   re + ++  dy+  
+  CTHSW_010176-T1  52 AKPDtNAPVKPPSAYVMFSNHVRAELKAENKSF--TDLAKIIGDRWKNISAEEKERYESRALAEREAYLKKVADYQKT 127
+                      55542689*******************976655..79**************************************865 PP
+
+>> CTHSW_015351-T1  CTHSW_015351
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.3   2.6e-09   2.4e-06      96     176 ..      57     138 ..      30     151 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 2.6e-09
+             sexP  96 sstgvsiskgqen.pyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevre 176
+                      s  g++ + +    p +      pk p n f++y    r +ik   p  +  +i++llg  wk  + e k++y +   + ++
+  CTHSW_015351-T1  57 SRKGIAPATATTApPKKKRDPNAPKGPGNVFFLYCRMERDNIKDEVPNESLGEITRLLGQKWKALSKEEKQKYYDAYKKEQD 138
+                      55566555544440445556689***********************************************999886655444 PP
+
+>> CTHSW_003698-T1  CTHSW_003698
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.2   1.5   5.2e-09   4.7e-06     111     188 ..     235     311 ..     185     328 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 26.2 bits;  conditional E-value: 5.2e-09
+             sexP 111 qaspe.qvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeyn 188
+                       a p+   p +ps+a++++s  +r+++k        +d++k++g  wkn +a+ kk y   a   re + ++  +y+  
+  CTHSW_003698-T1 235 HAKPDsNAPFKPSSAYVMFSNDVRQELKDENRS--FTDLAKIIGDRWKNISAKEKKYYETNALIAREEYLKKVEEYQKT 311
+                      35565268********************87655..579*********************9*******999999999754 PP
+
+>> CTHSW_013812-T1  CTHSW_013812
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   1.5   6.9e-06    0.0063     147     216 ..       5      75 ..       2      85 .. 0.80
+   2 !   12.7   1.0   7.1e-05     0.065     116     186 ..     104     174 ..      77     193 .. 0.78
+   3 ?    1.4   0.0       0.2   1.8e+02     149     198 ..     776     823 ..     748     838 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 6.9e-06
+             sexP 147 diskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstke.rdsmprtdfsnqdfitadde 216
+                      +isk +g  wk    + ++ y+++a+ +++ h  +ypd+ y  r ++         +   s+ d+ t +de
+  CTHSW_013812-T1   5 EISKEIGYWWKELPDDQRQFYVKEASLLKQEHLRKYPDFIYTRRSKAELAqAKRKVHNSHSDDDINTDEDE 75 
+                      79***************************************988766544034445566666676666666 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 7.1e-05
+             sexP 116 qvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdye 186
+                        pk+p +a++ y a++  ++   +p      isk ++  w     e +  ++eka   +  +  +   y 
+  CTHSW_013812-T1 104 FAPKHPMSAYLYYLASVYPQVSQQYPGSTVGPISKTISRTWHAMTKEERSPWIEKAESDKARYAREMQVYM 174
+                      47*****************************************************9876655444444443 PP
+
+  == domain 3  score: 1.4 bits;  conditional E-value: 0.2
+             sexP 149 skllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerd 198
+                       k  + +    g+ + k   e+  +v e h e+y  ++y  +   + ++d
+  CTHSW_013812-T1 776 MKKANELT--KGSPIVKLEPEQFGDVFESHLEKYKQFQYKMQSFVSTQQD 823
+                      44444333..4666666677888889999999999999887665444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (297 nodes)
+Target sequences:                      15563  (6778031 residues searched)
+Passed MSV filter:                       761  (0.048898); expected 311.3 (0.02)
+Passed bias filter:                      335  (0.0215254); expected 311.3 (0.02)
+Passed Vit filter:                        49  (0.00314849); expected 15.6 (0.001)
+Passed Fwd filter:                        24  (0.00154212); expected 0.2 (1e-05)
+Initial search space (Z):              15563  [actual number of targets]
+Domain search space  (domZ):              17  [number of targets reported over threshold]
+# CPU time: 0.49u 0.02s 00:00:00.51 Elapsed: 00:00:00.16
+# Mc/sec: 12194.27
+//
+[ok]

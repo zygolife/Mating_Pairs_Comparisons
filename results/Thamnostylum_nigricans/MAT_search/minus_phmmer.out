@@ -1,0 +1,558 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             MAT_locus_peps/mat_locus_query.pep
+# target sequence database:        annotation/Thamnostylum_nigricans_RSA_1406.aa.fasta
+# output directed to file:         results/Thamnostylum_nigricans/MAT_search/minus_phmmer.out
+# per-dom hits tabular output:     results/Thamnostylum_nigricans/MAT_search/minus_phmmer.domtbl
+# sequence reporting threshold:    E-value <= 1e-05
+# number of worker threads:        16
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       RNAhelicase  [L=649]
+Description: tr|B0F2G9|B0F2G9_PHYBL Putative RNA helicase (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   2.5e-189  630.1  15.9   2.6e-188  626.7  15.9    2.0  1  CHXZG_005632-T1  CHXZG_005632
+      1e-06   26.8   0.0    1.9e-06   25.9   0.0    1.3  1  CHXZG_006341-T1  CHXZG_006341
+
+
+Domain annotation for each sequence (and alignments):
+>> CHXZG_005632-T1  CHXZG_005632
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  626.7  15.9  4.6e-192  2.6e-188      16     624 ..      17     602 ..       1     618 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 626.7 bits;  conditional E-value: 4.6e-192
+      RNAhelicase  16 dhsprpqidgpitvnaninfdtneyqvs....paqp...qveygynqnqdcsmrwaaeaqaswntpfstntnfntssqpsssqsssafnnssgf 102
+                      d sp     gp  vna +nf+tne+ v+    p  p   + +++ n + + sm w  + q  w++   t    +   qp               
+  CHXZG_005632-T1  17 DISP----SGPSVVNATLNFNTNEFDVTneyaPPPPrrsKFDFSNNYDDNQSMTWTMDMQQGWDSA-PTMQQVDAWDQPY-------------- 91 
+                      3333....69**************99853333444421144555566666799**********863.2333333333332.............. PP
+
+      RNAhelicase 103 qawveptrsperfshpdqvvfklnteipdrpifvekvdfasyrskpivpdpaeim...qgppqvpvsndrgrrderiphipvnhvrgpyestde 193
+                                 rfs p+ v fkln +ipd+p f ++vd++s + k ivp+p +i+     p   p      rr + +p+ipvn+v+g yes +e
+  CHXZG_005632-T1  92 ---HVGDSGEARFSKPETVSFKLNADIPDQPYFTQEVDYSSIQRKSIVPEPEDILgtdDTPYDYPQDPSVDRRFQPLPRIPVNRVNGEYESAEE 182
+                      ...222334579*****************************************983323466778888889*********************** PP
+
+      RNAhelicase 194 ylythfelmrqdcliplqkavqsyrltadkpkdklglamsddqvetvalsrdyrlyehvrlnaivfgsrqtlyrisfrlpyycrvkwpqskrlm 287
+                      ylythfelmr d+liplq av+ y+ +  + k+  +la   d    +   r +rlyehvrln +vf+srq +yrisfrlpy+ rv wpqskrl+
+  CHXZG_005632-T1 183 YLYTHFELMRNDALIPLQNAVKYYKESVSRNKEDPSLADHPD----LQPMRGFRLYEHVRLNGLVFSSRQVVYRISFRLPYHVRVSWPQSKRLI 272
+                      *******************************99999986655....34569******************************************* PP
+
+      RNAhelicase 288 egsmvllskdnfvsdikiatvvnrgdepmrgssrfeyminvklecdnerdplgfgdpssadqdtyvmieaptgyfeayrhilsvlkntqadelp 381
+                      egs+vllskdnf  dikiatvv rg++p+rgs+rfey+in+ le dn++ p+g+gdp+ + +d yvm+ea  gyfeayrhils ++     elp
+  CHXZG_005632-T1 273 EGSLVLLSKDNFAKDIKIATVVERGEQPQRGSNRFEYLINIHLERDNDEMPMGYGDPTLSVEDKYVMLEATEGYFEAYRHILSTIQLISPSELP 366
+                      ********************************************************************************************** PP
+
+      RNAhelicase 382 lasylvdisqdirlpyyasrkqfydidprkptnsrdqqknlvkadvewpekntgmdrtqmdalqtmitnniaiiqgppgtgktfvgtygmkvll 475
+                      +a ylv++s+d++lp+ya+ k+ ydi   +    r      v     w   + gmd tqmdal+tm++nnia++qgppgtgktfvgty+m+vll
+  CHXZG_005632-T1 367 FAPYLVNVSRDVQLPHYAAMKRNYDIASYRGHKRRGP-AMPVDITRPWRPYDIGMDSTQMDALKTMLSNNIAVVQGPPGTGKTFVGTYAMRVLL 459
+                      **************************99887666654.4456666789999******************************************* PP
+
+      RNAhelicase 476 knfdqglgpivcicqtnhaldqflehvldfdprvirigarsrserlkdhilfevrkereavrglgrvyrkrdeiskkireiivtmyeepcvtld 569
+                       nf  ++gpivcicqtnhaldqfleh+ld++ +++rig+rs+s+ lk+h+lfe+rk  e+vrg+gr+yrkrd++ k+i   i  myeepcvtld
+  CHXZG_005632-T1 460 NNFHTSIGPIVCICQTNHALDQFLEHILDYEEKIVRIGSRSKSDLLKEHLLFELRKNSESVRGIGRLYRKRDDLQKQIMSTITEMYEEPCVTLD 553
+                      ********************************************************************************************** PP
+
+      RNAhelicase 570 ylrkikalrprqleslkrvgergarndalstaavaaasaggggadedsdddwvig 624
+                      y++ki  l+p q + l+r+ger  +     t      s  ++  d+d d+dwv +
+  CHXZG_005632-T1 554 YIQKINGLNPLQRDHLRRLGEREEKRTKD-T-----KSKFNAFDDDDDDEDWVTS 602
+                      *********************98776432.3.....23344557889999**965 PP
+
+>> CHXZG_006341-T1  CHXZG_006341
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.9   0.0   3.3e-10   1.9e-06     437     514 ..     596     675 ..     529     682 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 25.9 bits;  conditional E-value: 3.3e-10
+      RNAhelicase 437 drtqmdalqtmitnniaiiqgppgtgktfvgtygmkvllknfdqg..lgpivcicqtnhaldqflehvldfdprviriga 514
+                        +q+ a+q  +t+++++i g  gtgktf++t  +++l + +  g  + pi+ i +  + ld +l +v+   p+++r+g 
+  CHXZG_006341-T1 596 SPSQVSAVQHALTHSVSVISGGQGTGKTFLATKLIRLLHQALVSGqcFQPILVITKNENTLDDILGQVVQHIPQLVRMGK 675
+                      56899*******************************9998876553279****************************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (649 nodes)
+Target sequences:                      11557  (5116194 residues searched)
+Passed MSV filter:                       469  (0.0405815); expected 231.1 (0.02)
+Passed bias filter:                      256  (0.0221511); expected 231.1 (0.02)
+Passed Vit filter:                        28  (0.00242277); expected 11.6 (0.001)
+Passed Fwd filter:                         4  (0.000346111); expected 0.1 (1e-05)
+Initial search space (Z):              11557  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.74u 0.04s 00:00:00.78 Elapsed: 00:00:00.30
+# Mc/sec: 10961.63
+//
+Query:       TPT  [L=289]
+Description: tr|B0F2G7|B0F2G7_PHYBL Putative triose phosphate transporter (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    2.1e-86  289.2   4.8    3.1e-86  288.6   4.8    1.4  1  CHXZG_005989-T1  CHXZG_005989
+    8.1e-09   34.7   8.4    1.4e-08   34.0   8.4    1.3  1  CHXZG_007422-T1  CHXZG_007422
+
+
+Domain annotation for each sequence (and alignments):
+>> CHXZG_005989-T1  CHXZG_005989
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  288.6   4.8   5.4e-90   3.1e-86      97     288 ..     104     294 ..       1     295 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 288.6 bits;  conditional E-value: 5.4e-90
+              TPT  97 smfgghdsntddlstrhvdtydisplqtfwqslpgskhfalsdnfkfiinicmwyisssltnnigkqiltsfkypvtltfiqfalvamwcflva 190
+                      s+f g+ds   dlstrh++     plq +w  +    +fa+sdn+kfi+n cmwy+sssltnn gkqil  fk+pvtltfiqf lvamwc+ va
+  CHXZG_005989-T1 104 SVFHGQDSQA-DLSTRHIEPTVTGPLQNLWSYVLPHNRFAVSDNLKFILNCCMWYLSSSLTNNTGKQILNMFKFPVTLTFIQFGLVAMWCYTVA 196
+                      789****986.7******************99888889******************************************************** PP
+
+              TPT 191 nlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikalaplftvlfyrfifqvhytpnvyisllpltfgvilacsftysns 284
+                       +   t+ir ptq i +t+ plavflivghvfssiaisrvpvslvhtikalaplftvlfyrfifqv+yt  vy+sl+plt+gvilac+ft+sn+
+  CHXZG_005989-T1 197 TVFGVTQIRRPTQRIAKTMAPLAVFLIVGHVFSSIAISRVPVSLVHTIKALAPLFTVLFYRFIFQVQYTSKVYVSLIPLTLGVILACTFTFSNN 290
+                      ********************************************************************************************** PP
+
+              TPT 285 vvgl 288
+                      ++gl
+  CHXZG_005989-T1 291 LIGL 294
+                      ***8 PP
+
+>> CHXZG_007422-T1  CHXZG_007422
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.0   8.4   2.4e-12   1.4e-08     160     287 ..      28     154 ..      10     156 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 34.0 bits;  conditional E-value: 2.4e-12
+              TPT 160 igkqiltsfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikalaplftvlfyrfi 253
+                       +k il  f+yp +lt i     ++ c+++  l   t ++    e +  +  ++v+  ++  +s+++++ v v++ + ++a+ p+ftv++   +
+  CHXZG_007422-T1  28 YNKAILLDFRYPWSLTAIHTLCGSIGCYILYFLGYFTPVKLGEHENMV-MLMFSVLYTINIAISNVSLNLVSVAFHQVVRAMTPVFTVMISIVF 120
+                      4699************************************99888654.4567888899999****************************9999 PP
+
+              TPT 254 fqvhytpnvyisllpltfgvilacsftysnsvvg 287
+                      +q  ++   y+sllp+ +gv +a    y  + vg
+  CHXZG_007422-T1 121 LQKSFSNLTYLSLLPVVIGVGFATFGEYGYTAVG 154
+                      9********************9998899888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (289 nodes)
+Target sequences:                      11557  (5116194 residues searched)
+Passed MSV filter:                       494  (0.0427447); expected 231.1 (0.02)
+Passed bias filter:                      272  (0.0235355); expected 231.1 (0.02)
+Passed Vit filter:                        27  (0.00233625); expected 11.6 (0.001)
+Passed Fwd filter:                         5  (0.000432638); expected 0.1 (1e-05)
+Initial search space (Z):              11557  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.33u 0.03s 00:00:00.36 Elapsed: 00:00:00.15
+# Mc/sec: 9587.30
+//
+Query:       sexM  [L=211]
+Description: tr|B0F2G8|B0F2G8_PHYBL Sex minus OS=Phycomyces blakesleeanus GN=sexM PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    3.6e-14   52.4   8.2    2.9e-08   33.1   1.1    3.3  3  CHXZG_004773-T1  CHXZG_004773
+    5.9e-12   45.2   1.9    9.3e-12   44.5   1.9    1.3  1  CHXZG_003827-T1  CHXZG_003827
+    1.4e-11   43.9   1.5      2e-11   43.4   1.5    1.3  1  CHXZG_003049-T1  CHXZG_003049
+    2.8e-10   39.7   1.0    2.8e-10   39.7   1.0    1.7  2  CHXZG_000715-T1  CHXZG_000715
+    9.8e-10   37.9   1.3    1.7e-09   37.1   1.3    1.4  1  CHXZG_000745-T1  CHXZG_000745
+    1.3e-09   37.5   4.3    4.1e-06   26.1   1.4    2.8  2  CHXZG_000028-T1  CHXZG_000028
+    2.5e-09   36.6   4.0    2.1e-06   27.0   0.3    2.4  2  CHXZG_003388-T1  CHXZG_003388
+
+
+Domain annotation for each sequence (and alignments):
+>> CHXZG_004773-T1  CHXZG_004773
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.1   5.9e-05     0.097      43     101 ..      96     156 ..      87     165 .. 0.87
+   2 !   33.1   1.1   1.7e-11   2.9e-08      41     118 ..     307     384 ..     299     423 .. 0.88
+   3 !   10.4   0.1   0.00016      0.26      32     107 ..     428     503 ..     409     510 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 5.9e-05
+             sexM  43 rrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkad..eekly 101
+                      +r +naf+++    +  i +    i+  ++++  gk w +  ee r +y+++a+  +e+ y
+  CHXZG_004773-T1  96 KRCQNAFFVFSSERRGQIRAQQPQIRTSDLNKILGKEWNDLSEERRLHYKNRAEilKEQSY 156
+                      6889**********************************************99983334455 PP
+
+  == domain 2  score: 33.1 bits;  conditional E-value: 1.7e-11
+             sexM  41 kirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrkt 118
+                      +++rp na++l+++ ++  il  n  +   eis+  ++ w +  ee + yy ++a   k  h  + p++iy  + +  
+  CHXZG_004773-T1 307 RVKRPPNAYLLFNRDIRHQILDGNPNLTVAEISKAISERWNSLPEESKAYYNQEAARLKQRHMDEHPNFIYTRRSKME 384
+                      799********************************************************************8766544 PP
+
+  == domain 3  score: 10.4 bits;  conditional E-value: 0.00016
+             sexM  32 qkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfp 107
+                      +k  + +    ++p + f++y  +v+  i+         eis+  +  w+   ee r  + rka e+k  +++++ 
+  CHXZG_004773-T1 428 KKKRLKNPTAPKHPMSGFLFYSISVRAEIVVDMPKATVGEISKVIAGRWRRLTEEERAPWIRKAMEDKERYAREME 503
+                      5555566667789****************9999888889*****9999******************9988887765 PP
+
+>> CHXZG_003827-T1  CHXZG_003827
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.5   1.9   5.6e-15   9.3e-12      40     137 ..      12     109 ..       4     149 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 44.5 bits;  conditional E-value: 5.6e-15
+             sexM  40 vkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvckpflrst 133
+                       k+ rp n f+ +r   +  i+s     ++++is+  +k wk   ee ++ y ++a   k+ h+k +p y y+pq++  r+ +  v +p  + t
+  CHXZG_003827-T1  12 KKVPRPMNCFLAFRLEKQNEIVSRCPGANHRDISKIIAKWWKEISEEEKEPYRERARLAKIAHAKLYPDYKYQPQKKNGRKTRKYVRRPQNKFT 105
+                      6999*************************************************************************99999999999999988 PP
+
+             sexM 134 sdiq 137
+                      s ++
+  CHXZG_003827-T1 106 SRVE 109
+                      8776 PP
+
+>> CHXZG_003049-T1  CHXZG_003049
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.4   1.5   1.2e-14     2e-11      37     119 ..      39     121 ..      20     148 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 43.4 bits;  conditional E-value: 1.2e-14
+             sexM  37 sstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktr 119
+                        t +i rp n fm yr   +  i +     ++++is+  +k w  e e v++ y  +a++ k  h +++p+y y+pq+++  
+  CHXZG_003049-T1  39 KETGRIPRPMNCFMAYRLEKQKVIAAQVPGANHRDISKVVAKWWGEEPERVKQVYRAQAEKAKEEHFQRYPNYKYRPQRKRAA 121
+                      46889*************99999999999999*********************************************987653 PP
+
+>> CHXZG_000715-T1  CHXZG_000715
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.0   0.1         2   3.4e+03     149     149 ..     199     199 ..     170     231 .. 0.56
+   2 !   39.7   1.0   1.7e-13   2.8e-10      33     143 ..     260     369 ..     244     386 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -3.0 bits;  conditional E-value: 2
+             sexM 149 s 149
+                      +
+  CHXZG_000715-T1 199 N 199
+                      2 PP
+
+  == domain 2  score: 39.7 bits;  conditional E-value: 1.7e-13
+             sexM  33 kciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvc 126
+                        +++    i+rp+na++ +r     ++ + + t++ +eis+ a++ w    e+ +k +   a++ekl h + fp y y p+++ +    s+  
+  CHXZG_000715-T1 260 TKFLTKNAHIKRPRNAWIHFRCHYGQALKTQDPTLRAEEISKRASRRWARLTEKEKKPWHDLAEQEKLAHKEAFPEYRYCPKRHSSSSSSSSS- 352
+                      456778899*************9999*************************9999**************************988776554443. PP
+
+             sexM 127 kpflrsts.diqliyqkt 143
+                         l s s    l+yq  
+  CHXZG_000715-T1 353 -SSLSSPSpTTTLLYQDA 369
+                      .33444431456777765 PP
+
+>> CHXZG_000745-T1  CHXZG_000745
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.1   1.3   1.1e-12   1.7e-09      40     119 ..      67     146 ..      41     172 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 37.1 bits;  conditional E-value: 1.1e-12
+             sexM  40 vkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktr 119
+                       +i rp n f+ yr   +  i +    +++++is+  +k w  e +  ++ y + a+++k  h +k+p+y y p+++++ 
+  CHXZG_000745-T1  67 NRIPRPVNCFLAYRLEKQKLITAVCPGVNHRDISKAVAKWWSEEPDYEKEKYRQLAEKDKQLHKQKYPNYKYSPKKKRSS 146
+                      5799*************999999999********************99999***********************987753 PP
+
+>> CHXZG_000028-T1  CHXZG_000028
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.1   1.4   2.5e-09   4.1e-06      41     116 ..     311     386 ..     296     409 .. 0.87
+   2 !   11.0   0.1   0.00011      0.18      43     130 ..     458     550 ..     445     575 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 26.1 bits;  conditional E-value: 2.5e-09
+             sexM  41 kirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqr 116
+                      +++rp na++l+++ ++  +l  +  +   eis+  g+ wk  + e r+ y ++a   k  h k  p +iy  + +
+  CHXZG_000028-T1 311 RLKRPPNAYLLFNRDMRRRLLEESPKMTVAEISKEIGERWKRLEPEQRQNYMQQAALIKQDHLKNHPDFIYTRRSK 386
+                      689********************************************************************75432 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 0.00011
+             sexM  43 rrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpq.....qrktrrpqstvckpfl 130
+                      ++p + f+++  av+p +           is+  + +w++  +e r  + + a+e+k  +++++  y    +      r    p+ t  kp  
+  CHXZG_000028-T1 458 KHPMSGFLFFLAAVRPEVARQYPGSTVGPISKVIASQWRDMTDEARIPWLQMAEEDKARYAREMQVYTASLEkttddDRSLSAPEETGDKPSS 550
+                      78999*************98766556678*******************************999877654322000113444555555555554 PP
+
+>> CHXZG_003388-T1  CHXZG_003388
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.0   0.3   1.3e-09   2.1e-06      37     111 ..     116     190 ..      76     204 .. 0.85
+   2 !   10.7   0.3   0.00013      0.21      38     121 ..     259     345 ..     224     398 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 27.0 bits;  conditional E-value: 1.3e-09
+             sexM  37 sstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiy 111
+                       + +++ rp naf+l+++ ++  +  sn t+   eis+  g+ wkn  +  +  y  +a+  k  +    p+ +y
+  CHXZG_003388-T1 116 DAPIRVTRPPNAFLLFNKEMRKQLKDSNPTMKVAEISKEIGERWKNLSQAEKNRYVSQANSIKETQRALHPNSMY 190
+                      56799*****************************************99988888888887776665555565555 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 0.00013
+             sexM  38 stvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiyk...pqqrktrrp 121
+                      +    ++p +a+m y   v+p  + +       +is+  ++ w    e  r  +  ka  +k  +++++  y  +   p  r tr+ 
+  CHXZG_003388-T1 259 NPAAPKHPLSAYMWYLTEVRPETMQTYPGSTVGQISKLCAERWNTMTEAERMPWHTKAQADKARYAREMQIYASQhdhPMGRGTRQK 345
+                      4455689****************99876666789****************************9999998777643222666666654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (211 nodes)
+Target sequences:                      11557  (5116194 residues searched)
+Passed MSV filter:                       408  (0.0353033); expected 231.1 (0.02)
+Passed bias filter:                      223  (0.0192957); expected 231.1 (0.02)
+Passed Vit filter:                        29  (0.0025093); expected 11.6 (0.001)
+Passed Fwd filter:                        12  (0.00103833); expected 0.1 (1e-05)
+Initial search space (Z):              11557  [actual number of targets]
+Domain search space  (domZ):               7  [number of targets reported over threshold]
+# CPU time: 0.29u 0.02s 00:00:00.31 Elapsed: 00:00:00.13
+# Mc/sec: 8079.09
+//
+Query:       sexP  [L=297]
+Description: tr|B0F2H1|B0F2H1_PHYBL Sex plus OS=Phycomyces blakesleeanus GN=sexP PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.7e-21   76.5   4.9    1.1e-06   27.9   0.6    3.2  3  CHXZG_004773-T1  CHXZG_004773
+      2e-16   59.9   2.9    4.6e-11   42.2   0.9    2.4  2  CHXZG_000028-T1  CHXZG_000028
+    1.7e-14   53.5   1.7    2.5e-14   52.9   1.7    1.2  1  CHXZG_003827-T1  CHXZG_003827
+      8e-14   51.3   3.2    3.4e-10   39.4   0.6    2.3  2  CHXZG_003388-T1  CHXZG_003388
+    2.1e-11   43.4   0.7    2.8e-11   43.0   0.7    1.1  1  CHXZG_003049-T1  CHXZG_003049
+      3e-11   42.9   0.8    4.8e-11   42.2   0.8    1.3  1  CHXZG_000745-T1  CHXZG_000745
+    4.4e-10   39.0   1.6    6.3e-10   38.5   0.3    1.7  2  CHXZG_001436-T1  CHXZG_001436
+    2.2e-08   33.4   0.8    2.4e-08   33.3   0.8    1.0  1  CHXZG_011378-T1  CHXZG_011378
+    1.1e-07   31.1   8.1    5.6e-06   25.6   1.8    2.5  2  CHXZG_002311-T1  CHXZG_002311
+    3.9e-07   29.4   0.8    4.2e-07   29.2   0.8    1.0  1  CHXZG_009722-T1  CHXZG_009722
+    1.1e-06   27.9   3.0     0.0053   15.8   0.5    2.0  2  CHXZG_002686-T1  CHXZG_002686
+    5.1e-06   25.7   1.7    6.6e-06   25.3   1.0    1.5  1  CHXZG_000715-T1  CHXZG_000715
+
+
+Domain annotation for each sequence (and alignments):
+>> CHXZG_004773-T1  CHXZG_004773
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.9   0.0   2.3e-09   2.2e-06     101     177 ..      78     154 ..      64     176 .. 0.89
+   2 !   27.9   0.6   1.1e-09   1.1e-06     114     193 ..     305     383 ..     298     398 .. 0.89
+   3 !   22.0   0.1   7.3e-08     7e-05     113     180 ..     434     500 ..     398     517 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 26.9 bits;  conditional E-value: 2.3e-09
+             sexP 101 siskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrew 177
+                      sis   ++  qa      kr  naf+++s+  r +i+   p+   sd++k+lg  w + + e +  y  +a  ++e 
+  CHXZG_004773-T1  78 SISFQHDDKDQADDRPTKKRCQNAFFVFSSERRGQIRAQQPQIRTSDLNKILGKEWNDLSEERRLHYKNRAEILKEQ 154
+                      56666777889999999**********************************************99**9999877764 PP
+
+  == domain 2  score: 27.9 bits;  conditional E-value: 1.1e-09
+             sexP 114 peqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                      p++v krp na+++++  +r +i    p    ++isk ++  w +   e k  y ++a  +++ h +++p++ y  r + 
+  CHXZG_004773-T1 305 PKRV-KRPPNAYLLFNRDIRHQILDGNPNLTVAEISKAISERWNSLPEESKAYYNQEAARLKQRHMDEHPNFIYTRRSKM 383
+                      5555.89*******************************************************************988543 PP
+
+  == domain 3  score: 22.0 bits;  conditional E-value: 7.3e-08
+             sexP 113 speqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhke 180
+                      +p   pk+p + f++ys ++r +i   +p+    +isk+++  w+    e +  ++ ka e +e +  
+  CHXZG_004773-T1 434 NP-TAPKHPMSGFLFYSISVRAEIVVDMPKATVGEISKVIAGRWRRLTEEERAPWIRKAMEDKERYAR 500
+                      34.57******************************************************998876654 PP
+
+>> CHXZG_000028-T1  CHXZG_000028
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.2   0.9   4.8e-14   4.6e-11     106     193 ..     300     387 ..     281     417 .. 0.84
+   2 !   17.1   0.0   2.3e-06    0.0022     114     194 ..     454     533 ..     433     561 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 42.2 bits;  conditional E-value: 4.8e-14
+             sexP 106 qenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                      q+   q   +q  krp na+++++  +r+r+    p+   ++isk +g  wk    e ++ ym++a  +++ h +++pd+ y  r ++
+  CHXZG_000028-T1 300 QQQQQQPPVKQRLKRPPNAYLLFNRDMRRRLLEESPKMTVAEISKEIGERWKRLEPEQRQNYMQQAALIKQDHLKNHPDFIYTRRSKA 387
+                      3333444457889*********************************************************************987654 PP
+
+  == domain 2  score: 17.1 bits;  conditional E-value: 2.3e-06
+             sexP 114 peqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqst 194
+                      p   pk+p + f+++ a +r ++   +p      isk+++++w++   e +  +++ a e +  +  +   y  + +k + 
+  CHXZG_000028-T1 454 P-TAPKHPMSGFLFFLAAVRPEVARQYPGSTVGPISKVIASQWRDMTDEARIPWLQMAEEDKARYAREMQVYTASLEKTTD 533
+                      4.57*****************************************************999887776666666655555444 PP
+
+>> CHXZG_003827-T1  CHXZG_003827
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.9   1.7   2.6e-17   2.5e-14     112     275 ..       9     169 ..       3     178 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 52.9 bits;  conditional E-value: 2.6e-17
+             sexP 112 aspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerdsmprtdf 205
+                      a+ ++vp rp n f+ +    + +i +  p  n+ disk+++  wk  + e k+ y e+a   +  h + ypdy+y  +k++ ++     r   
+  CHXZG_003827-T1   9 AADKKVP-RPMNCFLAFRLEKQNEIVSRCPGANHRDISKIIAKWWKEISEEEKEPYRERARLAKIAHAKLYPDYKYQPQKKNGRKTRKYVRR-- 99 
+                      5667777.8********************************************************************988776555444443.. PP
+
+             sexP 206 snqdfitaddewirqlndllsqnpmtalhgssqenfaidyts..tpyfisspsndis...lgdlkleewqdfcnn 275
+                        q+ +t+  e  +++ +l+ +np+      sq+n a+d t   t  ++ssp +  s   +g    ee+   c+n
+  CHXZG_003827-T1 100 -PQNKFTSRVEQNNRIMELFYENPQL----LSQKNAAVDDTDeeTKLLVSSPQSFSScsnMGSPGQEEYSSNCHN 169
+                      .3555677888889999*******86....489******985338899****87655112666677888888877 PP
+
+>> CHXZG_003388-T1  CHXZG_003388
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.4   0.6   3.6e-13   3.4e-10     107     192 ..     112     195 ..      94     203 .. 0.87
+   2 !   12.1   0.1   7.3e-05      0.07     111     164 ..     257     309 ..     220     340 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 39.4 bits;  conditional E-value: 3.6e-13
+             sexP 107 enpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkq 192
+                      e p  a p +v  rp naf++++  +rk++k + p    ++isk +g  wkn +   k  y+ +an ++e ++  +p+  y  r +
+  CHXZG_003388-T1 112 ERPADA-PIRV-TRPPNAFLLFNKEMRKQLKDSNPTMKVAEISKEIGERWKNLSQAEKNRYVSQANSIKETQRALHPNSMYIRRSK 195
+                      455443.5555.5899**************************************999********************999977765 PP
+
+  == domain 2  score: 12.1 bits;  conditional E-value: 7.3e-05
+             sexP 111 qaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevk 164
+                        +p   pk+p +a+m y   +r +   t+p      iskl +  w       +
+  CHXZG_003388-T1 257 DKNP-AAPKHPLSAYMWYLTEVRPETMQTYPGSTVGQISKLCAERWNTMTEAER 309
+                      3334.68***************************************76544333 PP
+
+>> CHXZG_003049-T1  CHXZG_003049
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.0   0.7   2.9e-14   2.8e-11      87     192 ..      13     118 ..       4     149 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 43.0 bits;  conditional E-value: 2.9e-14
+             sexP  87 lrkqmctessstgvsiskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhke 180
+                      l+k  +t s+  ++ i      p +        rp n fm y    +k i    p  n+ disk+++  w      vk+ y  +a + +e h +
+  CHXZG_003049-T1  13 LKKLTATVSTRQSMRIRVRPPRPQKKKETGRIPRPMNCFMAYRLEKQKVIAAQVPGANHRDISKVVAKWWGEEPERVKQVYRAQAEKAKEEHFQ 106
+                      6677777777777777777777776655444459************************************************************ PP
+
+             sexP 181 rypdyeynsrkq 192
+                      ryp+y+y  +++
+  CHXZG_003049-T1 107 RYPNYKYRPQRK 118
+                      *******86543 PP
+
+>> CHXZG_000745-T1  CHXZG_000745
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.2   0.8     5e-14   4.8e-11     112     204 ..      64     153 ..      40     171 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 42.2 bits;  conditional E-value: 5e-14
+             sexP 112 aspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerdsmprtd 204
+                        p ++p rp n f+ y    +k i    p  n+ disk ++  w       k++y + a + ++ hk++yp+y+y+ +k+ +   ds p  d
+  CHXZG_000745-T1  64 RDPNRIP-RPVNCFLAYRLEKQKLITAVCPGVNHRDISKAVAKWWSEEPDYEKEKYRQLAEKDKQLHKQKYPNYKYSPKKKRS--SDSKPPQD 153
+                      5789998.7**********************************9*9999999999*********************9998754..56666555 PP
+
+>> CHXZG_001436-T1  CHXZG_001436
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.5   0.3   6.5e-13   6.3e-10     110     185 ..      22      97 ..      12     112 .. 0.86
+   2 ?   -1.0   0.0       0.7   6.8e+02      95     118 ..     162     187 ..     138     194 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 38.5 bits;  conditional E-value: 6.5e-13
+             sexP 110 yqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdy 185
+                       +      pk p n f++y    r +ik  fp+ n  d++kllg  wk    e k++y +   +  e ++e    y
+  CHXZG_001436-T1  22 KKKKDPNAPKGPGNVFFLYCRLERDKIKDEFPQENLGDVTKLLGQKWKGLTKEEKQKYYDMYRKEMEEYEEAMKSY 97 
+                      55556679**************************************************998877777777776666 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.7
+             sexP  95 ssstgvsiskgqenpyqas..peqvp 118
+                      +s+ g++ +  qe py     p+ vp
+  CHXZG_001436-T1 162 NSAGGLATASTQEVPYNDEpkPDHVP 187
+                      45667788888888886541144555 PP
+
+>> CHXZG_011378-T1  CHXZG_011378
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.3   0.8   2.5e-11   2.4e-08     115     178 ..      31      94 ..      10     106 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 33.3 bits;  conditional E-value: 2.5e-11
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewh 178
+                         pkr  +a+m++s   r +++   p+     i k+lg  wkn   e kk y+eka e ++ +
+  CHXZG_011378-T1  31 PNAPKRGLSAYMFFSQETRTKVQQENPDAAFGQIGKILGDKWKNMTEEEKKPYVEKAAEDKKRY 94 
+                      368*****************************************************99866533 PP
+
+>> CHXZG_002311-T1  CHXZG_002311
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.9   0.8   0.00068      0.65     106     176 ..     286     357 ..     242     367 .. 0.77
+   2 !   25.6   1.8   5.9e-09   5.6e-06     119     192 ..     368     440 ..     357     454 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.00068
+             sexP 106 qenpyqaspeqv.pkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevre 176
+                        +p +a p +   k+  + +++y+   r r+    p    +++skl++a ++    e ++e  + +n+ r+
+  CHXZG_002311-T1 286 SRHPSKAGPRRPnAKNKYSMWIMYNKANRHRLAAEHPYSTPAELSKLVSAAYRQMPLEEREELRKISNDYRK 357
+                      45788888876514566678899**************99********************9999999999875 PP
+
+  == domain 2  score: 25.6 bits;  conditional E-value: 5.9e-09
+             sexP 119 krpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkq 192
+                        p n +++++  +  +i    pey   d + +++  w+  + e +key  ka ++r+  +++yp++   s k+
+  CHXZG_002311-T1 368 TAPRNGYVLFTMEVSAEIVKEHPEYRMRDRNAVIARRWRELSEEKRKEYSAKAKQMRDDFQKKYPEHF-QSLKE 440
+                      2699*************************************************************974.44443 PP
+
+>> CHXZG_009722-T1  CHXZG_009722
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.2   0.8   4.4e-10   4.2e-07     114     176 ..      26      88 ..       2      99 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 29.2 bits;  conditional E-value: 4.4e-10
+             sexP 114 peqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevre 176
+                       +  pkr  +a+m++s   r ++k   p+ n   i k+lg  wkn   + k  y  ka+  ++
+  CHXZG_009722-T1  26 DKTGPKRGLSAYMFFSQEQRPKVKEDNPDANFGQIGKILGEKWKNMTEDEKAPYNAKADADKK 88 
+                      3457**************************************************999986543 PP
+
+>> CHXZG_002686-T1  CHXZG_002686
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.2   2.9e-05     0.028     113     179 ..      43     112 ..      32     119 .. 0.80
+   2 !   15.8   0.5   5.5e-06    0.0053     115     179 ..     115     179 ..     109     183 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 2.9e-05
+             sexP 113 speqvpkrpsna...fmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhk 179
+                       p +   rpsn    f++++   r+ri    pe +n +is  ++  +++   e k++  ++  ++r   +
+  CHXZG_002686-T1  43 EPMRWSSRPSNRfsmFIVFNKQHRQRISRENPELSNQEISAKVSQDYRDLTPEAKEKLRQQCAQLRNESR 112
+                      45566678888622257889999*******************************9999998888876544 PP
+
+  == domain 2  score: 15.8 bits;  conditional E-value: 5.5e-06
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhk 179
+                      ++ p  p + +++++   r  +k  +p+ +  +++++++ +wk +  +v+++y e++ + re  k
+  CHXZG_002686-T1 115 DKPPTLPLSGYFMFNKDKRPGFKELYPKASVIELNQMVANLWKASDPKVRQKYNERSRKAREKFK 179
+                      567889999999*************************************************9776 PP
+
+>> CHXZG_000715-T1  CHXZG_000715
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3   1.0   6.9e-09   6.6e-06     116     199 ..     267     350 ..     233     364 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 6.9e-09
+             sexP 116 qvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerds 199
+                         krp na++ +     + +kt  p     +isk  +  w     + kk + + a + +  hke +p+y y  ++ s+    s
+  CHXZG_000715-T1 267 AHIKRPRNAWIHFRCHYGQALKTQDPTLRAEEISKRASRRWARLTEKEKKPWHDLAEQEKLAHKEAFPEYRYCPKRHSSSSSSS 350
+                      4569********************************************************************999988776554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (297 nodes)
+Target sequences:                      11557  (5116194 residues searched)
+Passed MSV filter:                       429  (0.0371204); expected 231.1 (0.02)
+Passed bias filter:                      241  (0.0208532); expected 231.1 (0.02)
+Passed Vit filter:                        30  (0.00259583); expected 11.6 (0.001)
+Passed Fwd filter:                        15  (0.00129791); expected 0.1 (1e-05)
+Initial search space (Z):              11557  [actual number of targets]
+Domain search space  (domZ):              12  [number of targets reported over threshold]
+# CPU time: 0.44u 0.02s 00:00:00.46 Elapsed: 00:00:00.15
+# Mc/sec: 9573.98
+//
+[ok]

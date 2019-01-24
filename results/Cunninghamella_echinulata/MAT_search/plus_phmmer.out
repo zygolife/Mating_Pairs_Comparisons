@@ -1,0 +1,663 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             MAT_locus_peps/mat_locus_query.pep
+# target sequence database:        annotation/Cunninghamella_echinulata_RSA_2017_Plus.aa.fasta
+# output directed to file:         results/Cunninghamella_echinulata/MAT_search/plus_phmmer.out
+# per-dom hits tabular output:     results/Cunninghamella_echinulata/MAT_search/plus_phmmer.domtbl
+# sequence reporting threshold:    E-value <= 1e-05
+# number of worker threads:        8
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       RNAhelicase  [L=649]
+Description: tr|B0F2G9|B0F2G9_PHYBL Putative RNA helicase (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   7.5e-182  605.1   3.1   1.3e-181  604.2   3.1    1.3  1  GBNWU_000334-T1  GBNWU_000334
+    9.5e-06   23.3   0.0    1.5e-05   22.7   0.0    1.2  1  GBNWU_006740-T1  GBNWU_006740
+
+
+Domain annotation for each sequence (and alignments):
+>> GBNWU_000334-T1  GBNWU_000334
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  604.2   3.1  2.8e-185  1.3e-181     120     630 ..      62     570 ..       5     579 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 604.2 bits;  conditional E-value: 2.8e-185
+      RNAhelicase 120 qvvfklnteipdrpifvekvdfasyrskpivpdpaeimqgppqvpvs.....ndrgrrderiphipvnhvrgpyestdeylythfelmrqdcli 208
+                         fklnt + ++pif +  d+  +r+kp++p   +i+   pq+        +d+ +  +  p+ipvnh++g y+s d ylythfelmrqd li
+  GBNWU_000334-T1  62 STTFKLNTNVDNEPIFSQVTDYTLFRNKPVIPHADDILY--PQIHFDefaerSDNKKDSKGYPNIPVNHIQGAYKSIDHYLYTHFELMRQDFLI 153
+                      578**********************************97..555443111114444444569******************************** PP
+
+      RNAhelicase 209 plqkavqsyrltadkpkdklglamsd.dqvetv.alsrdyrlyehvrlnaivfgsrqtlyrisfrlpyycrvkwpqskrlmegsmvllskdnfv 300
+                      plqkav+sy+ t +  +++l +   d dq+e      rdyrlye+v+lna+vfg+rq lyr+sfrlp+y  v wp skrl+eg++vllskdnf 
+  GBNWU_000334-T1 154 PLQKAVKSYKATLET-QERLKIFSDDiDQLENKqPTYRDYRLYEQVQLNAVVFGNRQVLYRVSFRLPHYVGVSWPTSKRLIEGTLVLLSKDNFE 246
+                      ************985.678877665558999862567********************************************************* PP
+
+      RNAhelicase 301 sdikiatvvnrgdepmrgssrfeyminvklecdnerdplgfgdpssadqdtyvmieaptgyfeayrhilsvlkntqadelplasylvdisqdir 394
+                      +dikiatvv rgd pm+gs+rfeymi+++le dn +dplgfgdp+s  qdty+miea  gyfeayrhil v+k   ++elp+  yl+++ +++r
+  GBNWU_000334-T1 247 NDIKIATVVQRGDNPMKGSNRFEYMIDIQLERDNPEDPLGFGDPTSETQDTYIMIEATDGYFEAYRHILKVIKEIPSEELPFEPYLINVDKEVR 340
+                      ********************************************************************************************** PP
+
+      RNAhelicase 395 lpyyasrkqfydidprkptnsrdqqknlvkadvewpekntgmdrtqmdalqtmitnniaiiqgppgtgktfvgtygmkvllknfdqglgpivci 488
+                      +pyyas k++yd++    +      + ++     w   + g+d+tq dalqt+++n++ai+qgppgtgk++vg  +m+ +l nfd++lgpi+ci
+  GBNWU_000334-T1 341 IPYYASLKRYYDLESDLRSRKMGH-RKVIDIMGTWVPYDIGLDKTQTDALQTILSNDVAIVQGPPGTGKSYVGNKAMQTFLTNFDEALGPIICI 433
+                      *************98766555554.557777889************************************************************ PP
+
+      RNAhelicase 489 cqtnhaldqflehvldfdprvirigarsrserlkdhilfevrker..eavrglgrvyrkrdeiskkireiivtmyeepcvtldylrkikalrpr 580
+                      cqtnhaldqfleh+++++ +++rig rs+se+lkd++++e+rk        g+g++yrkr+e++ ki++iiv myeepcvt+d+++k k lrpr
+  GBNWU_000334-T1 434 CQTNHALDQFLEHIFEYNENIVRIGGRSKSEKLKDRLIYELRKNDigRGPSGVGKLYRKREELADKINDIIVEMYEEPCVTIDFIEKQKLLRPR 527
+                      ******************************************9852256789****************************************** PP
+
+      RNAhelicase 581 qleslkrvgergarndalstaavaaasaggggadedsdddwvigsditis 630
+                      q+e lkr+g+r  ++    t  v+ a  +g     d dd wvi s  t+ 
+  GBNWU_000334-T1 528 QIEELKRLGQREEKH---KTNFVSEA--NG--DTMDDDDLWVITSQPTVK 570
+                      *********987766...56666544..33..45567899***9998875 PP
+
+>> GBNWU_006740-T1  GBNWU_006740
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.7   0.0   3.1e-09   1.5e-05     430     520 ..     817     907 ..     781     942 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 22.7 bits;  conditional E-value: 3.1e-09
+      RNAhelicase 430 peknt.gmdrtqmdalqtmitnniaiiqgppgtgktfvgtygmkvllknfdqglgpivcicqtnhaldqflehv..ldfdpr.virigarsrse 519
+                      p+kn   +   q++++ + i + + ++ gppgtgkt v+   +  l  n+       + +  +n+al+q++e +  ld+dpr ++r+g     e
+  GBNWU_006740-T1 817 PKKNAvPFTPVQVESIHSGINHGLTMVVGPPGTGKTDVAVQTIANLYHNYPNQH--TLIVTHSNQALNQIFEKLtgLDIDPRhLVRLGHG--EE 906
+                      7777524567899*************************************8765..455789**********87558****956788854..34 PP
+
+      RNAhelicase 520 r 520
+                      +
+  GBNWU_006740-T1 907 E 907
+                      4 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (649 nodes)
+Target sequences:                       9570  (4570904 residues searched)
+Passed MSV filter:                       540  (0.0564263); expected 191.4 (0.02)
+Passed bias filter:                      233  (0.0243469); expected 191.4 (0.02)
+Passed Vit filter:                        28  (0.00292581); expected 9.6 (0.001)
+Passed Fwd filter:                         5  (0.000522466); expected 0.1 (1e-05)
+Initial search space (Z):               9570  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.55u 0.04s 00:00:00.59 Elapsed: 00:00:00.21
+# Mc/sec: 14116.28
+//
+Query:       TPT  [L=289]
+Description: tr|B0F2G7|B0F2G7_PHYBL Putative triose phosphate transporter (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    3.8e-57  193.0   7.5    1.1e-56  191.5   7.4    1.6  1  GBNWU_000336-T1  GBNWU_000336
+    2.5e-08   32.8   6.9    2.5e-08   32.8   6.9    1.5  2  GBNWU_005810-T1  GBNWU_005810
+
+
+Domain annotation for each sequence (and alignments):
+>> GBNWU_000336-T1  GBNWU_000336
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  191.5   7.4   2.2e-60   1.1e-56     123     288 ..     154     305 ..     123     306 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 191.5 bits;  conditional E-value: 2.2e-60
+              TPT 123 qtfwqslpgskhfalsdnfkfiinicmwyisssltnnigkqiltsfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavfl 216
+                        ++ sl + ++f  s+ +kfi+n cmwy++ssltnn gkqil +f+ypvtltf+qf lva+ cf  a l   thir pt +i +ti pla+fl
+  GBNWU_000336-T1 154 SFIFPSL-SKRRFEASNQLKFILNCCMWYVASSLTNNTGKQILNAFRYPVTLTFVQFGLVAICCFAAAKLFGATHIRRPTSDITKTIVPLAIFL 246
+                      4445555.467899******************************************************************************** PP
+
+              TPT 217 ivghvfssiaisrvpvslvhtikalaplftvlfyrfifqvhytpnvyisllpltfgvilacsftysnsvvgl 288
+                      ivghvfss+aisr+pvslvhtik l              + y+  vyisllplt+gvilacsft+sn++vgl
+  GBNWU_000336-T1 247 IVGHVFSSVAISRIPVSLVHTIKILY-------------LCYSMKVYISLLPLTLGVILACSFTFSNNMVGL 305
+                      **********************9652.............357889**************************9 PP
+
+>> GBNWU_005810-T1  GBNWU_005810
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.8   6.9   5.3e-12   2.5e-08     152     287 ..      96     229 ..      63     231 .. 0.83
+   2 ?   -2.8   0.2       0.4   1.9e+03     191     230 ..     248     287 ..     232     346 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 32.8 bits;  conditional E-value: 5.3e-12
+              TPT 152 isssltnnigkqiltsfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikalaplf 245
+                      ++ slt   +k il  f+yp +lt i     ++ c+++  l   t  +    e +  +  ++v+  ++  +s+++++ v v++ + ++++ p+f
+  GBNWU_005810-T1  96 LNLSLT-LYNKVILLDFRYPWSLTAIHTLCGSVGCYILYALGVFTPAKLNDNENMV-MLMFSVLYTINIAISNVSLNLVNVAFHQVVRSMTPVF 187
+                      334444.46799***************************9*999998877666543.4457888889999************************ PP
+
+              TPT 246 tvlfyrfifqvhytpnvyisllpltfgvilacsftysnsvvg 287
+                      tv++   ++q  y+  +y+sl p+ +gv +a    +  +v+g
+  GBNWU_005810-T1 188 TVIISIAFLQKSYSRMIYLSLCPVVLGVGFATIGEFDYTVIG 229
+                      ****99999*******************99988888878887 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.4
+              TPT 191 nlastthirsptqeivrtitplavflivghvfssiaisrv 230
+                      n     +++    +++  ++pla +  v + +++  + rv
+  GBNWU_005810-T1 248 NRVQVGRLKLHPLDLLLRMSPLAFIQCVFYAYATGELERV 287
+                      4444444444444444455555555555555555555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (289 nodes)
+Target sequences:                       9570  (4570904 residues searched)
+Passed MSV filter:                       524  (0.0547544); expected 191.4 (0.02)
+Passed bias filter:                      197  (0.0205852); expected 191.4 (0.02)
+Passed Vit filter:                        14  (0.0014629); expected 9.6 (0.001)
+Passed Fwd filter:                         3  (0.00031348); expected 0.1 (1e-05)
+Initial search space (Z):               9570  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.11
+# Mc/sec: 11620.42
+//
+Query:       sexM  [L=211]
+Description: tr|B0F2G8|B0F2G8_PHYBL Sex minus OS=Phycomyces blakesleeanus GN=sexM PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    6.5e-11   41.5   1.2    1.6e-10   40.2   1.2    1.6  1  GBNWU_006520-T1  GBNWU_006520
+    1.2e-10   40.6   2.9    1.7e-10   40.2   2.9    1.2  1  GBNWU_003709-T1  GBNWU_003709
+    1.7e-10   40.1   5.0    3.5e-10   39.1   5.0    1.6  1  GBNWU_006211-T1  GBNWU_006211
+    9.4e-10   37.7  14.7    1.3e-08   34.0   0.3    3.9  4  GBNWU_004435-T1  GBNWU_004435
+    1.4e-09   37.1   2.0    1.8e-09   36.7   1.1    1.6  2  GBNWU_000335-T1  GBNWU_000335
+    7.7e-09   34.7   9.5    8.4e-09   34.6   8.1    2.0  1  GBNWU_000647-T1  GBNWU_000647
+    9.8e-09   34.4   2.0    9.8e-09   34.4   2.0    1.7  2  GBNWU_007399-T1  GBNWU_007399
+      4e-07   29.1  23.5    5.9e-07   28.6   3.4    4.4  5  GBNWU_001773-T1  GBNWU_001773
+
+
+Domain annotation for each sequence (and alignments):
+>> GBNWU_006520-T1  GBNWU_006520
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.2   1.2   1.3e-13   1.6e-10      16     116 ..     180     283 ..     171     301 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 40.2 bits;  conditional E-value: 1.3e-13
+             sexM  16 ppsdilte..sisstpvr.qkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkf 106
+                      p s +lt   s s t ++ q  +++    i+rp+na++ +r     s+ + + ti+ +eis+ a++ w     + +k +   a++ekl h + f
+  GBNWU_006520-T1 180 PSSSLLTFwaSPSPTTIEqQHEFVTKNSHIKRPRNAWIHFRCYFGQSLKAKDPTIRAEEISKRASEYWARLTSKQKKPWHIMAEQEKLAHQEAF 273
+                      4456777511444455551556899999****************************************************************** PP
+
+             sexM 107 pgyiykpqqr 116
+                      p y y+p++ 
+  GBNWU_006520-T1 274 PDYRYRPKRA 283
+                      *******764 PP
+
+>> GBNWU_003709-T1  GBNWU_003709
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.2   2.9   1.4e-13   1.7e-10      39     190 ..      39     197 ..      19     205 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 40.2 bits;  conditional E-value: 1.4e-13
+             sexM  39 tvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvckpflrs 132
+                        ki rp n f+lyr   +  i       +++ is+  +k wkn     +k y   a e k  h   +p y y p+++ +      + k  ++ 
+  GBNWU_003709-T1  39 PEKIPRPLNCFLLYRMEKQKQICELCPGANHRTISKIVAKWWKNISMSDKKKYMDAAKEAKTEHKSLYPDYRYVPRRKSSSST--QLEKSSIQD 130
+                      5699********************99999***************999999999999*******************87766544..467999*** PP
+
+             sexM 133 tsdiqliyqkteskspseklsatsqdyi.....ihc..rdestnedeilntpp..tqclddsilktf 190
+                        +i++   + e k     +s+ +q y      +h    d   +  +ilntp   tq + ds l t+
+  GBNWU_003709-T1 131 EEEIEVNKDQVEKKPSLTPISSCNQFYYqygneLHMiyGDTVNSYTDILNTPLllTQPIYDSPLMTW 197
+                      ******9999999988899999999886222223432124444457888888433777777777765 PP
+
+>> GBNWU_006211-T1  GBNWU_006211
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.1   5.0     3e-13   3.5e-10      30     121 ..       9     100 ..       2     144 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 39.1 bits;  conditional E-value: 3e-13
+             sexM  30 vrqkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrp 121
+                       ++   + +   i rp n fm +r   +  i s + t+++++is+  +k w+   e+ ++ y + a   kl h k +p+y y p+++  r+ 
+  GBNWU_006211-T1   9 TKKTHSMKNKTNIPRPINCFMAFRLDKYREISSRSPTLNHRDISKVIAKWWREATEQEKEPYRKIAATAKLEHEKLYPNYKYAPKRKSERQT 100
+                      4555566777899***********************************************************************87766643 PP
+
+>> GBNWU_004435-T1  GBNWU_004435
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.2       1.4   1.7e+03      16     164 ..      60      96 ..      47     114 .. 0.50
+   2 ?    1.2   0.7      0.12   1.4e+02     101     167 ..     199     265 ..     164     297 .. 0.67
+   3 !   34.0   0.3   1.1e-11   1.3e-08      12     117 ..     309     419 ..     301     461 .. 0.77
+   4 !   10.5   0.1   0.00017      0.21      36     110 ..     501     575 ..     488     585 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 1.4
+             sexM  16 ppsdiltesisstpvrqkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgy 109
+                      p s   t + +s p+    i+ +  k +   +a+ml+                                                         
+  GBNWU_004435-T1  60 PTSTSATTTTTSVPITNSTIVDN--KTNTVADAYMLF--------------------------------------------------------- 94 
+                      44555555555555555555543..233344455544......................................................... PP
+
+             sexM 110 iykpqqrktrrpqstvckpflrstsdiqliyqkteskspseklsatsqdyiihcr 164
+                                                                           c 
+  GBNWU_004435-T1  95 -----------------------------------------------------CA 96 
+                      .....................................................33 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.12
+             sexM 101 yhskkfpgyiykpqqrktrrp.qstvckpflrstsdiqliyqkteskspseklsatsqdyiihcrdes 167
+                      y s     +i++ qq  t r   s+   p +   +d      ++ + sps   s+ts +y++      
+  GBNWU_004435-T1 199 YSSFLSMKHIHEQQQSDTTRSaTSSTSPPTFSIPNDNSPTLTRSSTPSPSP-TSSTSLNYLVLPSPPM 265
+                      444444568999999877665156677777777888888887877788875.5889999998665544 PP
+
+  == domain 3  score: 34.0 bits;  conditional E-value: 1.1e-11
+             sexM  12 nsyqppsdiltesisstpvr...qkciisstv..kirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeekl 100
+                      n yq  s +  + +ss   +      +i   +  +++rp na++l+++a++  +l+ +  +   eis+  g  wk   +e r++y ++a   k 
+  GBNWU_004435-T1 309 NMYQQKSILYNKQLSSNNNNnnnNTIMIQQPIqeRLKRPPNAYLLFNRAMRRQLLADDPKLTVAEISKKIGDRWKYLPQEQRQFYINQAQMLKQ 402
+                      5666666666666655443211023445544422689********************************************************* PP
+
+             sexM 101 yhskkfpgyiykpqqrk 117
+                       h k +p +iy  + + 
+  GBNWU_004435-T1 403 DHLKNYPDFIYTRRSKA 419
+                      ***********876554 PP
+
+  == domain 4  score: 10.5 bits;  conditional E-value: 0.00017
+             sexM  36 isstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyi 110
+                      +      ++p + f+++  av+p +           is+  +  wkn   e r+ + +ka ++k  ++k++  y+
+  GBNWU_004435-T1 501 VKHPTAPKHPMSGFLFFLGAVRPEVAQQFPGSTVGPISKEISSRWKNMTAEERQPWLQKAIDDKARYAKEMQVYM 575
+                      5555566899***************98765555568999999**********************99999988775 PP
+
+>> GBNWU_000335-T1  GBNWU_000335
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0      0.77   9.2e+02      61      96 ..      69     104 ..      31     109 .. 0.66
+   2 !   36.7   1.1   1.5e-12   1.8e-09      40     143 ..     108     214 ..      99     279 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.77
+             sexM  61 lssnstihnkeisrtagkmwknekeevrkyyerkad 96 
+                      +  n+ i  +e+     +m  +ek     +y  k d
+  GBNWU_000335-T1  69 IGPNNNIKRQELLSATERMIMDEKNYSDSFYTGKID 104
+                      345556666666666666666676666666666655 PP
+
+  == domain 2  score: 36.7 bits;  conditional E-value: 1.5e-12
+             sexM  40 vkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvckpflrst 133
+                       k rrp naf+ly  +++  i  +     n ++s+  g mw+   ee++  + r a eek  h  + p++ y  +++  +  +s+  +  l   
+  GBNWU_000335-T1 108 DKPRRPPNAFLLYSGSLRKKIRRTFPEYSNSDVSKLLGIMWRTASEEIKDKFTRLAYEEKQRHKLQHPNFEYNLKKQGWNSGESSASQNNLYDN 201
+                      578*********************************************************************9888887777777776665443 PP
+
+             sexM 134 ...sdiqliyqkt 143
+                         +di  + q+t
+  GBNWU_000335-T1 202 ewlNDINEFLQQT 214
+                      1114555555554 PP
+
+>> GBNWU_000647-T1  GBNWU_000647
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.6   8.1   7.1e-12   8.4e-09      41     129 ..       3      91 ..       1     182 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 34.6 bits;  conditional E-value: 7.1e-12
+             sexM  41 kirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrpqstvckpf 129
+                      ki rp n f+lyr   +  il+     ++++is+  +k wk    + +  y ++a + k+ hs+ +p+y y pq++   +p++   k  
+  GBNWU_000647-T1   3 KIPRPMNCFLLYRHDKQKEILTQCPGANHRDISKIIAKWWKEATIQEKAPYVERARKAKVEHSRLYPNYKYMPQKKSKGKPRTYKRKTQ 91 
+                      899**************************************999888887888899******************999989987554433 PP
+
+>> GBNWU_007399-T1  GBNWU_007399
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.1       2.2   2.6e+03     128     140 ..     129     141 ..     102     177 .. 0.53
+   2 !   34.4   2.0   8.2e-12   9.8e-09      29     119 ..     245     335 ..     231     368 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 2.2
+             sexM 128 pflrstsdiqliy 140
+                        l  +s i  i+
+  GBNWU_007399-T1 129 SPLYPSSPITTIH 141
+                      2223333333333 PP
+
+  == domain 2  score: 34.4 bits;  conditional E-value: 8.2e-12
+             sexM  29 pvrqkciisstvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktr 119
+                       v q  +++    i+rp+na++ +r     ++   + t++ +eis+ a+k w    e  +k + + a++ek  h + fp y y p++  ++
+  GBNWU_007399-T1 245 QVDQSMFLTKNAHIKRPRNAWIHFRCHYGQALKIHDPTLRAEEISKRASKRWSLLSENEKKPWHQLAEQEKQAHKEAFPEYRYCPKRSNSN 335
+                      67889999999**************9999999999**************************************************987665 PP
+
+>> GBNWU_001773-T1  GBNWU_001773
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.2   0.00011      0.13      43      98 ..     372     427 ..     336     436 .. 0.84
+   2 ?   -3.1   0.2       2.5     3e+03      61     103 ..     469     511 ..     441     518 .. 0.76
+   3 !   28.6   3.4   4.9e-10   5.9e-07      39     120 ..     627     708 ..     621     753 .. 0.87
+   4 ?    3.0   0.4     0.033        39      42     109 ..     802     869 ..     780     900 .. 0.82
+   5 ?   -3.3   0.1       2.8   3.3e+03      99     119 ..    1001    1021 ..     972    1095 .. 0.51
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 0.00011
+             sexM  43 rrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadee 98 
+                      rr  n f+++    +  +      ++n +i+r  g  wk   e  r +y++kad  
+  GBNWU_001773-T1 372 RRSPNGFFVFCSERRHILKQGKPNVRNTDINRQLGDDWKALTESERDWYKQKADRI 427
+                      566677777766655566778899*****************************975 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 2.5
+             sexM  61 lssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhs 103
+                       + +    n +i++  g   ++e++   k  +   de++l h 
+  GBNWU_001773-T1 469 AADDDDDDNNQINNNRGDEEEDEEDNDDKEEDDNEDEKELIHK 511
+                      4455666788899999998888888888888888999998885 PP
+
+  == domain 3  score: 28.6 bits;  conditional E-value: 4.9e-10
+             sexM  39 tvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrr 120
+                      + +++rp na++l+++ ++  il+ n  +   eis+  ++ w     e ++yy +ka   k  h ++ p y+y  + ++  +
+  GBNWU_001773-T1 627 SERLKRPPNAYLLFNKEMRRQILNQNDKLTVAEISKILSETWTKLPTERKEYYINKAANLKKQHLEEHPDYVYSRRSKEELE 708
+                      56899********************************************************************987766554 PP
+
+  == domain 4  score: 3.0 bits;  conditional E-value: 0.033
+             sexM  42 irrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgy 109
+                       ++p + f+++   v+p i       +  +is+  +  w    +e +  + +ka e+k  +++++  +
+  GBNWU_001773-T1 802 PKHPMSGFLFFAAHVRPGITLQCVNKRVGDISKAISAKWNQLTDEEKLPWLEKAKEDKARYAREIGEF 869
+                      578999************988877777789*********99999999999999*****9998876543 PP
+
+  == domain 5  score: -3.3 bits;  conditional E-value: 2.8
+             sexM   99 klyhskkfpgyiykpqqrktr 119 
+                         yh++ +    +kp  r + 
+  GBNWU_001773-T1 1001 SHYHNQHLQDRYFKPYSRLSS 1021
+                       445555555555666555432 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (211 nodes)
+Target sequences:                       9570  (4570904 residues searched)
+Passed MSV filter:                       561  (0.0586207); expected 191.4 (0.02)
+Passed bias filter:                      155  (0.0161964); expected 191.4 (0.02)
+Passed Vit filter:                        25  (0.00261233); expected 9.6 (0.001)
+Passed Fwd filter:                        11  (0.00114943); expected 0.1 (1e-05)
+Initial search space (Z):               9570  [actual number of targets]
+Domain search space  (domZ):               8  [number of targets reported over threshold]
+# CPU time: 0.24u 0.02s 00:00:00.26 Elapsed: 00:00:00.09
+# Mc/sec: 9817.08
+//
+Query:       sexP  [L=297]
+Description: tr|B0F2H1|B0F2H1_PHYBL Sex plus OS=Phycomyces blakesleeanus GN=sexP PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    3.6e-34  117.8   3.2    5.4e-34  117.2   3.2    1.4  1  GBNWU_000335-T1  GBNWU_000335
+      8e-20   70.7  18.7    1.4e-10   40.4   0.9    3.8  4  GBNWU_001773-T1  GBNWU_001773
+    2.7e-16   59.2   0.3    3.2e-16   58.9   0.3    1.2  1  GBNWU_003709-T1  GBNWU_003709
+    5.5e-16   58.1   3.3    3.3e-09   35.9   0.4    2.4  2  GBNWU_004435-T1  GBNWU_004435
+    1.6e-14   53.4   1.8    3.2e-14   52.4   1.8    1.5  1  GBNWU_000647-T1  GBNWU_000647
+      4e-11   42.2   5.3    1.2e-09   37.3   0.7    2.7  2  GBNWU_001361-T1  GBNWU_001361
+    1.9e-08   33.4   2.4    1.9e-08   33.4   2.4    1.8  2  GBNWU_006211-T1  GBNWU_006211
+    5.3e-08   31.9   2.0    5.3e-08   31.9   2.0    1.7  2  GBNWU_009053-T1  GBNWU_009053
+    5.6e-08   31.9   0.9    6.3e-08   31.7   0.9    1.0  1  GBNWU_003189-T1  GBNWU_003189
+    1.6e-07   30.3   0.6    2.2e-07   29.9   0.6    1.2  1  GBNWU_000990-T1  GBNWU_000990
+      6e-07   28.5   3.4    9.6e-07   27.8   3.4    1.4  1  GBNWU_008917-T1  GBNWU_008917
+    7.5e-06   24.9   1.0    7.5e-06   24.9   1.0    1.7  2  GBNWU_001289-T1  GBNWU_001289
+
+
+Domain annotation for each sequence (and alignments):
+>> GBNWU_000335-T1  GBNWU_000335
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  117.2   3.2   6.7e-37   5.4e-34      11     229 ..      13     215 ..       7     287 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 117.2 bits;  conditional E-value: 6.7e-37
+             sexP  11 yqrpikprlllapklsvqqisviyikgktalriypsqafvyardlitmvdekrdyitvntgssverkdlfsaaesllrkqm.ctessstgvsis 103
+                      + r i+p l     + +q++s+ y   k+ +r++ps+  + +  ++++++   + i++  +++++r++l+sa e ++  +   ++s  tg    
+  GBNWU_000335-T1  13 FHRKIRP-LETQTTIPIQRLSIHYKNKKSFIRLHPSKIHIQSSYFLSLLNSNCENISIGPNNNIKRQELLSATERMIMDEKnYSDSFYTG---- 101
+                      5677777.44566799*********************************************************98876543034444444.... PP
+
+             sexP 104 kgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstker 197
+                        + +         p+rp naf++ys +lrk+i+ tfpey+nsd+skllg mw+ a+ e+k ++   a e ++ hk ++p++eyn +kq     
+  GBNWU_000335-T1 102 --KIDL----QNDKPRRPPNAFLLYSGSLRKKIRRTFPEYSNSDVSKLLGIMWRTASEEIKDKFTRLAYEEKQRHKLQHPNFEYNLKKQGWNSG 189
+                      ..3332....234699*************************************************************************99887 PP
+
+             sexP 198 dsmprtdfsnqdfitaddewirqlndllsqnp 229
+                      +s       +q+    d+ew++ +n++l q  
+  GBNWU_000335-T1 190 ESSA-----SQNN-LYDNEWLNDINEFLQQTK 215
+                      7753.....2333.3699********999875 PP
+
+>> GBNWU_001773-T1  GBNWU_001773
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.0   8.4e-07   0.00067     111     176 ..     363     429 ..     315     473 .. 0.83
+   2 !   40.4   0.9   1.7e-13   1.4e-10     102     196 ..     614     708 ..     587     726 .. 0.88
+   3 !   21.6   3.3   9.6e-08   7.7e-05      64     199 ..     750     881 ..     727     935 .. 0.79
+   4 ?   -3.3   0.2       3.5   2.8e+03     112     147 ..    1019    1054 ..    1013    1058 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 8.4e-07
+             sexP 111 qaspeqvpkrps.nafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevre 176
+                      +  p+q+ kr s n f+++ +  r  +k   p   n+di++ lg  wk      +  y +ka+ +r 
+  GBNWU_001773-T1 363 KQQPQQLGKRRSpNGFFVFCSERRHILKQGKPNVRNTDINRQLGDDWKALTESERDWYKQKADRIRT 429
+                      34688887765449**********************************98888888899***99985 PP
+
+  == domain 2  score: 40.4 bits;  conditional E-value: 1.7e-13
+             sexP 102 iskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstk 195
+                      +  g  + y ++  +  krp na+++++  +r++i     +   ++isk+l+  w     e k+ y+ ka  +++ h e++pdy y+ r +   
+  GBNWU_001773-T1 614 LFHGDHSHYDSTKSERLKRPPNAYLLFNKEMRRQILNQNDKLTVAEISKILSETWTKLPTERKEYYINKAANLKKQHLEEHPDYVYSRRSKEEL 707
+                      35788999999999999*********************************************************************99877655 PP
+
+             sexP 196 e 196
+                      e
+  GBNWU_001773-T1 708 E 708
+                      5 PP
+
+  == domain 3  score: 21.6 bits;  conditional E-value: 9.6e-08
+             sexP  64 dyitvntgssverkdlfsaaesllrkqmctessstgvsiskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwk 157
+                      d   +  +s   + d     e+l +k+   +sss++   s+g++      p   pk+p + f++++a +r  i          disk ++a w 
+  GBNWU_001773-T1 750 DESILKLASLPNNHDSKQIGETLSNKRKK-KSSSSSHHESRGRKKKRLTYP-WAPKHPMSGFLFFAAHVRPGITLQCVNKRVGDISKAISAKWN 841
+                      55555556666667777778888887765.5666677889**998877776.68*******************99999999************* PP
+
+             sexP 158 nagaevkkeymekanevrewhkerypdyeynsrkqstkerds 199
+                          e k  ++eka e +  +  +    e+ns ++  ke  +
+  GBNWU_001773-T1 842 QLTDEEKLPWLEKAKEDKARYAREI--GEFNSLQKKEKEAAA 881
+                      ***************9877665544..578887776666544 PP
+
+  == domain 4  score: -3.3 bits;  conditional E-value: 3.5
+             sexP  112 aspeqvpkrpsnafmiysatlrkrikttfpeynnsd 147 
+                        s   vp rp++   +   t+   ++   p +nn+ 
+  GBNWU_001773-T1 1019 LSSALVPSRPASPTELDKDTIATVVQMINPRFNNNS 1054
+                       467789********9*999**999999999999874 PP
+
+>> GBNWU_003709-T1  GBNWU_003709
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.9   0.3     4e-19   3.2e-16     110     220 ..      35     143 ..       9     218 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 58.9 bits;  conditional E-value: 4e-19
+             sexP 110 yqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerdsmprt 203
+                       +  pe++p rp n f++y    +k+i    p  n+  isk+++  wkn +   kk+ym+ a e +  hk  ypdy y  r++s+     + ++
+  GBNWU_003709-T1  35 RKRDPEKIP-RPLNCFLLYRMEKQKQICELCPGANHRTISKIVAKWWKNISMSDKKKYMDAAKEAKTEHKSLYPDYRYVPRRKSSSS-TQLEKS 126
+                      5678****9.7********************************************************************99998765.456777 PP
+
+             sexP 204 dfsnqdfitaddewirq 220
+                       + +++ i  + + +++
+  GBNWU_003709-T1 127 SIQDEEEIEVNKDQVEK 143
+                      77777777666555543 PP
+
+>> GBNWU_004435-T1  GBNWU_004435
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.9   0.4   4.2e-12   3.3e-09      55     193 ..     279     419 ..     266     441 .. 0.74
+   2 !   22.4   0.2   5.5e-08   4.4e-05      63     180 ..     452     569 ..     439     601 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 35.9 bits;  conditional E-value: 4.2e-12
+             sexP  55 litmvdekrdyitvntgssverkdlfsaaesllrkqmctessstgvsiskgqenp..yqaspeqvpkrpsnafmiysatlrkrikttfpeynns 146
+                      l t v  k+  it+ +    ++ + +++ +++ +++    +   + + + +  n    q   ++  krp na+++++  +r+++    p+   +
+  GBNWU_004435-T1 279 LSTCVSTKNTQITMASQLGADEAEALASWDNMYQQKSILYNKQLSSNNNNNNNNTimIQQPIQERLKRPPNAYLLFNRAMRRQLLADDPKLTVA 372
+                      5566666666666666666655555555555555444444443333333333343113444455679*************************** PP
+
+             sexP 147 diskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                      +isk +g  wk    e ++ y+ +a  +++ h ++ypd+ y  r ++
+  GBNWU_004435-T1 373 EISKKIGDRWKYLPQEQRQFYINQAQMLKQDHLKNYPDFIYTRRSKA 419
+                      *****************************************988764 PP
+
+  == domain 2  score: 22.4 bits;  conditional E-value: 5.5e-08
+             sexP  63 rdyit.vntgssverkdlfsaaesllrkqmctessstgvsiskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgam 155
+                      r y +   t+  +   dl+   +  l+++   + s+      +g++      p   pk+p + f+++   +r ++   fp      isk +++ 
+  GBNWU_004435-T1 452 RSYTSsCTTSGGIGDDDLLQQQQKGLKRKRGRQRSNKVQRDPRGRKKKRVKHP-TAPKHPMSGFLFFLGAVRPEVAQQFPGSTVGPISKEISSR 544
+                      55554134556677788888877777777777777766677788877766555.68************************************** PP
+
+             sexP 156 wknagaevkkeymekanevrewhke 180
+                      wkn  ae ++ +++ka + +  + +
+  GBNWU_004435-T1 545 WKNMTAEERQPWLQKAIDDKARYAK 569
+                      ***************9776544433 PP
+
+>> GBNWU_000647-T1  GBNWU_000647
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.4   1.8     4e-17   3.2e-14     117     266 ..       4     157 ..       1     179 [. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 52.4 bits;  conditional E-value: 4e-17
+             sexP 117 vpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqst.kerdsmprt..dfsn 207
+                      +p rp n f++y    +k+i t  p  n+ disk+++  wk a  + k  y+e+a + +  h   yp+y+y  +k+s  k r    +t  +f++
+  GBNWU_000647-T1   4 IP-RPMNCFLLYRHDKQKEILTQCPGANHRDISKIIAKWWKEATIQEKAPYVERARKAKVEHSRLYPNYKYMPQKKSKgKPRTYKRKTqnEFTS 96 
+                      44.8*******************************************************************99888752445444333114544 PP
+
+             sexP 208 qdf.itaddewirqlndllsqnpmtalhgssqenfaidytstpyfisspsn.dislgdlkl 266
+                      +        + i q  d ls n     h  +q ++++  +s    + sps+  is + l l
+  GBNWU_000647-T1  97 KSEeRNNFMKLIYQDRDALSNNQKQYQHQINQPSLSLSSSSCSSSLLSPSSsPISASMLNL 157
+                      3320233345688999*********************999998888888651577766666 PP
+
+>> GBNWU_001361-T1  GBNWU_001361
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.3   0.7   1.6e-12   1.2e-09     108     193 ..     131     216 ..     120     261 .. 0.84
+   2 !   15.2   0.3   8.4e-06    0.0067      93     175 ..     266     344 ..     232     363 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 37.3 bits;  conditional E-value: 1.6e-12
+             sexP 108 npyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                      n    sp     rp naf++++  +rkr+k   p +  ++isk ++  wk  + e + +y+ +an+++e ++  +p+  y  r ++
+  GBNWU_001361-T1 131 NIMTTSPRARVTRPPNAFLLFNKEMRKRLKIDNPTWTVAEISKEISERWKTLSLEERGQYLLQANKIKENQQALHPNAMYIRRSKA 216
+                      556678998899*****************************************************************999776544 PP
+
+  == domain 2  score: 15.2 bits;  conditional E-value: 8.4e-06
+             sexP  93 tessstgvsiskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevr 175
+                        sss++  i k  +   +  p+q pk+p +a+m +   +r + +   p+     iskl + +w       k  ++eka   +
+  GBNWU_001361-T1 266 L-SSSSSPLIKKRVK--KKKDPKQ-PKHPLSAYMWFLTEVRPKTRQLHPKLTVGQISKLCADQWNAMEEHQKLPWIEKATNDK 344
+                      3.3333344554433..3456766.9**************************************8888888889***995433 PP
+
+>> GBNWU_006211-T1  GBNWU_006211
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.4   2.4   2.4e-11   1.9e-08     117     210 ..      21     109 ..       5     125 .. 0.85
+   2 ?   -1.1   0.2       0.8   6.4e+02     105     129 ..     202     225 ..     132     258 .. 0.46
+
+  Alignments for each domain:
+  == domain 1  score: 33.4 bits;  conditional E-value: 2.4e-11
+             sexP 117 vpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerdsmprtdfsnqdf 210
+                      +p rp n fm +     ++i +  p  n+ disk+++  w+ a  + k+ y + a   +  h++ yp+y+y  +++s +   + p      qd+
+  GBNWU_006211-T1  21 IP-RPINCFMAFRLDKYREISSRSPTLNHRDISKVIAKWWREATEQEKEPYRKIAATAKLEHEKLYPNYKYAPKRKSER--QTRPY--HRKQDL 109
+                      55.8****************************************999999*********************99888754..44442..334554 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.8
+             sexP 105 gqenpyqaspeqvpkrpsnafmiys 129
+                       q n +  +p  +    +n+f+ ++
+  GBNWU_006211-T1 202 YQINYFNTNPSMMIT-KNNSFISFT 225
+                      233333333333222.233333333 PP
+
+>> GBNWU_009053-T1  GBNWU_009053
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.9   2.0   6.7e-11   5.3e-08      82     193 ..      23     136 ..       1     154 [. 0.78
+   2 ?   -1.4   2.0      0.95   7.6e+02     103     167 ..     144     204 ..     128     217 .] 0.49
+
+  Alignments for each domain:
+  == domain 1  score: 31.9 bits;  conditional E-value: 6.7e-11
+             sexP  82 aaesllrkq.mctessstgvsiskgqe.npyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekane 173
+                        e+l++   + t+s++ g + s ++  +  +   e +pkrp  +++ +s + r ri    p+  n++++ llg  w + + + +k +++ a +
+  GBNWU_009053-T1  23 LGENLVKLSlLLTQSTADGANGSTNKApSKKRVRDESLPKRPLTSYIHFSVSERNRIMKENPKATNTEVASLLGKEWNSLNEKQRKPFVDMAKK 116
+                      56777765515788999998776655314567889*******************************************************9998 PP
+
+             sexP 174 vrewhkerypdyeynsrkqs 193
+                       +e +  +  + + n+   s
+  GBNWU_009053-T1 117 DKERYDRELTNVKNNNAPVS 136
+                      87777666666666655544 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.95
+             sexP 103 skgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkey 167
+                       k  +n    + +q  k+ s      s++ +k +k   p  +     k  g+  k a     ke 
+  GBNWU_009053-T1 144 EKEVDNDIPKAKKQKQKESSTETKKSSSSSKKPVKQATPSSD----EKSNGSKKKKAPETKPKED 204
+                      444455555555555555555555555555555555555322....2333444444443333444 PP
+
+>> GBNWU_003189-T1  GBNWU_003189
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.7   0.9   7.9e-11   6.3e-08     116     175 ..      20      79 ..       5      87 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 31.7 bits;  conditional E-value: 7.9e-11
+             sexP 116 qvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevr 175
+                        pkr  +a+m++s   r ++k   p+     + k+lg  wkn + e kk y+++a + +
+  GBNWU_003189-T1  20 SAPKRGLSAYMFFSQANRNKVKEENPDATFGQLGKILGEKWKNMSDEEKKPYVQQAEKDK 79 
+                      58****************************************************997644 PP
+
+>> GBNWU_000990-T1  GBNWU_000990
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.9   0.6   2.8e-10   2.2e-07     109     181 ..      92     165 ..      73     187 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 29.9 bits;  conditional E-value: 2.8e-10
+             sexP 109 pyqaspeqvpkrpsnafmiysatlrkrikttfpeynn.sdiskllgamwknagaevkkeymekanevrewhker 181
+                      p +      pk p n f+++    r +ik   pe  +  +++kll+a wk+ ++e kk y++   +  e ++  
+  GBNWU_000990-T1  92 PKKKKDPNAPKGPGNVFFLFCRLQRDKIKDEHPEERSlGEVTKLLSAKWKSLSSEEKKVYQDMYQKELEEYEVA 165
+                      555666689************************9765379********************99866544444444 PP
+
+>> GBNWU_008917-T1  GBNWU_008917
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.8   3.4   1.2e-09   9.6e-07      96     207 ..     105     216 ..      53     238 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 27.8 bits;  conditional E-value: 1.2e-09
+             sexP  96 sstgvsiskgqenpyqaspe.qvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeyn 188
+                      ss g  i++g   p +   +   pk p n f+++    r+++k  +p  n  ++++llg  wk    + kk+y +  ++ +e +++    y+  
+  GBNWU_008917-T1 105 SSNG-KINEGSNPPVRKKKDpNAPKGPGNVFFLFCRMERENFKDELPTENLGEVTRLLGQKWKAMTDDEKKKYYDIYDKEQEEYRKAMKSYKDA 197
+                      4444.789999999876544279**************************************************999998888888888888877 PP
+
+             sexP 189 srkqstkerdsmprtdfsn 207
+                         +s k   s  + d  n
+  GBNWU_008917-T1 198 GGGESGKIAVSKMNEDSKN 216
+                      7777777666655555544 PP
+
+>> GBNWU_001289-T1  GBNWU_001289
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.9   1.0   9.4e-09   7.5e-06     104     179 ..      49     124 ..      34     141 .. 0.89
+   2 ?   -1.9   0.4       1.4   1.1e+03     101     101 ..     201     201 ..     153     268 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 24.9 bits;  conditional E-value: 9.4e-09
+             sexP 104 kgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhk 179
+                      kg ++   +    +pk+ps+ +m +s + r r+    p      i+ llg  w+  + + k+ y++ a + +e ++
+  GBNWU_001289-T1  49 KGSKSKKNSEKRDLPKKPSSPYMCFSKSERSRVNQENPGQTTQAIASLLGKEWRALSEKEKQPYVDLAKQDKERYE 124
+                      7778888888999*******************************************9999*****99988776554 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 1.4
+             sexP 101 s 101
+                       
+  GBNWU_001289-T1 201 Q 201
+                      2 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (297 nodes)
+Target sequences:                       9570  (4570904 residues searched)
+Passed MSV filter:                       520  (0.0543365); expected 191.4 (0.02)
+Passed bias filter:                      203  (0.0212121); expected 191.4 (0.02)
+Passed Vit filter:                        23  (0.00240334); expected 9.6 (0.001)
+Passed Fwd filter:                        14  (0.0014629); expected 0.1 (1e-05)
+Initial search space (Z):               9570  [actual number of targets]
+Domain search space  (domZ):              12  [number of targets reported over threshold]
+# CPU time: 0.33u 0.02s 00:00:00.35 Elapsed: 00:00:00.12
+# Mc/sec: 10823.62
+//
+[ok]

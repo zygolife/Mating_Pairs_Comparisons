@@ -1,0 +1,514 @@
+# phmmer :: search a protein sequence against a protein database
+# HMMER 3.2.1 (June 2018); http://hmmer.org/
+# Copyright (C) 2018 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             MAT_locus_peps/mat_locus_query.pep
+# target sequence database:        annotation/Chaetocladium_brefeldii_NRRL_1350.aa.fasta
+# output directed to file:         results/Chaetocladium_brefeldii/MAT_search/minus_phmmer.out
+# per-dom hits tabular output:     results/Chaetocladium_brefeldii/MAT_search/minus_phmmer.domtbl
+# sequence reporting threshold:    E-value <= 1e-05
+# number of worker threads:        8
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       RNAhelicase  [L=649]
+Description: tr|B0F2G9|B0F2G9_PHYBL Putative RNA helicase (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   2.2e-185  616.5   6.7   2.2e-185  616.5   6.7    2.2  2  COZTY_004655-T1  COZTY_004655
+    1.1e-08   32.7   0.0    5.4e-08   30.4   0.0    1.9  2  COZTY_002536-T1  COZTY_002536
+      9e-06   23.1   0.0    2.2e-05   21.8   0.0    1.6  1  COZTY_004928-T1  COZTY_004928
+
+
+Domain annotation for each sequence (and alignments):
+>> COZTY_004655-T1  COZTY_004655
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  616.5   6.7  8.3e-189  2.2e-185       2     626 ..       2     601 ..       1     606 [. 0.89
+   2 ?   -8.9  13.7         3   7.8e+03      43     107 ..     601     667 ..     598     683 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 616.5 bits;  conditional E-value: 8.3e-189
+      RNAhelicase   2 ssrkssrqrpprgwdhsprpqidgpitvnaninfdtneyqvspaq...pqv.eygynqnqdcsmrwaaeaqaswntpfstntnfntssqpsssq 91 
+                      s + ++++rp ++ + +pr  +     + an+n  tne++v+p++   p+  ++ +  n   s+ w  e+q  w     t t+++   q    q
+  COZTY_004655-T1   2 SRNTNNNKRPTKSVNSTPRADV-----ITANFNNLTNEFEVTPSRrapPRRsKFDF-GNVAPSQSWTMESQRGWGASPETQTSWDQ--QEEEGQ 87 
+                      5556678899999999998765.....67889999********7533243313443.5778899***********98888888764..444555 PP
+
+      RNAhelicase  92 sssafnnssgfqawveptrsperfshpdqvvfklnteipdrpifvekvdfasyrskpivpdpaeimqgppqvpvsndrgrrder..iphipvnh 183
+                       +   +    f      tr  e         f+ln ei d pif +  d+ ++r + i+pd  +i+    ++   n+  +rd r  +p +p+n+
+  COZTY_004655-T1  88 HAHVHDK---F-----STRDTEA-----TATFRLNMEIEDAPIFSKVTDYTAFRQQDIIPDFEQIVA-YEELRDPNEWEQRDYRdpFPDVPINR 167
+                      5544433...2.....3565554.....468******************************999886.567888899999997733679***** PP
+
+      RNAhelicase 184 vrgpyestdeylythfelmrqdcliplqkavqsyrltadkpkd..klglamsddqvetvalsrdyrlyehvrlnaivfgsrqtlyrisfrlpyy 275
+                      v+ p++s+d+ylythfelmrqd liplqkav+ y+      k+    g+am     e ++  r yrlyehv+lnaivfg+rq lyr+sfrlp+y
+  COZTY_004655-T1 168 VKQPFDSSDQYLYTHFELMRQDFLIPLQKAVKGYKEAVKYAKNyeDAGIAM-----EQISQQRPYRLYEHVNLNAIVFGTRQPLYRVSFRLPFY 256
+                      **********************************98877666511455555.....567889******************************** PP
+
+      RNAhelicase 276 crvkwpqskrlmegsmvllskdnfvsdikiatvvnrgdepmrgssrfeyminvklecdnerdplgfgdpssadqdtyvmieaptgyfeayrhil 369
+                      ++v w qskrlm gs+vl+skd+f +d+k+at+vnrgdepmrg++rfe+++++ le d+++ plgfgdps  + dtyvmiea  gyfeayrh+l
+  COZTY_004655-T1 257 AHVNWSQSKRLMPGSLVLISKDHFENDLKVATIVNRGDEPMRGANRFEFLVDIYLERDDDEQPLGFGDPSLTENDTYVMIEATDGYFEAYRHVL 350
+                      ********************************************************************************************** PP
+
+      RNAhelicase 370 svlkntqadelplasylvdisqdirlpyyasrkqfydidprkptnsrdqqknlvkadvewpekntgmdrtqmdalqtmitnniaiiqgppgtgk 463
+                      +v+kn + d+lp++ ylv +s ++ +p ya++k  ydi+ +     rd+    v    +w +  tgmdrtqmdal+t++t+n+ai+qgppgtgk
+  COZTY_004655-T1 351 NVFKNIKPDQLPFSEYLVKLSNEVLVPDYAAKKNTYDINVQSRNIRRDRWP--VSILGQWADYKTGMDRTQMDALRTILTHNLAIVQGPPGTGK 442
+                      ***************************************999888888775..555669*********************************** PP
+
+      RNAhelicase 464 tfvgtygmkvllknfdqglgpivcicqtnhaldqflehvldfdprvirigarsrserlkdhilfevrkereavrglgrvyrkrdeiskkireii 557
+                      tfvgty+m+vll nfd ++gpivcicqtnhaldqfleh+l +  +++r+g rs+se lk+h l+e++k++e  rg++r+yr+rd + k i++ i
+  COZTY_004655-T1 443 TFVGTYAMRVLLNNFDASMGPIVCICQTNHALDQFLEHILGYSTEIVRVGGRSKSELLKNHTLYELKKDHERPRGISRLYRERDSLIKVIKDTI 536
+                      ********************************************************************************************** PP
+
+      RNAhelicase 558 vtmyeepcvtldylrkikalrprqleslkrvgergarndalstaavaaasaggggadedsdddwvigsd 626
+                      + +yeepcvt++y++ ik lrp+q++sl+r g+r  +n  + taa +       + d dsd++wv++++
+  COZTY_004655-T1 537 IELYEEPCVTVEYIESIKGLRPKQIDSLRRAGQRE-KNRPI-TAATSLN--DYHAIDSDSDEEWVLSTE 601
+                      *********************************96.45544.4544433..44678*********9876 PP
+
+  == domain 2  score: -8.9 bits;  conditional E-value: 3
+      RNAhelicase  43 spaqpqveygynqnqdc.smrwaaeaqasw.ntpfstntnfntssqpsssqsssafnnssgfqawve 107
+                       p qp+  ++ n n++  + r +     +  n   ++n n n ++  s++ +   +nn+ g   wv 
+  COZTY_004655-T1 601 EPVQPKATFSNNNNRNNnNSRNSNNNNGNKnNNNRNSNNNRNNNNNRSNNNNKGGYNNNGGKADWVG 667
+                      799999999998887651455555555554145677888999999999999***********99*95 PP
+
+>> COZTY_002536-T1  COZTY_002536
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0     0.075     2e+02     181     215 ..     412     448 ..     398     454 .. 0.82
+   2 !   30.4   0.0   2.1e-11   5.4e-08     437     522 ..     698     785 ..     693     792 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.075
+      RNAhelicase 181 vnhvrgpyestdeylyt..hfelmrqdcliplqkavq 215
+                       n +++p+ + d  +yt  hf l+r + + p+q+ ++
+  COZTY_002536-T1 412 TNKLHNPWPNVDLTMYTlyHFLLLRDELVGPIQRIIK 448
+                      4788999999999888777999***********9886 PP
+
+  == domain 2  score: 30.4 bits;  conditional E-value: 2.1e-11
+      RNAhelicase 437 drtqmdalqtmitnniaiiqgppgtgktfvgtygmkvllknfdqgl..gpivcicqtnhaldqflehvldfdprvirigarsrserlk 522
+                        +q+ a++ ++t+ iai+ gppgtgktf+++   +++ + +  gl   pi+ i +t  +ld +l+ v+     ++r+g++     lk
+  COZTY_002536-T1 698 SASQLKAVKFVLTHRIAIVSGPPGTGKTFLASKLAQLMSEALTSGLfhQPILIITKTQSSLDDILKGVVGQISDIVRFGSEPYDGSLK 785
+                      67899****************************999999******9556*********************9999***99987665555 PP
+
+>> COZTY_004928-T1  COZTY_004928
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.8   0.0   8.6e-09   2.2e-05     420     527 ..     797     904 ..     593     963 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 21.8 bits;  conditional E-value: 8.6e-09
+      RNAhelicase 420 knlvkadvewpeknt.gmdrtqmdalqtmitnniaiiqgppgtgktfvgtygmkvllknfdqglgpivcicqtnhaldqflehvldf..dpr.v 509
+                       n+     + p+kn   +   q +++ + i + + ++ gppgtgkt v+   +  l  n  +     + +  +n+al+q++  ++d+  dpr +
+  COZTY_004928-T1 797 PNMGPFPQDIPKKNQiRFTPVQAESIYSGINHGLTLVVGPPGTGKTDVAAQTIANLYHNHPEQH--TLIVTHSNQALNQIFSKIIDLdvDPRhL 888
+                      5566666677888852466789999*******************************99998865..455789*********9997652278746 PP
+
+      RNAhelicase 510 irigarsrserlkdhilf 527
+                      +r+g     ++l  ++ f
+  COZTY_004928-T1 889 VRLGHGE--QELDANVSF 904
+                      7888543..345555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (649 nodes)
+Target sequences:                       7810  (3561962 residues searched)
+Passed MSV filter:                       325  (0.0416133); expected 156.2 (0.02)
+Passed bias filter:                      206  (0.0263764); expected 156.2 (0.02)
+Passed Vit filter:                        19  (0.00243278); expected 7.8 (0.001)
+Passed Fwd filter:                         4  (0.000512164); expected 0.1 (1e-05)
+Initial search space (Z):               7810  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.51u 0.03s 00:00:00.54 Elapsed: 00:00:00.24
+# Mc/sec: 9430.85
+//
+Query:       TPT  [L=289]
+Description: tr|B0F2G7|B0F2G7_PHYBL Putative triose phosphate transporter (Fragment) OS=Phycomyces blakesleeanus PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    2.2e-59  200.0  10.4    4.5e-59  199.0  10.4    1.5  1  COZTY_004537-T1  COZTY_004537
+    1.5e-09   36.5   7.9    1.5e-09   36.5   7.9    1.4  1  COZTY_007258-T1  COZTY_007258
+
+
+Domain annotation for each sequence (and alignments):
+>> COZTY_004537-T1  COZTY_004537
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  199.0  10.4   1.1e-62   4.5e-59     149     288 ..       1     140 [.       1     141 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 199.0 bits;  conditional E-value: 1.1e-62
+              TPT 149 mwyisssltnnigkqiltsfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikala 242
+                      mwy+ ssl++n +kqi+ +fkypvtltf+qf +va wc l+  +  ++ i+ pt+ iv+ti pl+ f+ivghvfssi+isr+pvslvhtikala
+  COZTY_004537-T1   1 MWYVCSSLSSNTAKQIMNTFKYPVTLTFVQFLMVACWCALMERIFKSSGIKKPTKTIVQTIIPLSSFMIVGHVFSSISISRIPVSLVHTIKALA 94 
+                      8********************************************************************************************* PP
+
+              TPT 243 plftvlfyrfifqvhytpnvyisllpltfgvilacsftysnsvvgl 288
+                      plftvlfyrfif vhy+  vy +l+plt+gvilacsft+sn+++gl
+  COZTY_004537-T1  95 PLFTVLFYRFIFNVHYSSQVYTALIPLTMGVILACSFTFSNNLIGL 140
+                      *********************************************8 PP
+
+>> COZTY_007258-T1  COZTY_007258
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.5   7.9   3.9e-13   1.5e-09     154     287 ..      16     147 ..       5     150 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 36.5 bits;  conditional E-value: 3.9e-13
+              TPT 154 ssltnnigkqiltsfkypvtltfiqfalvamwcflvanlastthirsptqeivrtitplavflivghvfssiaisrvpvslvhtikalaplftv 247
+                       slt   +k il +fk+p tlt i     ++ c+ +  +   t  +   +e    +  ++v+  ++  +s+++++ v v + + i+a+ p+ftv
+  COZTY_007258-T1  16 LSLT-LYNKIILNNFKFPYTLTAIHTLCGSIGCYALYLFGVFTPAKLGNREN-GIMAMFSVLYTINIAISNVSLNLVSVPFHQVIRAMTPVFTV 107
+                      3343.457889***********************999888888888877774.3456677888889999***********999*********** PP
+
+              TPT 248 lfyrfifqvhytpnvyisllpltfgvilacsftysnsvvg 287
+                      ++  +++q  y   +y+sllp+ +gv +a    ys + +g
+  COZTY_007258-T1 108 IISILFLQKSYPNQIYVSLLPVVLGVGFATRDEYSFTYMG 147
+                      **99999****999*************9998888766665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (289 nodes)
+Target sequences:                       7810  (3561962 residues searched)
+Passed MSV filter:                       268  (0.034315); expected 156.2 (0.02)
+Passed bias filter:                      164  (0.0209987); expected 156.2 (0.02)
+Passed Vit filter:                        16  (0.00204866); expected 7.8 (0.001)
+Passed Fwd filter:                         3  (0.000384123); expected 0.1 (1e-05)
+Initial search space (Z):               7810  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.20u 0.00s 00:00:00.20 Elapsed: 00:00:00.10
+# Mc/sec: 9398.79
+//
+Query:       sexM  [L=211]
+Description: tr|B0F2G8|B0F2G8_PHYBL Sex minus OS=Phycomyces blakesleeanus GN=sexM PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    3.7e-10   38.7   6.7    1.8e-07   29.9   0.7    2.9  3  COZTY_007783-T1  COZTY_007783
+    2.6e-09   35.9   0.4    2.6e-09   35.9   0.4    1.6  2  COZTY_002718-T1  COZTY_002718
+    1.4e-08   33.6   1.8    1.4e-08   33.6   1.8    1.9  2  COZTY_005175-T1  COZTY_005175
+    2.4e-08   32.8   5.7    3.6e-08   32.2   3.4    2.0  2  COZTY_006321-T1  COZTY_006321
+    5.2e-08   31.7   3.2    0.00025   19.7   0.4    2.3  2  COZTY_004215-T1  COZTY_004215
+
+
+Domain annotation for each sequence (and alignments):
+>> COZTY_007783-T1  COZTY_007783
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0      0.35   5.4e+02      42      84 ..      34      74 ..      18      85 .. 0.77
+   2 !   29.9   0.7   1.2e-10   1.8e-07      38     116 ..     188     266 ..     162     308 .. 0.87
+   3 !   10.8   0.2   8.3e-05      0.13      43     107 ..     355     419 ..     340     429 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.35
+             sexM 42 irrpknafmlyrqavhpsilssnstihnkeisrtagkmwknek 84
+                      r p n +++y     p  l    ++h k + ++  ++w+n+ 
+  COZTY_007783-T1 34 RRIPLNDYQIYPTITTPYYLPPI-SLHEKVLDQS-KQQWENDV 74
+                     46699999999999999998765.5899988775.57899975 PP
+
+  == domain 2  score: 29.9 bits;  conditional E-value: 1.2e-10
+             sexM  38 stvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqr 116
+                      +  k++rp na++l+++ ++  +l  +  +   eis+  g  wk   +  r  y ++a   k  h kk+p +iy  + +
+  COZTY_007783-T1 188 TLEKLKRPPNAYLLFNRDMRRKLLRQSPKMTVAEISKKVGNWWKALPDAKRACYVKEAAILKEEHLKKYPDFIYTRRSK 266
+                      5579**********************************************************************76544 PP
+
+  == domain 3  score: 10.8 bits;  conditional E-value: 8.3e-05
+             sexM  43 rrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfp 107
+                      ++p +a++ y  +v+p +  +        is++ +k w     e r  +++kad +k  +++++ 
+  COZTY_007783-T1 355 KHPMSAYLHYLASVYPQVSLNFPGSTVGPISKSISKTWHAMSPEERLPWKQKADSDKARYAREMQ 419
+                      6899************9865543334468****************************99988765 PP
+
+>> COZTY_002718-T1  COZTY_002718
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.9   0.4   1.7e-12   2.6e-09      41     120 ..      56     135 ..      21     151 .. 0.83
+   2 ?   -3.3   0.1       1.8   2.7e+03     171     195 ..     259     283 ..     240     287 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 35.9 bits;  conditional E-value: 1.7e-12
+             sexM  41 kirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrr 120
+                       + rp n+fm yr   +  i       +++ is+  +k wk+  ee +  y r ad  k  h+ k p+y++kp++   + 
+  COZTY_002718-T1  56 HVGRPINSFMAYRSVKQRQIRVVCPKANHRVISQIIAKWWKDIDEEEKNIYIRLADTAKKEHALKHPNYVFKPKKGTKQA 135
+                      588****************9999999999********************************************8754444 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 1.8
+             sexM 171 deilntpptqclddsilktflddls 195
+                        + ntp +q ++   l  +   +s
+  COZTY_002718-T1 259 AMLSNTPASQIMETPTLDYYTSPMS 283
+                      4456888888888877777766665 PP
+
+>> COZTY_005175-T1  COZTY_005175
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   1.8     9e-12   1.4e-08      39     121 ..      51     132 ..      12     154 .. 0.87
+   2 ?   -3.2   0.4       1.7   2.7e+03     168     181 ..     205     219 ..     164     236 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 33.6 bits;  conditional E-value: 9e-12
+             sexM  39 tvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktrrp 121
+                        ki rp n+fm++r   +  i+      ++++is+  +k wk   +  +++y  +a++ k  h   +p y + pq+r t+ p
+  COZTY_005175-T1  51 VEKIPRPLNSFMIFRLEKQREIVDKCPGANHRDISKIISKWWKELSKPDKEWYMAEAEKRKAEHKALYPDYKFCPQKRATK-P 132
+                      34889****************************************99******************************9986.3 PP
+
+  == domain 2  score: -3.2 bits;  conditional E-value: 1.7
+             sexM 168 tned.eilntpptqc 181
+                      t++d  ++n  pt  
+  COZTY_005175-T1 205 TSKDfHFVNVQPTSS 219
+                      333323344444443 PP
+
+>> COZTY_006321-T1  COZTY_006321
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   3.4   2.3e-11   3.6e-08      40     119 ..      14      93 ..       2     117 .. 0.92
+   2 ?    0.5   0.0      0.12   1.9e+02     175     204 ..     188     217 ..     136     221 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 32.2 bits;  conditional E-value: 2.3e-11
+             sexM  40 vkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiykpqqrktr 119
+                       +i rp n f++yr   +  i++   t ++++is+  +k w+   ee +k + ++a   k  h+  +p y y p+++ t 
+  COZTY_006321-T1  14 SQIPRPLNCFLMYRLEKQKEIVAKCPTANHRDISKIIAKWWQEASEEEKKPFRERARIAKQEHNALYPDYKYAPKKKVTP 93 
+                      5799**********************************************************************998774 PP
+
+  == domain 2  score: 0.5 bits;  conditional E-value: 0.12
+             sexM 175 ntpptqclddsilktflddlsfdifspide 204
+                      ++p t  +d   +  + d   f+i sp+d 
+  COZTY_006321-T1 188 SSPATMPFDSPHVSPYSDYSEFEISSPVDT 217
+                      679999999999999999999******996 PP
+
+>> COZTY_004215-T1  COZTY_004215
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.4   1.6e-07   0.00025      39     112 ..      98     171 ..      79     186 .. 0.84
+   2 !   12.2   0.1   3.1e-05     0.049      29     110 ..     193     275 ..     182     292 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 1.6e-07
+             sexM  39 tvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyiyk 112
+                        ++ rp na++l+++ ++  +   + t+   +is+  g  wkn  +e +  y ++a++ k  +    p+ +y 
+  COZTY_004215-T1  98 PTRVTRPPNAYLLFNKEMRRILKDQDPTMKVADISKEVGFRWKNMPKEQKDQYVNQANKLKEEQRALHPNSMYI 171
+                      46899**************999999********************99999999999988776666666666664 PP
+
+  == domain 2  score: 12.2 bits;  conditional E-value: 3.1e-05
+             sexM  29 pvrqkciis.stvkirrpknafmlyrqavhpsilssnstihnkeisrtagkmwknekeevrkyyerkadeeklyhskkfpgyi 110
+                      p r+++  + +t   ++p +a+m y   v+p  +      +  +is+  +  w    ee r  ++ ka+ +k  +++++  y 
+  COZTY_004215-T1 193 PQRKRAKRNkTTTTPKHPLSAYMWYLTEVRPDAMRQYPGSNVGQISKLCADRWNVMSEEARLPWKTKAEADKDRYAREMQIYA 275
+                      55555444314556789******************99999999**************************99998888876554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (211 nodes)
+Target sequences:                       7810  (3561962 residues searched)
+Passed MSV filter:                       351  (0.0449424); expected 156.2 (0.02)
+Passed bias filter:                      172  (0.022023); expected 156.2 (0.02)
+Passed Vit filter:                        25  (0.00320102); expected 7.8 (0.001)
+Passed Fwd filter:                         9  (0.00115237); expected 0.1 (1e-05)
+Initial search space (Z):               7810  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.18u 0.02s 00:00:00.20 Elapsed: 00:00:00.09
+# Mc/sec: 7718.13
+//
+Query:       sexP  [L=297]
+Description: tr|B0F2H1|B0F2H1_PHYBL Sex plus OS=Phycomyces blakesleeanus GN=sexP PE=4 SV=1
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    6.6e-15   54.3   1.4    9.9e-15   53.7   1.4    1.2  1  COZTY_006321-T1  COZTY_006321
+    1.5e-13   49.8   3.2    4.6e-10   38.4   0.5    2.2  2  COZTY_004215-T1  COZTY_004215
+    2.9e-13   48.9   1.0    5.1e-13   48.1   1.0    1.4  1  COZTY_005175-T1  COZTY_005175
+    1.1e-12   47.0   4.1    1.8e-08   33.2   0.8    2.3  2  COZTY_007783-T1  COZTY_007783
+    3.1e-09   35.7   0.8    5.4e-09   34.9   0.3    1.7  2  COZTY_002718-T1  COZTY_002718
+      8e-09   34.3   0.1    1.1e-08   33.9   0.1    1.2  1  COZTY_006741-T1  COZTY_006741
+    2.3e-08   32.8   0.1    4.6e-08   31.9   0.1    1.5  2  COZTY_000974-T1  COZTY_000974
+    5.9e-08   31.5   1.5    6.3e-08   31.4   1.5    1.0  1  COZTY_002584-T1  COZTY_002584
+    1.5e-07   30.1   0.8    1.8e-07   29.9   0.8    1.0  1  COZTY_003314-T1  COZTY_003314
+    6.3e-06   24.8   3.7    7.9e-06   24.5   3.7    1.3  1  COZTY_000694-T1  COZTY_000694
+
+
+Domain annotation for each sequence (and alignments):
+>> COZTY_006321-T1  COZTY_006321
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.7   1.4   1.3e-17   9.9e-15     103     243 ..       5     138 ..       2     178 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 53.7 bits;  conditional E-value: 1.3e-17
+             sexP 103 skgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstke 196
+                      +k q n  q    q+p rp n f++y    +k+i    p  n+ disk+++  w+ a+ e kk + e+a   ++ h   ypdy+y  +k+ t +
+  COZTY_006321-T1   5 NKQQTNQQQ---SQIP-RPLNCFLMYRLEKQKEIVAKCPTANHRDISKIIAKWWQEASEEEKKPFRERARIAKQEHNALYPDYKYAPKKKVTPK 94 
+                      555555444...4788.8**************************************************************************** PP
+
+             sexP 197 rdsmprtdfsnqdfitaddewirqlndllsqnpmtalhgssqenfai 243
+                      r  + r     q f +   e  + l +++ ++p    h s  ++ a 
+  COZTY_006321-T1  95 RIYIRRN--KKQQFTSRAKE-NNMLMEMIYEDPTALKHLSMNDDTAA 138
+                      *998886..46677655444.57888999999988888887776665 PP
+
+>> COZTY_004215-T1  COZTY_004215
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.4   0.5   5.9e-13   4.6e-10     106     192 ..      90     175 ..      66     192 .. 0.80
+   2 !   12.0   0.1   6.7e-05     0.052     115     176 ..     204     265 ..     181     280 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 38.4 bits;  conditional E-value: 5.9e-13
+             sexP 106 qenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkq 192
+                        +   a p +v  rp na+++++  +r+ +k   p    +disk +g  wkn   e k +y+ +an+++e ++  +p+  y  r +
+  COZTY_004215-T1  90 LNDKKTARPTRVT-RPPNAYLLFNKEMRRILKDQDPTMKVADISKEVGFRWKNMPKEQKDQYVNQANKLKEEQRALHPNSMYIRRSR 175
+                      2334567888885.899*************************************************************998876654 PP
+
+  == domain 2  score: 12.0 bits;  conditional E-value: 6.7e-05
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevre 176
+                         pk+p +a+m y   +r      +p  n   iskl +  w   + e +  +  ka   ++
+  COZTY_004215-T1 204 TTTPKHPLSAYMWYLTEVRPDAMRQYPGSNVGQISKLCADRWNVMSEEARLPWKTKAEADKD 265
+                      468***************************************99999999999988865544 PP
+
+>> COZTY_005175-T1  COZTY_005175
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.1   1.0   6.6e-16   5.1e-13     114     237 ..      51     170 ..      26     209 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 48.1 bits;  conditional E-value: 6.6e-16
+             sexP 114 peqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerdsmprtdfsn 207
+                       e++p rp n+fmi+    +++i    p  n+ disk+++  wk  +   k+ ym +a + +  hk  ypdy++  +k++tk r    r     
+  COZTY_005175-T1  51 VEKIP-RPLNSFMIFRLEKQREIVDKCPGANHRDISKIISKWWKELSKPDKEWYMAEAEKRKAEHKALYPDYKFCPQKRATKPRAYRKRA---R 140
+                      46777.8****************************************************************************9877664...5 PP
+
+             sexP 208 qdfitaddewirqlndllsqnpmtalhgss 237
+                       +f+  d e  + l+ l+    +t+   s+
+  COZTY_005175-T1 141 NEFVARDFENKQSLSALFKGGMLTSTTTSN 170
+                      678888888888888777777776655554 PP
+
+>> COZTY_007783-T1  COZTY_007783
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.2   0.8   2.3e-11   1.8e-08     115     193 ..     190     267 ..     142     281 .. 0.87
+   2 !   14.7   0.1   9.6e-06    0.0075      89     175 ..     325     411 ..     293     424 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 33.2 bits;  conditional E-value: 2.3e-11
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqs 193
+                      e+  krp na+++++  +r+++    p+   ++isk +g  wk      +  y+++a  ++e h ++ypd+ y  r ++
+  COZTY_007783-T1 190 EK-LKRPPNAYLLFNRDMRRKLLRQSPKMTVAEISKKVGNWWKALPDAKRACYVKEAAILKEEHLKKYPDFIYTRRSKA 267
+                      33.48*************************************9887777778*********************988654 PP
+
+  == domain 2  score: 14.7 bits;  conditional E-value: 9.6e-06
+             sexP  89 kqmcte.ssstgvsiskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevr 175
+                      k+  t+ s+  g+   +g++      p   pk+p +a++ y a++  ++   fp      isk ++  w   + e +  + +ka+  +
+  COZTY_007783-T1 325 KKRSTKfSTKGGLKDPRGRKKKRHKHP-FAPKHPMSAYLHYLASVYPQVSLNFPGSTVGPISKSISKTWHAMSPEERLPWKQKADSDK 411
+                      444454145567888889888877777.58*****************************************99999999999997654 PP
+
+>> COZTY_002718-T1  COZTY_002718
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.9   0.3     7e-12   5.4e-09     114     208 ..      54     144 ..      43     185 .. 0.83
+   2 ?   -2.9   0.0       2.3   1.8e+03       6      43 ..     338     373 ..     335     377 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 34.9 bits;  conditional E-value: 7e-12
+             sexP 114 peqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeynsrkqstkerdsmprtdfsn 207
+                      p  v  rp n+fm y +  +++i+   p+ n+  is++++  wk+   e k  y+  a+  ++ h  ++p+y +  +k  tk+     +t f n
+  COZTY_002718-T1  54 PNHV-GRPINSFMAYRSVKQRQIRVVCPKANHRVISQIIAKWWKDIDEEEKNIYIRLADTAKKEHALKHPNYVFKPKK-GTKQA--AKKTTFVN 143
+                      5555.59*******************************************************************8765.66654..34555544 PP
+
+             sexP 208 q 208
+                       
+  COZTY_002718-T1 144 N 144
+                      3 PP
+
+  == domain 2  score: -2.9 bits;  conditional E-value: 2.3
+             sexP   6 tphlpyqrpikprlllapklsvqqisviyikgktalri 43 
+                      t ++ y+r i   + +  kl+ +  s++ +k  t l++
+  COZTY_002718-T1 338 TEYMQYERKIV--MYFEEKLAYEAESILVVKDATVLEL 373
+                      66777777664..6678899999999999999988876 PP
+
+>> COZTY_006741-T1  COZTY_006741
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.9   0.1   1.4e-11   1.1e-08     109     188 ..      55     135 ..       2     141 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 33.9 bits;  conditional E-value: 1.4e-11
+             sexP 109 pyqa.speqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypdyeyn 188
+                      p +       pk p n f++y    r ++k  fp  n  ++++llg  wk    + kk+y +      + ++e    y  n
+  COZTY_006741-T1  55 PQRKkKDPNAPKGPGNVFFLYCRLERDKVKDEFPSENLGEVTRLLGQRWKGLTKDGKKKYYDMYKRELDEYEEAMKIYTLN 135
+                      3332133468**************************************************998765555566666666665 PP
+
+>> COZTY_000974-T1  COZTY_000974
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   0.0       2.8   2.2e+03      92     114 ..      32      54 ..      28      58 .. 0.80
+   2 !   31.9   0.1   5.9e-11   4.6e-08     102     183 ..     168     246 ..     133     303 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 2.8
+             sexP  92 ctessstgvsiskgqenpyqasp 114
+                       te+  t   + + ++npy+a  
+  COZTY_000974-T1  32 LTENKLTFKCLGEKEQNPYEAEI 54 
+                      5778888888899999***9975 PP
+
+  == domain 2  score: 31.9 bits;  conditional E-value: 5.9e-11
+             sexP 102 iskgqenpyqaspeqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkeryp 183
+                      + k    p +      pk p n f+++    r +ik  fpe +  d++kllg  wk  + + k  y +   +  + + e   
+  COZTY_000974-T1 168 VIK---PPKKKKDPNAPKGPGNVFFLFCRQERDKIKEEFPEESIGDVTKLLGLKWKGLAKDEKMVYYDLFKKEMDEYDEAMK 246
+                      443...4556666789******************************************999999998876554444445444 PP
+
+>> COZTY_002584-T1  COZTY_002584
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.4   1.5   8.1e-11   6.3e-08     114     184 ..      27      93 ..       2      98 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 31.4 bits;  conditional E-value: 8.1e-11
+             sexP 114 peqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypd 184
+                          pkr  +a+m++s   r  ik   pe     i kllg  wkn +   kk y  ka       k+ry d
+  COZTY_002584-T1  27 DPSAPKRGLSAYMFFSQDQRATIKEENPEATFGQIGKLLGEKWKNMSETEKKPYHAKAEA----DKKRYED 93 
+                      3468********************************************9*****999864....4555554 PP
+
+>> COZTY_003314-T1  COZTY_003314
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.9   0.8   2.3e-10   1.8e-07     115     184 ..      21      86 ..       7      90 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 29.9 bits;  conditional E-value: 2.3e-10
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrewhkerypd 184
+                         pkr  +a+m++s   r  ++   pe +   + kllg  wk+ + e kk y +ka   +    +ry d
+  COZTY_003314-T1  21 PNAPKRGLSAYMFFSQDQRASVREKNPEASFGTLGKLLGEKWKSMSPEEKKPYDDKAKADK----QRYED 86 
+                      468*****************************************************97654....44444 PP
+
+>> COZTY_000694-T1  COZTY_000694
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   3.7     1e-08   7.9e-06     115     192 ..      48     127 ..      14     180 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 1e-08
+             sexP 115 eqvpkrpsnafmiysatlrkrikttfpeynnsdiskllgamwknagaevkkeymekanevrew..hkerypdyeynsrkq 192
+                         pk+p + f+++s ++r+ +   +pe   s+ +k+ ga w+  + e kk   e+   ++e   ++   p+  ++++k+
+  COZTY_000694-T1  48 PNAPKQPPSNFFLFSNSIREDVDKQYPEATFSEKAKIYGARWQQLSDEQKKSKKEREKYIKELaaYEAARPETAHHNEKK 127
+                      358999999999**************************************999999888887522344556655555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (297 nodes)
+Target sequences:                       7810  (3561962 residues searched)
+Passed MSV filter:                       359  (0.0459667); expected 156.2 (0.02)
+Passed bias filter:                      187  (0.0239437); expected 156.2 (0.02)
+Passed Vit filter:                        20  (0.00256082); expected 7.8 (0.001)
+Passed Fwd filter:                        15  (0.00192061); expected 0.1 (1e-05)
+Initial search space (Z):               7810  [actual number of targets]
+Domain search space  (domZ):              10  [number of targets reported over threshold]
+# CPU time: 0.25u 0.01s 00:00:00.26 Elapsed: 00:00:00.12
+# Mc/sec: 8344.75
+//
+[ok]
